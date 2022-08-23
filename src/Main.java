@@ -1,3 +1,5 @@
+import db.DBLogic_Clinic;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -28,6 +30,11 @@ public class Main {
                 loginmeth.loginWindow();
             }
         });
+
+
+
+        //DBLogic_Clinic db = new DBLogic_Clinic();
+        //db.register("clName", "cl@email.com", "22030405", "clLegalAddress", "clPhysicalAddress", "clRegNumber", "clUsername", "clPass");
 
     }
 }
