@@ -19,7 +19,7 @@ public class FieldsDocRegister {
     JTextField docSurnameText = new JTextField();
     JTextField usernameText = new JTextField();
     JTextField personalCodeText = new JTextField();
-    
+
     JTextField certificateText = new JTextField();
 
 

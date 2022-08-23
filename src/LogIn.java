@@ -57,8 +57,5 @@ public class LogIn extends Fields_Login {
         regbut.setBounds(20, 500, 160, 35);
 
 
-
-
-
     }
 }
