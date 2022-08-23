@@ -6,9 +6,9 @@ public class Main {
 
     LogIn loginmeth = new LogIn();
     Registration regmeth = new Registration();
-    DocRegistration docRegMeth = new DocRegistration();
 
     loginmeth.loginWindow();
+
     //to join  the panellogin and panelregistration actionlistener is brought to the main class
         //if user presses create new account a new window will open with the registration form
     loginmeth.regbut.addActionListener(new ActionListener() {
