@@ -10,14 +10,11 @@ public class DBLogic_Clinic extends DBConnection{
     public void register (String name, String email, String phone, String legal_address, String physical_address, String reg_number, String username, String password) {
         try {
 
-
-
             // connection to DB
             Connection conn = connectToDB();
 
             // object for password hashing
             MD5 passwordHash = new MD5();
-
 
             // sql statement to execute
             String sql = "INSERT INTO clinic (name, email, phone, legal_address, physical_address, reg_number, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
