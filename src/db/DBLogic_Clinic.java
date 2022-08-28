@@ -37,4 +37,62 @@ public class DBLogic_Clinic extends DBConnection{
         }
     }
 
+    // login as a clinic
+    public boolean login(String username, String password) throws SQLException {
+        boolean isLoggedIn = false;
+
+        // connection to DB
+        Connection conn = connectToDB();
+
+        // object for password hashing
+        MD5 passwordHash = new MD5();
+
+        // sql statement to execute
+        String select  = "SELECT username, password from clinic WHERE username = ? AND password = ?";
+        PreparedStatement ps = conn.prepareStatement(select);
+
+        ps.setString(1, username);
+        ps.setString(2, passwordHash.md5(password));
+        ResultSet rs = ps.executeQuery();
+
+        // check if such clinic exists in DB
+        if(rs.next()) {
+            isLoggedIn = true;
+            System.out.println("Success");
+        } else {
+            System.out.println("Clinic not found");
+        }
+
+        conn.close();
+
+        return isLoggedIn;
+    }
+
+    //get clinic name by username
+    public String getName(String username) throws SQLException {
+        String name = "";
+
+        // connection to DB
+        Connection conn = connectToDB();
+
+        // sql statement to execute
+        String select  = "SELECT name from clinic WHERE username = ?";
+        PreparedStatement ps = conn.prepareStatement(select);
+
+        ps.setString(1, username);
+        ResultSet rs = ps.executeQuery();
+
+        // get clinic name by username
+        if(rs.next()) {
+            name = rs.getString("name");
+            System.out.println(name);
+        } else {
+            System.out.println("Clinic not found");
+        }
+
+        conn.close();
+
+        return name;
+    }
+
 }

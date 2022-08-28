@@ -18,7 +18,7 @@ public class MD5 {
         String md5 = null;
 
         try {
-            md5 = md5(pass);
+            md5 = md5Hashing(pass);
         } catch (Exception a) {
             a.printStackTrace();
         }

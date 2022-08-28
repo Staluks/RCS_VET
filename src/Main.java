@@ -2,9 +2,10 @@ import db.DBLogic_Clinic;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
     LogIn loginmeth = new LogIn();
     Registration regmeth = new Registration();
@@ -34,7 +35,9 @@ public class Main {
 
 
         //DBLogic_Clinic db = new DBLogic_Clinic();
-        //db.register("clNameA", "cl2@email.com", "22030406", "cl2LegalAddress", "cl2PhysicalAddress", "cl2RegNumber", "clAUsername", "clAPass");
+        //db.register("clNameD", "cl4@email.com", "22030408", "cl4LegalAddress", "cl4PhysicalAddress", "cl4RegNumber", "clDUsername", "clDPass");
+        //db.login("clDUsername", "clDPass");
+        //db.getName("clDUsername");
 
     }
 }
