@@ -35,7 +35,8 @@ public class Main {
 
 
         //DBLogic_Clinic db = new DBLogic_Clinic();
-        //db.register("clNameD", "cl4@email.com", "22030408", "cl4LegalAddress", "cl4PhysicalAddress", "cl4RegNumber", "clDUsername", "clDPass");
+        //boolean s = db.register("clNameE", "cl5@email.com", "22030409", "cl5LegalAddress", "cl5PhysicalAddress", "cl5RegNumber", "clEUsername", "clEPass");
+        //System.out.println(s);
         //int clinicId = db.getClinicId("clDUsername", "clDPass");
         //db.getName("clDUsername");
         //db.isUsernameUnique("clDUsername");
