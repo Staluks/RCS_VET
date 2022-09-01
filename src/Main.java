@@ -38,6 +38,7 @@ public class Main {
         //db.register("clNameD", "cl4@email.com", "22030408", "cl4LegalAddress", "cl4PhysicalAddress", "cl4RegNumber", "clDUsername", "clDPass");
         //int clinicId = db.getClinicId("clDUsername", "clDPass");
         //db.getName("clDUsername");
+        //db.isUsernameUnique("clDUsername");
 
     }
 }

@@ -90,4 +90,28 @@ public class DBLogic_Clinic extends DBConnection{
         return name;
     }
 
+    // check is username unique for clinic
+    // returns "true" if username is unique, "false" if username already exists in DB
+    public boolean isUsernameUnique(String username) throws SQLException {
+        boolean isUnique = true;
+        // connection to DB
+        Connection conn = connectToDB();
+
+        // sql statement to execute
+        String select  = "SELECT username from clinic WHERE username = ?";
+        PreparedStatement ps = conn.prepareStatement(select);
+
+        ps.setString(1, username);
+        ResultSet rs = ps.executeQuery();
+
+        // check if such clinic exists in DB
+        if(rs.next()) {
+            isUnique = false;
+        }
+
+        conn.close();
+
+        return isUnique;
+    }
+
 }
