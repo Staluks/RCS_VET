@@ -35,7 +35,7 @@ public class DBLogic_Clinic extends DBConnection{
     public boolean register(String name, String email, String phone, String legal_address, String physical_address, String reg_number, String username, String password) {
 
         try {
-            if (isUsernameUnique(name)) {
+            if (isUsernameUnique(username)) {
                 // connection to DB
                 Connection conn = connectToDB();
 
@@ -67,7 +67,7 @@ public class DBLogic_Clinic extends DBConnection{
         return false;
     }
 
-    // get clinic ID by username
+    // get clinic ID by username and password
     // returns clinic id or "-1" if clinic not found
     public int getClinicId(String username, String password) throws SQLException {
 
