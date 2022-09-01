@@ -10,7 +10,7 @@ public class FieldsDocRegister {
     JLabel docSurname = new JLabel("Surname of doctor *");
     JLabel username = new JLabel("Username *");
     JLabel personalCode = new JLabel("Personal code*");
-    JLabel certificate = new JLabel("certificate Nr. *");
+    JLabel certificate = new JLabel("Certificate Nr. *");
 
     JLabel password = new JLabel("Password *");
     JLabel reppassword = new JLabel("Confirm password *");
