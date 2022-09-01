@@ -7,7 +7,7 @@ import java.sql.*;
 public class DBLogic_Clinic extends DBConnection{
 
     // register new clinic
-    public void register (String name, String email, String phone, String legal_address, String physical_address, String reg_number, String username, String password) {
+    public void register(String name, String email, String phone, String legal_address, String physical_address, String reg_number, String username, String password) {
         try {
 
             // connection to DB
@@ -27,7 +27,7 @@ public class DBLogic_Clinic extends DBConnection{
             ps.setString(5, physical_address);
             ps.setString(6, reg_number);
             ps.setString(7, username);
-            ps.setString(8, passwordHash.md5(password));
+            ps.setString(8, passwordHash.getMd5(password));
 
             ps.executeUpdate();
             conn.close();
@@ -37,9 +37,9 @@ public class DBLogic_Clinic extends DBConnection{
         }
     }
 
-    // login as a clinic
-    public boolean login(String username, String password) throws SQLException {
-        boolean isLoggedIn = false;
+    // get clinic ID by username
+    // returns clinic id or "-1" if clinic not found
+    public int getClinicId(String username, String password) throws SQLException {
 
         // connection to DB
         Connection conn = connectToDB();
@@ -48,27 +48,25 @@ public class DBLogic_Clinic extends DBConnection{
         MD5 passwordHash = new MD5();
 
         // sql statement to execute
-        String select  = "SELECT username, password from clinic WHERE username = ? AND password = ?";
+        String select  = "SELECT id, username, password from clinic WHERE username = ? AND password = ?";
         PreparedStatement ps = conn.prepareStatement(select);
 
         ps.setString(1, username);
-        ps.setString(2, passwordHash.md5(password));
+        ps.setString(2, passwordHash.getMd5(password));
         ResultSet rs = ps.executeQuery();
 
         // check if such clinic exists in DB
         if(rs.next()) {
-            isLoggedIn = true;
-            System.out.println("Success");
-        } else {
-            System.out.println("Clinic not found");
+            return rs.getInt("id");
         }
 
         conn.close();
 
-        return isLoggedIn;
+        return -1;
     }
 
     //get clinic name by username
+    // returns clinic name or "" if clinic not found by username
     public String getName(String username) throws SQLException {
         String name = "";
 
@@ -85,9 +83,6 @@ public class DBLogic_Clinic extends DBConnection{
         // get clinic name by username
         if(rs.next()) {
             name = rs.getString("name");
-            System.out.println(name);
-        } else {
-            System.out.println("Clinic not found");
         }
 
         conn.close();

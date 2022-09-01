@@ -14,7 +14,7 @@ public class MD5 {
     }
 
     // hash password using md5
-    public String md5(String pass) {
+    public String getMd5(String pass) {
         String md5 = null;
 
         try {

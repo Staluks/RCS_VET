@@ -36,7 +36,7 @@ public class Main {
 
         //DBLogic_Clinic db = new DBLogic_Clinic();
         //db.register("clNameD", "cl4@email.com", "22030408", "cl4LegalAddress", "cl4PhysicalAddress", "cl4RegNumber", "clDUsername", "clDPass");
-        //db.login("clDUsername", "clDPass");
+        //int clinicId = db.getClinicId("clDUsername", "clDPass");
         //db.getName("clDUsername");
 
     }
