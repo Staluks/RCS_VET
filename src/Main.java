@@ -1,3 +1,4 @@
+import com.sun.source.tree.NewArrayTree;
 import db.DBLogic_Clinic;
 
 import java.awt.event.ActionEvent;
@@ -11,6 +12,7 @@ public class Main {
     Registration regmeth = new Registration();
     ClinicDashBoard clindashb = new ClinicDashBoard();
     DocRegistration docreg = new DocRegistration();
+    DoctorDashBoard docdashb = new DoctorDashBoard();
 
 
     loginmeth.loginWindow();
@@ -42,7 +44,10 @@ public class Main {
                 loginmeth.panellogin.setVisible(false);
                 loginmeth.frame.add(clindashb.panelClinicDashB);
                 clindashb.clinicDash();
-
+            } if (loginmeth.doctor.isSelected()){
+                loginmeth.panellogin.setVisible(false);
+                loginmeth.frame.add(docdashb.panelDoctorDashB);
+                docdashb.doctorDash();
             }
         }
     });
@@ -73,7 +78,15 @@ public class Main {
             clindashb.clinicDash();
         }
     });
-
+    //user can log out from doctor dash board if preses log out button
+docdashb.logout.addActionListener(new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent e) {
+       docdashb.panelDoctorDashB.setVisible(false);
+        loginmeth.frame.add(loginmeth.panellogin);
+        loginmeth.loginWindow();
+    }
+});
 
 
         //DBLogic_Clinic db = new DBLogic_Clinic();

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="made a doctors registration Form.">
-      <change afterPath="$PROJECT_DIR$/src/ClinicDashBoard.java" afterDir="false" />
+    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="pievienoju clinic dash board un savienoju ekranus - clinic dash, doctor registration">
+      <change afterPath="$PROJECT_DIR$/src/DoctorDashBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fields_DoctorDashBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields_ClinicDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_ClinicDashBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662110127365</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pievienoju clinic dash board un savienoju ekranus - clinic dash, doctor registration">
+      <created>1662118838485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662118838485</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made a doctors registration Form." />
     <MESSAGE value="izmainas rcs02" />
-    <option name="LAST_COMMIT_MESSAGE" value="izmainas rcs02" />
+    <MESSAGE value="pievienoju clinic dash board un savienoju ekranus - clinic dash, doctor registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="pievienoju clinic dash board un savienoju ekranus - clinic dash, doctor registration" />
   </component>
 </project>

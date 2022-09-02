@@ -6,7 +6,7 @@ public class Fields_ClinicDashBoard {
 
     JLabel yourDashB = new JLabel("Your Dash Board");
 
-    JButton logout = new JButton("Logo ut");
+    JButton logout = new JButton("Log ut");
     JButton addNewDoc = new JButton("Add New Doctor");
     JButton block = new JButton("Block");
     JButton unblock = new JButton("Unblock");
