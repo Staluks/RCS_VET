@@ -6,8 +6,8 @@ public class Fields_Login {
         //this panel is the first window that opens for loging in
         JPanel panellogin = new JPanel();
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("paw.png"));
-        ImageIcon logo = new ImageIcon(getClass().getResource("logo.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("imagesw/paw.png"));
+        ImageIcon logo = new ImageIcon(getClass().getResource("imagesw/logo.png"));
         JLabel logo1 = new JLabel();
 
         JRadioButton clinic = new JRadioButton("Clinic");
