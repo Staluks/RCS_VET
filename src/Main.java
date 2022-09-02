@@ -9,6 +9,9 @@ public class Main {
 
     LogIn loginmeth = new LogIn();
     Registration regmeth = new Registration();
+    ClinicDashBoard clindashb = new ClinicDashBoard();
+    DocRegistration docreg = new DocRegistration();
+
 
     loginmeth.loginWindow();
 
@@ -31,6 +34,45 @@ public class Main {
                 loginmeth.loginWindow();
             }
         });
+// todo add validation for login text fields
+    loginmeth.loginbut.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (loginmeth.clinic.isSelected()) {
+                loginmeth.panellogin.setVisible(false);
+                loginmeth.frame.add(clindashb.panelClinicDashB);
+                clindashb.clinicDash();
+
+            }
+        }
+    });
+    //to return to the log in window user can pres log out button
+    clindashb.logout.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            clindashb.panelClinicDashB.setVisible(false);
+            loginmeth.frame.add(loginmeth.panellogin);
+            loginmeth.loginWindow();
+        }
+    });
+    //when loged in as clinic, by pressing add new doctor, a registration form will open
+    clindashb.addNewDoc.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            clindashb.panelClinicDashB.setVisible(false);
+            loginmeth.frame.add(docreg.panelDocRegistration);
+            docreg.docRegistrationWindow();
+        }
+    });
+    //in doctor reg form, by  pressing back, user returns to clinic dash board
+    docreg.back.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            docreg.panelDocRegistration.setVisible(false);
+            loginmeth.frame.add(clindashb.panelClinicDashB);
+            clindashb.clinicDash();
+        }
+    });
 
 
 
