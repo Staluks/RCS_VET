@@ -1,8 +1,11 @@
+import db.DBLogic_Clinic;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
     LogIn loginmeth = new LogIn();
     Registration regmeth = new Registration();
@@ -28,6 +31,15 @@ public class Main {
                 loginmeth.loginWindow();
             }
         });
+
+
+
+        //DBLogic_Clinic db = new DBLogic_Clinic();
+        //boolean s = db.register("clNameE", "cl5@email.com", "22030409", "cl5LegalAddress", "cl5PhysicalAddress", "cl5RegNumber", "clEUsername", "clEPass");
+        //System.out.println(s);
+        //int clinicId = db.getClinicId("clDUsername", "clDPass");
+        //db.getName("clDUsername");
+        //db.isUsernameUnique("clDUsername");
 
     }
 }
