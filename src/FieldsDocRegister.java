@@ -10,10 +10,11 @@ public class FieldsDocRegister {
     JLabel docSurname = new JLabel("Surname of doctor *");
     JLabel username = new JLabel("Username *");
     JLabel personalCode = new JLabel("Personal code*");
-    JLabel certificate = new JLabel("certificate Nr. *");
+    JLabel certificate = new JLabel("Certificate Nr. *");
 
     JLabel password = new JLabel("Password *");
     JLabel reppassword = new JLabel("Confirm password *");
+    JLabel errorMessage = new JLabel();
 
     JTextField docNameText = new JTextField();
     JTextField docSurnameText = new JTextField();
@@ -25,6 +26,8 @@ public class FieldsDocRegister {
 
     JPasswordField passwordText = new JPasswordField();
     JPasswordField reppasswordText = new JPasswordField();
+
+
 
     JRadioButton active = new JRadioButton("active");
     JRadioButton blocked = new JRadioButton("blocked");

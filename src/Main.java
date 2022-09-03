@@ -9,6 +9,8 @@ public class Main {
 
     LogIn loginmeth = new LogIn();
     Registration regmeth = new Registration();
+    DocRegValidation docReg = new DocRegValidation();
+    DocRegistration doc = new DocRegistration();
 
     loginmeth.loginWindow();
 
@@ -31,7 +33,16 @@ public class Main {
                 loginmeth.loginWindow();
             }
         });
-
+        doc.submit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(docReg.docRegVal(doc.docNameText.getText(), doc.docSurnameText.getText(), doc.usernameText.getText(), doc.passwordText.getText(), doc.reppasswordText.getText(), doc.personalCodeText.getText(), doc.certificateText.getText())){
+                    doc.errorMessage.setText("registration successful");
+                }else{
+                    doc.errorMessage.setText("Text fields are filled wrong");
+                }
+            }
+        });
 
 
         //DBLogic_Clinic db = new DBLogic_Clinic();
