@@ -1,8 +1,10 @@
 import db.DBLogic_Clinic;
+import db.DBLogic_Doctor;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -34,12 +36,23 @@ public class Main {
 
 
 
-        //DBLogic_Clinic db = new DBLogic_Clinic();
-        //boolean s = db.register("clNameE", "cl5@email.com", "22030409", "cl5LegalAddress", "cl5PhysicalAddress", "cl5RegNumber", "clEUsername", "clEPass");
+        //DBLogic_Clinic dbClinic = new DBLogic_Clinic();
+        //boolean s = dbClinic.register("clNameE", "cl5@email.com", "22030409", "cl5LegalAddress", "cl5PhysicalAddress", "cl5RegNumber", "clEUsername", "clEPass");
         //System.out.println(s);
-        //int clinicId = db.getClinicId("clDUsername", "clDPass");
-        //db.getName("clDUsername");
-        //db.isUsernameUnique("clDUsername");
+        //int clinicId = dbClinic.getClinicId("clDUsername", "clDPass");
+        //dbClinic.getName("clDUsername");
+        //dbClinic.isUsernameUnique("clDUsername");
+
+        //DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
+        //boolean b = dbDoctor.register("NameD3", "SurnameD3", "usernameD3", "passwordD3", "333333-33333", "CER333", "4", "active");
+        //System.out.println();
+        //int id = dbDoctor.getDoctorId("usernameD2", "passwordD3");
+        //System.out.println(id);
+        //System.out.println(dbDoctor.getName("usernameD3"));
+        //ArrayList<String> list = dbDoctor.getDoctorList("4");
+        //for (String s : list) {
+        //    System.out.println(s);
+
 
     }
 }
