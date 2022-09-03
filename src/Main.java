@@ -11,6 +11,9 @@ public class Main {
 
     LogIn loginmeth = new LogIn();
     Registration regmeth = new Registration();
+    DocRegistration doc = new DocRegistration();
+    DocRegValidation docReg = new DocRegValidation();
+    ClinicDashBoard clDash = new ClinicDashBoard();
 
     loginmeth.loginWindow();
 
@@ -33,6 +36,19 @@ public class Main {
                 loginmeth.loginWindow();
             }
         });
+        doc.submit.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if(docReg.docRegVal(doc.docNameText.getText(), doc.docSurnameText.getText(), doc.usernameText.getText(), doc.passwordText.getText(), doc.reppasswordText.getText(), doc.personalCodeText.getText(), doc.certificateText.getText())){
+                doc.errorMessage.setText("registration successful");
+                doc.panelDocRegistration.setVisible(false);
+                loginmeth.frame.add(clDash.panelClinicDashB);
+                clDash.clinicDash();
+            }else{
+                doc.errorMessage.setText("Text fields are filled wrong");
+            }
+        }
+    });
 
 
 

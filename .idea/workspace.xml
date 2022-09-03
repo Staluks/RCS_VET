@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-
-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="clinicdash board">
+    <list default="true" id="2c3d5f18-d3a4-4362-99a3-648092d224e7" name="Changes" comment="_created medical history form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imagesw/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imagesw/paw.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/paw.png" afterDir="false" />
-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="made a doctors registration Form.">
       <change beforePath="$PROJECT_DIR$/src/DocRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FieldsDocRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FieldsDocRegister.java" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-
-        <entry key="$PROJECT_DIR$" value="rcs_16" />
-
         <entry key="$PROJECT_DIR$" value="Develop" />
-
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,16 +38,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/images" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -71,13 +56,14 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="" />
+      <changelist id="2c3d5f18-d3a4-4362-99a3-648092d224e7" name="Changes" comment="_created medical history form" />
       <created>1660285489749</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -90,7 +76,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661242787938</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="_created patient registration form">
+      <created>1662115430601</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662115430601</updated>
+    </task>
+    <task id="LOCAL-00003" summary="_created medical history form">
+      <created>1662116320078</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662116320078</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +106,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made a doctors registration Form." />
-    <option name="LAST_COMMIT_MESSAGE" value="made a doctors registration Form." />
+    <MESSAGE value="_created patient registration form" />
+    <MESSAGE value="_created medical history form" />
+    <option name="LAST_COMMIT_MESSAGE" value="_created medical history form" />
   </component>
 </project>

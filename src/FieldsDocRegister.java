@@ -11,7 +11,7 @@ public class FieldsDocRegister {
     JLabel username = new JLabel("Username *");
     JLabel personalCode = new JLabel("Personal code*");
     JLabel certificate = new JLabel("Certificate Nr. *");
-
+    JLabel errorMessage = new JLabel();
     JLabel password = new JLabel("Password *");
     JLabel reppassword = new JLabel("Confirm password *");
 

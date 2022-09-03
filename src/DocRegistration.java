@@ -25,6 +25,7 @@ public class DocRegistration extends FieldsDocRegister{
         panelDocRegistration.add(certificate);
         panelDocRegistration.add(password);
         panelDocRegistration.add(reppassword);
+        panelDocRegistration.add(errorMessage);
 
         docName.setBounds(50, 60, 200,200);
         docSurname.setBounds(50, 105, 200, 200);
@@ -33,6 +34,7 @@ public class DocRegistration extends FieldsDocRegister{
         certificate.setBounds(50,240,200,200);
         password.setBounds(50,285,200,200);
         reppassword.setBounds(50,325,200,200);
+        errorMessage.setBounds(280, 445, 200, 30);
 
         //adding all the fields for user input in the form
         panelDocRegistration.add(docNameText);
