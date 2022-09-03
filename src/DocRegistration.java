@@ -60,6 +60,7 @@ public class DocRegistration extends FieldsDocRegister{
         //this method allows user to choose only one button doctor or clinic
         ButtonGroup buttonGroup = new ButtonGroup();
         buttonGroup.add(active);
+        active.setSelected(true);
         buttonGroup.add(blocked);
 
 
