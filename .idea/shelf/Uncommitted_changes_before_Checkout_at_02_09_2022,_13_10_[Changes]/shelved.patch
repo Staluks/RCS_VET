@@ -1,0 +1,124 @@
+Index: src/Fields_Login.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import javax.swing.*;\r\n\r\npublic class Fields_Login {\r\n        JFrame frame = new JFrame();\r\n\r\n        //this panel is the first window that opens for loging in\r\n        JPanel panellogin = new JPanel();\r\n\r\n        ImageIcon icon = new ImageIcon(getClass().getResource(\"images/paw.png\"));\r\n        ImageIcon logo = new ImageIcon(getClass().getResource(\"images/logo.png\"));\r\n        JLabel logo1 = new JLabel();\r\n\r\n        JRadioButton clinic = new JRadioButton(\"Clinic\");\r\n        JRadioButton doctor = new JRadioButton(\"Doctor\");\r\n\r\n        JLabel username = new JLabel(\"Username\");\r\n        JLabel password = new JLabel(\"Password\");\r\n\r\n        JTextField userText = new JTextField();\r\n\r\n        JPasswordField passwordText = new JPasswordField();\r\n\r\n        JButton loginbut = new JButton(\"Log In\");\r\n        JButton regbut = new JButton(\"Create new account\");\r\n\r\n    }\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Fields_Login.java b/src/Fields_Login.java
+--- a/src/Fields_Login.java	(revision a94a67f2bf3c93478b3af4225305b18d0e992cdd)
++++ b/src/Fields_Login.java	(date 1662113258524)
+@@ -6,8 +6,8 @@
+         //this panel is the first window that opens for loging in
+         JPanel panellogin = new JPanel();
+ 
+-        ImageIcon icon = new ImageIcon(getClass().getResource("images/paw.png"));
+-        ImageIcon logo = new ImageIcon(getClass().getResource("images/logo.png"));
++        ImageIcon icon = new ImageIcon(getClass().getResource("/images/paw.png"));
++        ImageIcon logo = new ImageIcon(getClass().getResource("/images/logo.png"));
+         JLabel logo1 = new JLabel();
+ 
+         JRadioButton clinic = new JRadioButton("Clinic");
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"9780ae5f-98b3-4822-9dad-9ba910ad16c5\" name=\"Changes\" comment=\"made a doctors registration Form.\">\n      <change afterPath=\"$PROJECT_DIR$/src/Fields_ClinicDashBoard.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Fields_Login.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Fields_Login.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/logo.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/images/logo.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/paw.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/images/paw.png\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"rcs_16\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2DFCXm7KvYGPM0Lto5QBDa8vHQB\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Git.Branch.Popup.ShowAllRemotes\": \"true\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/images\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"RCS_VET\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"9780ae5f-98b3-4822-9dad-9ba910ad16c5\" name=\"Changes\" comment=\"\" />\n      <created>1660285489749</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1660285489749</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"made a doctors registration Form.\">\n      <created>1661242787938</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1661242787938</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"izmainas rcs02\">\n      <created>1662110127365</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662110127365</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"made a doctors registration Form.\" />\n    <MESSAGE value=\"izmainas rcs02\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"izmainas rcs02\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a94a67f2bf3c93478b3af4225305b18d0e992cdd)
++++ b/.idea/workspace.xml	(date 1662113014506)
+@@ -1,12 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="made a doctors registration Form.">
+-      <change afterPath="$PROJECT_DIR$/src/Fields_ClinicDashBoard.java" afterDir="false" />
++    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="clinicdash board">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Fields_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_Login.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/logo.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/paw.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/paw.png" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,7 +20,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="rcs_16" />
++        <entry key="$PROJECT_DIR$" value="rcs_02" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -37,13 +34,13 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Git.Branch.Popup.ShowAllRemotes": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src/images" />
+@@ -60,6 +57,8 @@
+     <recent_temporary>
+       <list>
+         <item itemvalue="Application.Main" />
++        <item itemvalue="Application.Main" />
++        <item itemvalue="Application.Main" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -79,14 +78,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1661242787938</updated>
+     </task>
+-    <task id="LOCAL-00002" summary="izmainas rcs02">
+-      <created>1662110127365</created>
+-      <option name="number" value="00002" />
+-      <option name="presentableId" value="LOCAL-00002" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1662110127365</updated>
+-    </task>
+-    <option name="localTasksCounter" value="3" />
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -102,7 +94,21 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="made a doctors registration Form." />
+-    <MESSAGE value="izmainas rcs02" />
+-    <option name="LAST_COMMIT_MESSAGE" value="izmainas rcs02" />
++    <option name="LAST_COMMIT_MESSAGE" value="made a doctors registration Form." />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-method">
++          <url>file://$PROJECT_DIR$/src/Main.java</url>
++          <line>27</line>
++          <properties method="actionPerformed">
++            <option name="EMULATED" value="true" />
++            <option name="WATCH_EXIT" value="false" />
++          </properties>
++          <option name="timeStamp" value="2" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+ </project>
+\ No newline at end of file
