@@ -9,12 +9,10 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws SQLException {
 
-    LogIn loginmeth = new LogIn();
-    Registration regmeth = new Registration();
-    DocRegistration doc = new DocRegistration();
-    DocRegValidation docReg = new DocRegValidation();
-    ClinicDashBoard clDash = new ClinicDashBoard();
 
+
+    DocRegValidation docRegVal = new DocRegValidation();
+    ClinicDashBoard clDash = new ClinicDashBoard();
     LogIn loginmeth = new LogIn();
     Registration regmeth = new Registration();
     ClinicDashBoard clindashb = new ClinicDashBoard();
@@ -46,19 +44,6 @@ public class Main {
                 loginmeth.loginWindow();
             }
         });
-        doc.submit.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            if(docReg.docRegVal(doc.docNameText.getText(), doc.docSurnameText.getText(), doc.usernameText.getText(), doc.passwordText.getText(), doc.reppasswordText.getText(), doc.personalCodeText.getText(), doc.certificateText.getText())){
-                doc.errorMessage.setText("registration successful");
-                doc.panelDocRegistration.setVisible(false);
-                loginmeth.frame.add(clDash.panelClinicDashB);
-                clDash.clinicDash();
-            }else{
-                doc.errorMessage.setText("Text fields are filled wrong");
-            }
-        }
-    });
         // todo add validation for login text fields
         loginmeth.loginbut.addActionListener(new ActionListener() {
             @Override
@@ -115,6 +100,20 @@ public class Main {
                 docdashb.panelDoctorDashB.setVisible(false);
                 loginmeth.frame.add(loginmeth.panellogin);
                 loginmeth.loginWindow();
+            }
+        });
+        // if everything is filled right clinic can register new doctor for clinic with submit button
+        docreg.submit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(docRegVal.docRegVal(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.reppasswordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText())){
+                    docreg.errorMessage.setText("registration successful");
+                    docreg.panelDocRegistration.setVisible(false);
+                    loginmeth.frame.add(clDash.panelClinicDashB);
+                    clDash.clinicDash();
+                }else{
+                    docreg.errorMessage.setText("Text fields are filled wrong");
+                }
             }
         });
 
