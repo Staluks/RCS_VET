@@ -19,11 +19,11 @@ public class Main {
 
 
 
-    loginmeth.loginWindow();
+        loginmeth.loginWindow();
 
-    //to join  the panellogin and panelregistration actionlistener is brought to the main class
+        //to join  the panellogin and panelregistration actionlistener is brought to the main class
         //if user presses create new account a new window will open with the registration form
-    loginmeth.regbut.addActionListener(new ActionListener() {
+        loginmeth.regbut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 loginmeth.panellogin.setVisible(false);
@@ -101,10 +101,21 @@ public class Main {
 
 
 
-        //DBLogic_Clinic db = new DBLogic_Clinic();
-        //db.register("clNameD", "cl4@email.com", "22030408", "cl4LegalAddress", "cl4PhysicalAddress", "cl4RegNumber", "clDUsername", "clDPass");
-        //db.login("clDUsername", "clDPass");
-        //db.getName("clDUsername");
+        //DBLogic_Clinic dbClinic = new DBLogic_Clinic();
+        //boolean s = dbClinic.register("clNameE", "cl5@email.com", "22030409", "cl5LegalAddress", "cl5PhysicalAddress", "cl5RegNumber", "clEUsername", "clEPass");
+        //System.out.println(s);
+        //int clinicId = dbClinic.getClinicId("clDUsername", "clDPass");
+        //dbClinic.getName("clDUsername");
+        //dbClinic.isUsernameUnique("clDUsername");
 
+        //DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
+        //boolean b = dbDoctor.register("NameD3", "SurnameD3", "usernameD3", "passwordD3", "333333-33333", "CER333", "4", "active");
+        //System.out.println();
+        //int id = dbDoctor.getDoctorId("usernameD2", "passwordD3");
+        //System.out.println(id);
+        //System.out.println(dbDoctor.getName("usernameD3"));
+        //ArrayList<String> list = dbDoctor.getDoctorList("4");
+        //for (String s : list) {
+        //    System.out.println(s);
     }
 }
