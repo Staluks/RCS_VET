@@ -7,7 +7,8 @@ public class NewMedHistory extends FieldsNewMedHistory {
 
     public void NewMedHistoryWindow() {
 
-        //defining panelPatRegistration window for Patien registration form
+        //defining panelPatRegistration window for Patient registration form
+
         panelNewMedHis.setVisible(true);
         panelNewMedHis.setLayout(null);
         panelNewMedHis.setBackground(Color.LIGHT_GRAY);
@@ -23,7 +24,7 @@ public class NewMedHistory extends FieldsNewMedHistory {
 
         //adding and defining all the text elements in the form
         panelNewMedHis.add(patName);
-        panelNewMedHis.add(patDoc);
+        panelNewMedHis.add(patSpecies);
         panelNewMedHis.add(diagnosis);
         panelNewMedHis.add(dateOfDiagnosis);
         panelNewMedHis.add(manipulations);
@@ -32,18 +33,18 @@ public class NewMedHistory extends FieldsNewMedHistory {
 
 
         patName.setBounds(50, 50, 200,200);
-        patDoc.setBounds(50, 105, 200, 200);
+        patSpecies.setBounds(50, 105, 200, 200);
         diagnosis.setBounds(50,160,200,200 );
-        dateOfDiagnosis.setBounds(50,240,200,200);
-        manipulations.setBounds(50,320,200,200);
-        medicine.setBounds(50,380,200,200);
+        dateOfDiagnosis.setBounds(50,225,200,200);
+        manipulations.setBounds(50,290,200,200);
+        medicine.setBounds(50,365,200,200);
 
 
 
 
         //adding all the fields for user input in the form
         panelNewMedHis.add(patNameText);
-        panelNewMedHis.add(patDocText);
+        panelNewMedHis.add(patSpeciesText);
         panelNewMedHis.add(diagnosisText);
         panelNewMedHis.add(dateOfDiagnosisText);
         panelNewMedHis.add(manipulationsText);
@@ -52,16 +53,15 @@ public class NewMedHistory extends FieldsNewMedHistory {
 
 
         patNameText.setBounds(280,140,200,35);
-        patNameText.setEnabled(false);
-        patDocText.setBounds(280,185,200,35);
-        patDocText.setEnabled(false);
+        patSpeciesText.setBounds(280,185,200,35);
         diagnosisText.setBounds(280,230,350,70);
-        dateOfDiagnosisText.setBounds(280, 310,200,30);
+        dateOfDiagnosisText.setBounds(280, 305,200,35);
         manipulationsText.setBounds(280,350,350,70);
         medicineText.setBounds(280,430,350,70);
 
         panelNewMedHis.add(submithis);
         submithis.setBounds(440,570,150,60);
+
 
     }
 }

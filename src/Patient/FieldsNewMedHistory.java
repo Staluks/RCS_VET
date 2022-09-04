@@ -11,7 +11,7 @@ public class FieldsNewMedHistory {
     JButton submithis = new JButton("Submit");
     JLabel newMedHisForm = new JLabel("New Medical History form");
     JLabel patName = new JLabel("Name of Patient *");
-    JLabel patDoc = new JLabel("Name of Doctor *");
+    JLabel patSpecies = new JLabel("Patient Species *");
     JLabel diagnosis = new JLabel("Diagnosis *");
     JLabel dateOfDiagnosis = new JLabel("Date of diagnosis *");
     JLabel manipulations = new JLabel("Manipulations");
@@ -20,12 +20,11 @@ public class FieldsNewMedHistory {
 
 
 
-    JTextField patNameText = new JTextField();
-    JTextField patDocText = new JTextField();
+    JTextArea patNameText = new JTextArea();
+    JTextArea patSpeciesText = new JTextArea();
     JTextField diagnosisText = new JTextField();
     JTextField dateOfDiagnosisText = new JTextField();
     JTextField manipulationsText = new JTextField();
     JTextField medicineText = new JTextField();
-
 
 }
