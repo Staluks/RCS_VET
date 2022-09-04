@@ -12,16 +12,12 @@ public class Main {
 
 
     DocRegValidation docRegVal = new DocRegValidation();
-    ClinicDashBoard clDash = new ClinicDashBoard();
     LogIn loginmeth = new LogIn();
     Registration regmeth = new Registration();
     ClinicDashBoard clindashb = new ClinicDashBoard();
     DoctorDashBoard docdashb = new DoctorDashBoard();
     DocRegistration docreg = new DocRegistration();
     DBLogic_Clinic dbClinic = new DBLogic_Clinic();
-
-
-
 
     loginmeth.loginWindow();
 
@@ -109,8 +105,8 @@ public class Main {
                 if(docRegVal.docRegVal(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.reppasswordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText())){
                     docreg.errorMessage.setText("registration successful");
                     docreg.panelDocRegistration.setVisible(false);
-                    loginmeth.frame.add(clDash.panelClinicDashB);
-                    clDash.clinicDash();
+                    loginmeth.frame.add(clindashb.panelClinicDashB);
+                    clindashb.clinicDash();
                 }else{
                     docreg.errorMessage.setText("Text fields are filled wrong");
                 }
