@@ -10,7 +10,7 @@ public class Fields_Registration {
     JLabel adres = new JLabel("Address *");
     JLabel email = new JLabel("Email address *");
     JLabel phone = new JLabel("Phone number *");
-    JLabel regaddress = new JLabel("Registration address");
+    JLabel regaddress = new JLabel("Registration address *");
     JLabel username = new JLabel("Username *");
     JLabel password = new JLabel("Password *");
     JLabel reppassword = new JLabel("Confirm password *");
