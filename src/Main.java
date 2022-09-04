@@ -1,9 +1,13 @@
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
+import db.DBLogic_MedicalHistory;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Date;
 import java.sql.SQLException;
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Main {
@@ -101,6 +105,8 @@ public class Main {
 
 
 
+
+
         //DBLogic_Clinic dbClinic = new DBLogic_Clinic();
         //boolean s = dbClinic.register("clNameE", "cl5@email.com", "22030409", "cl5LegalAddress", "cl5PhysicalAddress", "cl5RegNumber", "clEUsername", "clEPass");
         //System.out.println(s);
@@ -117,7 +123,37 @@ public class Main {
         //ArrayList<String> list = dbDoctor.getDoctorList("4");
         //for (String s : list) {
         //    System.out.println(s);
+        //}
 
+// ---------- ===== === -- - ------- = - = ========================================
+
+//        DBLogic_MedicalHistory dbMedHist = new DBLogic_MedicalHistory();
+/*
+        boolean regStatus = dbMedHist.register(3, 5, "diagnosis6", Date.valueOf(LocalDate.of(2012, 2, 12)), "medical_manipulation6", "medicaments6");
+//        boolean regStatus = dbMedHist.register(5, 3, "diagnosis9", Date.valueOf(LocalDate.of(2010, 7, 17)), null, null);
+        System.out.println(regStatus);
+*/
+
+/*
+        String[] patient = dbMedHist.getPatient(7);
+        System.out.println(patient[0] + " " + patient[1]);
+*/
+
+/*
+        ArrayList<Integer> patientIds = dbMedHist.getPatientIds(7);
+        for (int id: patientIds) {
+            System.out.println("ID: " + id);
+        }
+*/
+
+/*
+        ArrayList<String> medicalHistoryOfPatient = dbMedHist.getMedicalHistoryOfPatient(7);
+        for (String el: medicalHistoryOfPatient) {
+            System.out.println("MH: " + el);
+        }
+*/
+
+// ---------- ===== === -- - ------- = - = ========================================
 
     }
 }
