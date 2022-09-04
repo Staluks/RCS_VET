@@ -1,3 +1,4 @@
+import Patient.NewMedHistory;
 import db.DBLogic_Clinic;
 
 import java.awt.event.ActionEvent;
@@ -7,14 +8,14 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) throws SQLException {
 
-    LogIn loginmeth = new LogIn();
-    Registration regmeth = new Registration();
+        LogIn loginmeth = new LogIn();
+        Registration regmeth = new Registration();
 
-    loginmeth.loginWindow();
+        loginmeth.loginWindow();
 
-    //to join  the panellogin and panelregistration actionlistener is brought to the main class
+        //to join  the panellogin and panelregistration actionlistener is brought to the main class
         //if user presses create new account a new window will open with the registration form
-    loginmeth.regbut.addActionListener(new ActionListener() {
+        loginmeth.regbut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 loginmeth.panellogin.setVisible(false);
