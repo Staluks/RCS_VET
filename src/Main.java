@@ -154,6 +154,17 @@ public class Main {
         //    System.out.println(s);
         //}
         //boolean u = dbPatient.update("Snowball", "Dog", "Husky", 22.5f, Date.valueOf("2019-06-15"), "CF4321", "Alina", "Sokolova", 7, 7);
+/*
+        String[] patient = dbPatient.getPatientNameAndGroup(3);
+        System.out.println(patient[0] + " " + patient[1]);
+        System.out.println(Arrays.toString(patient));
+*/
+/*
+        ArrayList<Integer> patientIds = dbPatient.getPatientIds(4);
+        for (int id: patientIds) {
+            System.out.println("ID: " + id);
+        }
+*/
         // -------------------------------------------------------------------------
 
 // ---------- ===== === -- - ------- = - = ========================================
