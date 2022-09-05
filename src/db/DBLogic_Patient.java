@@ -95,7 +95,7 @@ public class DBLogic_Patient extends DBConnection{
             Connection conn = connectToDB();
 
             // sql statement to execute
-            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, weight= ?, date_of_birth = ?, passport_num = ?, owner_name = ?, owner_surname = ? WHERE doctor_id = ? and id = ?";
+            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, weight= ?, date_of_birth = ?, passport_num = ?, owner_name = ?, owner_surname = ? WHERE doctor_id = ? and id = ? LIMIT 1";
                     // WHERE doctor_id = ?";
             PreparedStatement ps = conn.prepareStatement(sql);
 
