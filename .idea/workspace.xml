@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f15af50a-f82a-404a-bfc9-059b516bd281" name="Changes" comment="- DBLogicPatient: crud - fixes after review">
+    <list default="true" id="f15af50a-f82a-404a-bfc9-059b516bd281" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +21,6 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="rcs_16" />
         <entry key="$PROJECT_DIR$" value="Develop" />
       </map>
     </option>
@@ -99,6 +99,13 @@
       <option name="project" value="LOCAL" />
       <updated>1662378636141</updated>
     </task>
+    <task id="LOCAL-00005" summary="doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)">
+      <created>1662379478939</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662379478939</updated>
+    </task>
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
@@ -115,6 +122,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made a doctors registration Form." />
+    <MESSAGE value="- DBLogicPatient: crud" />
+    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
+    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+    <MESSAGE value="doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)" />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
