@@ -154,6 +154,7 @@ public class Main {
         //    System.out.println(s);
         //}
         //boolean u = dbPatient.update("Snowball", "Dog", "Husky", 22.5f, Date.valueOf("2019-06-15"), "CF4321", "Alina", "Sokolova", 7, 7);
+        //System.out.println(u);
 /*
         String[] patient = dbPatient.getPatientNameAndGroup(3);
         System.out.println(patient[0] + " " + patient[1]);
@@ -167,7 +168,7 @@ public class Main {
 */
         // -------------------------------------------------------------------------
 
-// ---------- ===== === -- - ------- = - = ========================================
+        // ---------- ===== === -- - ------- = - = ========================================
 
 //        DBLogic_MedicalHistory dbMedHist = new DBLogic_MedicalHistory();
 /*
@@ -182,7 +183,7 @@ public class Main {
         }
 */
 
-// ---------- ===== === -- - ------- = - = ========================================
+        // ---------- ===== === -- - ------- = - = ========================================
 
     }
 }
