@@ -156,5 +156,22 @@ public class Main {
         //boolean u = dbPatient.update("Snowball", "Dog", "Husky", 22.5f, Date.valueOf("2019-06-15"), "CF4321", "Alina", "Sokolova", 7, 7);
         // -------------------------------------------------------------------------
 
+// ---------- ===== === -- - ------- = - = ========================================
+
+//        DBLogic_MedicalHistory dbMedHist = new DBLogic_MedicalHistory();
+/*
+        boolean regStatus = dbMedHist.register(9, 7, "diagnosis10", Date.valueOf("1985-08-13"), "medical_manipulation10", "medicaments10");
+//        boolean regStatus = dbMedHist.register(9, 7, "diagnosis11", Date.valueOf("2002-02-20"), null, null);
+        System.out.println(regStatus);
+*/
+/*
+        ArrayList<String> medicalHistoryOfPatient = dbMedHist.getMedicalHistoryOfPatient(9);
+        for (String el: medicalHistoryOfPatient) {
+            System.out.println("MH: " + el);
+        }
+*/
+
+// ---------- ===== === -- - ------- = - = ========================================
+
     }
 }
