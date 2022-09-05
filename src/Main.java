@@ -1,15 +1,14 @@
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
+import db.DBLogic_MedicalHistory;
 import db.DBLogic_Patient;
 
-import javax.xml.crypto.Data;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.sql.Date;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -141,6 +140,7 @@ public class Main {
 
 
         //DBLogic_Patient dbPatient = new DBLogic_Patient();
+        //boolean p = dbPatient.register("Kroshka", "Dog", "Chihua-hua", 2.5f, Date.valueOf("2013-03-13"), "CH1111", "Helena", "Luropa", 10 );
 
         //boolean p = dbPatient.register("Snowball", "Dog", "Husky", 20.5f, Date.valueOf("2020-06-15"), "CF1234", "Milena", "Sokolova", 7 );
         //System.out.println(p);
@@ -149,13 +149,41 @@ public class Main {
         //for (String s : list) {
         //    System.out.println(s);
         //}
-
         //ArrayList<String> list = dbPatient.getPatientList("3");
         //for (String s : list) {
         //    System.out.println(s);
         //}
         //boolean u = dbPatient.update("Snowball", "Dog", "Husky", 22.5f, Date.valueOf("2019-06-15"), "CF4321", "Alina", "Sokolova", 7, 7);
+        //System.out.println(u);
+/*
+        String[] patient = dbPatient.getPatientNameAndGroup(3);
+        System.out.println(patient[0] + " " + patient[1]);
+        System.out.println(Arrays.toString(patient));
+*/
+/*
+        ArrayList<Integer> patientIds = dbPatient.getPatientIds(4);
+        for (int id: patientIds) {
+            System.out.println("ID: " + id);
+        }
+*/
         // -------------------------------------------------------------------------
+
+        // ---------- ===== === -- - ------- = - = ========================================
+
+//        DBLogic_MedicalHistory dbMedHist = new DBLogic_MedicalHistory();
+/*
+        boolean regStatus = dbMedHist.register(9, 7, "diagnosis10", Date.valueOf("1985-08-13"), "medical_manipulation10", "medicaments10");
+//        boolean regStatus = dbMedHist.register(9, 7, "diagnosis11", Date.valueOf("2002-02-20"), null, null);
+        System.out.println(regStatus);
+*/
+/*
+        ArrayList<String> medicalHistoryOfPatient = dbMedHist.getMedicalHistoryOfPatient(9);
+        for (String el: medicalHistoryOfPatient) {
+            System.out.println("MH: " + el);
+        }
+*/
+
+        // ---------- ===== === -- - ------- = - = ========================================
 
     }
 }
