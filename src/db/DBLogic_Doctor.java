@@ -227,7 +227,7 @@ public class DBLogic_Doctor extends DBConnection{
                 Connection conn = connectToDB();
 
                 // sql statement to execute
-                String sql = "UPDATE doctor SET name = ?, surname = ?, personal_code = ?, certificate = ?, status = ? WHERE id = ?";
+                String sql = "UPDATE doctor SET name = ?, surname = ?, personal_code = ?, certificate = ?, status = ? WHERE id = ? LIMIT 1";
                 // WHERE doctor_id = ?";
                 PreparedStatement ps = conn.prepareStatement(sql);
 
