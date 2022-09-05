@@ -1,8 +1,9 @@
+import Validation.ValidationLogin;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.module.ModuleDescriptor;
 
 public class LogIn extends Fields_Login {
 
@@ -51,6 +52,25 @@ public class LogIn extends Fields_Login {
         panellogin.add(loginbut);
 
         loginbut.setBounds(250, 500, 200, 35);
+
+
+        loginbut.addActionListener(new ActionListener() {
+           @Override
+           public void actionPerformed(ActionEvent e) {
+                   String field;
+                   field = userText.getText();
+                   String field2;
+                   field2 = passwordText.getText();
+                   if(ValidationLogin.isValidUsername(field) && ValidationLogin.isValidPassword(field2)) {
+
+                   }
+                   else {
+                       JOptionPane.showMessageDialog(null, "Please enter your username and password correctly");
+                   }
+               }
+           });
+
+
 
         panellogin.add(regbut);
 
