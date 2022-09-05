@@ -1,14 +1,10 @@
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
-import db.DBLogic_MedicalHistory;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Date;
 import java.sql.SQLException;
-import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -105,8 +101,6 @@ public class Main {
 
 
 
-
-
         //DBLogic_Clinic dbClinic = new DBLogic_Clinic();
         //boolean s = dbClinic.register("clNameE", "cl5@email.com", "22030409", "cl5LegalAddress", "cl5PhysicalAddress", "cl5RegNumber", "clEUsername", "clEPass");
         //System.out.println(s);
@@ -123,38 +117,7 @@ public class Main {
         //ArrayList<String> list = dbDoctor.getDoctorList("4");
         //for (String s : list) {
         //    System.out.println(s);
-        //}
 
-// ---------- ===== === -- - ------- = - = ========================================
-
-//        DBLogic_MedicalHistory dbMedHist = new DBLogic_MedicalHistory();
-/*
-        boolean regStatus = dbMedHist.register(9, 7, "diagnosis10", Date.valueOf("1985-08-13"), "medical_manipulation10", "medicaments10");
-//        boolean regStatus = dbMedHist.register(9, 7, "diagnosis11", Date.valueOf("2002-02-20"), null, null);
-        System.out.println(regStatus);
-*/
-
-/*
-        String[] patient = dbMedHist.getPatientNameAndGroup(8);
-        System.out.println(patient[0] + " " + patient[1]);
-        System.out.println(Arrays.toString(patient));
-*/
-
-/*
-        ArrayList<Integer> patientIds = dbMedHist.getPatientIds(7);
-        for (int id: patientIds) {
-            System.out.println("ID: " + id);
-        }
-*/
-
-/*
-        ArrayList<String> medicalHistoryOfPatient = dbMedHist.getMedicalHistoryOfPatient(9);
-        for (String el: medicalHistoryOfPatient) {
-            System.out.println("MH: " + el);
-        }
-*/
-
-// ---------- ===== === -- - ------- = - = ========================================
 
     }
 }
