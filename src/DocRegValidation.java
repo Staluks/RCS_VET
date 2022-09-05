@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.regex.Pattern;
 public class DocRegValidation{
     //    String docName, String docSurname, String docUsername, String personalCode, String sertificate, String password, String reppassword
@@ -35,12 +36,20 @@ public class DocRegValidation{
         }
         return Pattern.matches(passwordPattern, password);
     }
+//    validation for new doctors form
     public boolean docRegVal(String name, String surname, String username, String password, String repeatPassword, String personal_code, String certificate) {
         if (nameVal(name) && nameVal(surname) && userVal(username) && perCode(personal_code) && userVal(certificate) && passwordVal(password, repeatPassword)) {
             return true;
         }
         return false;
 
+    }
+//    method to get active or blocked statuss
+    public String getStatus(JRadioButton active){
+        if (active.isSelected()){
+            return "active";
+        }
+        return "blocked";
     }
 
 }

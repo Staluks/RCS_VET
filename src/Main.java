@@ -18,6 +18,7 @@ public class Main {
     DoctorDashBoard docdashb = new DoctorDashBoard();
     DocRegistration docreg = new DocRegistration();
     DBLogic_Clinic dbClinic = new DBLogic_Clinic();
+    DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
 
     loginmeth.loginWindow();
 
@@ -100,15 +101,32 @@ public class Main {
         });
         // if everything is filled right clinic can register new doctor for clinic with submit button
         docreg.submit.addActionListener(new ActionListener() {
+//            submit button for new doctors registration
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(docRegVal.docRegVal(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.reppasswordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText())){
-                    docreg.errorMessage.setText("registration successful");
-                    docreg.panelDocRegistration.setVisible(false);
-                    loginmeth.frame.add(clindashb.panelClinicDashB);
-                    clindashb.clinicDash();
-                }else{
-                    docreg.errorMessage.setText("Text fields are filled wrong");
+//              gets Clinic ID
+                try {
+                    int dbClId = 0;
+                    dbClId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+
+                    String clId = Integer.toString(dbClId);
+    //               chekcs if text fields are filled correct
+                    if(docRegVal.docRegVal(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.reppasswordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText())){
+    //                   checks if unique needed fields are unique
+    //                   if unique then fields are registered in doctors table.
+                        if(dbDoctor.register(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText(), clId, docRegVal.getStatus(docreg.active))){
+                            dbDoctor.register(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText(), clId, docRegVal.getStatus(docreg.active));
+                            docreg.panelDocRegistration.setVisible(false);
+                            loginmeth.frame.add(clindashb.panelClinicDashB);
+                            clindashb.clinicDash();
+                        }else{
+                            docreg.errorMessage.setText("doctor with this username/personal code/certificate Nr. already exists");
+                        }
+                    }else{
+                        docreg.errorMessage.setText("fields are filled wrong");
+                    }
+                }catch (SQLException a) {
+                    a.printStackTrace();
                 }
             }
         });
