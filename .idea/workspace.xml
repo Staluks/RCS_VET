@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c3d5f18-d3a4-4362-99a3-648092d224e7" name="Changes" comment="-fixes">
+    <list default="true" id="2c3d5f18-d3a4-4362-99a3-648092d224e7" name="Changes" comment="-fixes" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_30.xml" afterDir="false" />
+    <list default="true" id="f15af50a-f82a-404a-bfc9-059b516bd281" name="Changes" comment="- DBLogicPatient: crud - fixes after review">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RCS_VET.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RCS_VET.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DocRegValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocRegValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +52,15 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/images" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -67,6 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
@@ -127,6 +132,28 @@
       <updated>1662269622613</updated>
     </task>
     <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00002" summary="- DBLogicPatient: crud">
+      <created>1662370605024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662370605024</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- DBLogicPatient: crud - &quot;update&quot; added">
+      <created>1662374695116</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662374695116</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- DBLogicPatient: crud - fixes after review">
+      <created>1662378636141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662378636141</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,5 +174,9 @@
     <MESSAGE value="-created doctors registration validation" />
     <MESSAGE value="-fixes" />
     <option name="LAST_COMMIT_MESSAGE" value="-fixes" />
+    <MESSAGE value="- DBLogicPatient: crud" />
+    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
+    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+    <option name="LAST_COMMIT_MESSAGE" value="- DBLogicPatient: crud - fixes after review" />
   </component>
 </project>

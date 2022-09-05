@@ -59,7 +59,7 @@ public class DBLogic_Doctor extends DBConnection{
     }
 
     // register new doctor
-    public boolean register(String name, String surname, String username, String password, String personal_code, String certificate, String clinic_id, String status) {
+    public boolean register(String name, String surname, String username, String password, String personal_code, String certificate, int clinic_id, String status) {
 
         try {
             if (isUsernameUnique(username) && isCertificateUnique(certificate)) {
@@ -79,7 +79,7 @@ public class DBLogic_Doctor extends DBConnection{
                 ps.setString(4, passwordHash.getMd5(password));
                 ps.setString(5, personal_code);
                 ps.setString(6, certificate);
-                ps.setString(7, clinic_id);
+                ps.setInt(7, clinic_id);
                 ps.setString(8, status);
 
                 ps.executeUpdate();
@@ -148,7 +148,7 @@ public class DBLogic_Doctor extends DBConnection{
     }
 
     //get list of doctors (name, surname, personal_code, status) by clinic_id
-    public ArrayList<String> getDoctorList(String clinic_id) throws SQLException {
+    public ArrayList<String> getDoctorList(int clinic_id) throws SQLException {
         ArrayList<String> doctorList = new ArrayList<String>();
 
         // connection to DB
@@ -158,7 +158,7 @@ public class DBLogic_Doctor extends DBConnection{
         String select  = "SELECT name, surname, personal_code, status from doctor WHERE clinic_id = ?";
         PreparedStatement ps = conn.prepareStatement(select);
 
-        ps.setString(1, clinic_id);
+        ps.setInt(1, clinic_id);
         ResultSet rs = ps.executeQuery();
 
         // get doctor name, surname by username
