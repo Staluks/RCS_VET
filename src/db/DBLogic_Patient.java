@@ -1,15 +1,11 @@
 package db;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
-import java.sql.Date;
 
 public class DBLogic_Patient extends DBConnection{
 
-    // register new doctor
+    // register new patient
     public boolean register(String name, String group, String breed, float weight, Date date_of_birth, String passport_num, String owner_name, String owner_surname, int doctor_id) {
 
         try {
@@ -91,6 +87,37 @@ public class DBLogic_Patient extends DBConnection{
         return patientAllInfo;
     }
 
+    // update existing patient data
+    public boolean update(String name, String group, String breed, float weight, Date date_of_birth, String passport_num, String owner_name, String owner_surname, int doctor_id) {
 
+        try {
+            // connection to DB
+            Connection conn = connectToDB();
+
+            // sql statement to execute
+            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, weight= ?, date_of_birth = ?, passport_num = ?, owner_name = ?, owner_surname = ? WHERE doctor_id = ?";
+                    // WHERE doctor_id = ?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+
+            ps.setString(1, name);
+            ps.setString(2, group);
+            ps.setString(3, breed);
+            ps.setFloat(4, weight);
+            ps.setDate(5, (java.sql.Date) date_of_birth);
+            ps.setString(6, passport_num);
+            ps.setString(7, owner_name);
+            ps.setString(8, owner_surname);
+            ps.setInt(9, doctor_id);
+
+            ps.executeUpdate();
+            conn.close();
+
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
 
 }
