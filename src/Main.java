@@ -111,16 +111,14 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
 //              gets Clinic ID
                 try {
-                    int dbClId = 0;
-                    dbClId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                    int dbClId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
 
-                    String clId = Integer.toString(dbClId);
     //               chekcs if text fields are filled correct
                     if(docRegVal.docRegVal(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.reppasswordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText())){
     //                   checks if unique needed fields are unique
     //                   if unique then fields are registered in doctors table.
-                        if(dbDoctor.register(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText(), clId, docRegVal.getStatus(docreg.active))){
-                            dbDoctor.register(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText(), clId, docRegVal.getStatus(docreg.active));
+                        if(dbDoctor.register(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText(), dbClId, docRegVal.getStatus(docreg.active))){
+                            dbDoctor.register(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText(), dbClId, docRegVal.getStatus(docreg.active));
                             docreg.panelDocRegistration.setVisible(false);
                             loginmeth.frame.add(clindashb.panelClinicDashB);
                             clindashb.clinicDash();

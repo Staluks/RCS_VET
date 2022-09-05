@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c3d5f18-d3a4-4362-99a3-648092d224e7" name="Changes" comment="-fixes" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_30.xml" afterDir="false" />
-    <list default="true" id="f15af50a-f82a-404a-bfc9-059b516bd281" name="Changes" comment="- DBLogicPatient: crud - fixes after review">
+    <list default="true" id="2c3d5f18-d3a4-4362-99a3-648092d224e7" name="Changes" comment="-added dbLogic to submit button in new doctor form, added get selected radiobutton">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RCS_VET.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RCS_VET.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DocRegValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocRegValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,25 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/37128/IdeaProjects/RCS_VET/lib/mysql-connector-java-8.0.30.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/37128/IdeaProjects/RCS_VET/lib/mysql-connector-java-8.0.30.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
+  &amp;quot;keyToString&amp;quot;: {
+    &amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;project.structure.last.edited&amp;quot;: &amp;quot;Modules&amp;quot;,
+    &amp;quot;project.structure.proportion&amp;quot;: &amp;quot;0.15&amp;quot;,
+    &amp;quot;project.structure.side.proportion&amp;quot;: &amp;quot;0.2&amp;quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -71,7 +66,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
@@ -96,42 +90,6 @@
       <option name="project" value="LOCAL" />
       <updated>1661242787938</updated>
     </task>
-    <task id="LOCAL-00002" summary="_created patient registration form">
-      <created>1662115430601</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662115430601</updated>
-    </task>
-    <task id="LOCAL-00003" summary="_created medical history form">
-      <created>1662116320078</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1662116320078</updated>
-    </task>
-    <task id="LOCAL-00004" summary="-created doctors registration validation">
-      <created>1662181704555</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1662181704555</updated>
-    </task>
-    <task id="LOCAL-00005" summary="-fixes">
-      <created>1662269328695</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1662269328695</updated>
-    </task>
-    <task id="LOCAL-00006" summary="-fixes">
-      <created>1662269622613</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1662269622613</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <task id="LOCAL-00002" summary="- DBLogicPatient: crud">
       <created>1662370605024</created>
       <option name="number" value="00002" />
@@ -153,6 +111,20 @@
       <option name="project" value="LOCAL" />
       <updated>1662378636141</updated>
     </task>
+    <task id="LOCAL-00005" summary="-fixes">
+      <created>1662269328695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662269328695</updated>
+    </task>
+    <task id="LOCAL-00006" summary="-fixes">
+      <created>1662269622613</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662269622613</updated>
+    </task>
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
@@ -173,7 +145,6 @@
     <MESSAGE value="_created medical history form" />
     <MESSAGE value="-created doctors registration validation" />
     <MESSAGE value="-fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="-fixes" />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
