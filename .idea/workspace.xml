@@ -8,10 +8,9 @@
     <change beforePath="$PROJECT_DIR$/src/db/DBLogic_MedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_MedicalHistory.java" afterDir="false" />
     <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Patient.java" afterDir="false" />
     <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="validation Password">
+    <list default="true" id="f15af50a-f82a-404a-bfc9-059b516bd281" name="Changes" comment="- merge fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields_Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +31,6 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="rcs_16" />
         <entry key="$PROJECT_DIR$" value="Develop" />
       </map>
     </option>
@@ -49,7 +47,6 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   &lt;component name=&quot;PropertiesComponent&quot;&gt;{
@@ -80,6 +77,7 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +98,35 @@
       <updated>1661242787938</updated>
     </task>
     <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- DBLogicPatient: crud">
+      <created>1662370605024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662370605024</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- DBLogicPatient: crud - &quot;update&quot; added">
+      <created>1662374695116</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662374695116</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- DBLogicPatient: crud - fixes after review">
+      <created>1662378636141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662378636141</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- merge fixes">
+      <created>1662385479407</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662385479407</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,5 +143,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made a doctors registration Form." />
     <option name="LAST_COMMIT_MESSAGE" value="made a doctors registration Form." />
+    <MESSAGE value="- DBLogicPatient: crud" />
+    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
+    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+    <MESSAGE value="doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)" />
+    <MESSAGE value="- DBLogicPatient: crud" />
+    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
+    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+    <MESSAGE value="- merge fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- merge fixes" />
   </component>
 </project>
