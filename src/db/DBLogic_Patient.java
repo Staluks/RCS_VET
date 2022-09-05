@@ -13,7 +13,7 @@ public class DBLogic_Patient extends DBConnection{
             Connection conn = connectToDB();
 
             // sql statement to execute
-            String sql = "INSERT INTO patient (`name`, `group`, breed, weight, date_of_birth, passport_num, " + "owner_name, owner_surname, doctor_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO patient (`name`, `group`, breed, weight, date_of_birth, passport_num, owner_name, owner_surname, doctor_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement ps = conn.prepareStatement(sql);
 
             ps.setString(1, name);
@@ -38,7 +38,7 @@ public class DBLogic_Patient extends DBConnection{
     }
 
     //get list of patients (name, group, breed, passport_num, owner_name, owner_surname) by doctor_id
-    public ArrayList<String> getPatientList(String doctor_id) throws SQLException {
+    public ArrayList<String> getPatientList(int doctor_id) throws SQLException {
         ArrayList<String> patientList = new ArrayList<String>();
 
         // connection to DB
@@ -48,7 +48,7 @@ public class DBLogic_Patient extends DBConnection{
         String select  = "SELECT name, `group`, breed, passport_num, owner_name, owner_surname from patient WHERE doctor_id = ?";
         PreparedStatement ps = conn.prepareStatement(select);
 
-        ps.setString(1, doctor_id);
+        ps.setInt(1, doctor_id);
         ResultSet rs = ps.executeQuery();
 
         // get doctor name, surname by username
@@ -61,8 +61,8 @@ public class DBLogic_Patient extends DBConnection{
         return patientList;
     }
 
-    //get patient full info (all info about patient to update) by pacient_id
-    public ArrayList<String> getPatientAllInfoList(String patient_id) throws SQLException {
+    //get patient full info (all info about patient to update) by patient_id
+    public ArrayList<String> getPatientAllInfoList(int patient_id) throws SQLException {
         ArrayList<String> patientAllInfo = new ArrayList<String>();
 
         // connection to DB
@@ -72,7 +72,7 @@ public class DBLogic_Patient extends DBConnection{
         String select  = "SELECT name, `group`, breed, weight, date_of_birth, passport_num, owner_name, owner_surname from patient WHERE id = ?";
         PreparedStatement ps = conn.prepareStatement(select);
 
-        ps.setString(1, patient_id);
+        ps.setInt(1, patient_id);
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
             patientAllInfo.add(rs.getString("name"));
@@ -88,14 +88,14 @@ public class DBLogic_Patient extends DBConnection{
     }
 
     // update existing patient data
-    public boolean update(String name, String group, String breed, float weight, Date date_of_birth, String passport_num, String owner_name, String owner_surname, int doctor_id) {
+    public boolean update(String name, String group, String breed, float weight, Date date_of_birth, String passport_num, String owner_name, String owner_surname, int doctor_id, int patient_id) {
 
         try {
             // connection to DB
             Connection conn = connectToDB();
 
             // sql statement to execute
-            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, weight= ?, date_of_birth = ?, passport_num = ?, owner_name = ?, owner_surname = ? WHERE doctor_id = ?";
+            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, weight= ?, date_of_birth = ?, passport_num = ?, owner_name = ?, owner_surname = ? WHERE doctor_id = ? and id = ?";
                     // WHERE doctor_id = ?";
             PreparedStatement ps = conn.prepareStatement(sql);
 
@@ -108,6 +108,7 @@ public class DBLogic_Patient extends DBConnection{
             ps.setString(7, owner_name);
             ps.setString(8, owner_surname);
             ps.setInt(9, doctor_id);
+            ps.setInt(10, patient_id);
 
             ps.executeUpdate();
             conn.close();
