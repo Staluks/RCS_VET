@@ -1,10 +1,15 @@
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
+import db.DBLogic_Patient;
 
+import javax.xml.crypto.Data;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.sql.Date;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -118,6 +123,20 @@ public class Main {
         //for (String s : list) {
         //    System.out.println(s);
 
+        //DBLogic_Patient dbPatient = new DBLogic_Patient();
+        //boolean p = dbPatient.register("Snowball", "Dog", "Husky", 20.5f, Date.valueOf("2020-06-15"), "CF1234", "Milena", "Sokolova", 7 );
+        //System.out.println(p);
+        //ArrayList<String> list = dbPatient.getPatientAllInfoList("7");
+        //for (String s : list) {
+        //    System.out.println(s);
+        //}
+
+        //ArrayList<String> list = dbPatient.getPatientList("3");
+        //for (String s : list) {
+        //    System.out.println(s);
+        //}
+
+        //boolean u = dbPatient.update("Snowball", "Dog", "Husky", 22.5f, Date.valueOf("2019-06-15"), "CF4321", "Alina", "Sokolova", 7, 7);
 
     }
 }
