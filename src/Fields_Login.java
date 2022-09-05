@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Fields_Login {
         JFrame frame = new JFrame();
@@ -14,6 +16,7 @@ public class Fields_Login {
         JRadioButton doctor = new JRadioButton("Doctor");
 
         JLabel username = new JLabel("Username");
+
         JLabel password = new JLabel("Password");
 
         JTextField userText = new JTextField();
