@@ -7,8 +7,8 @@ import java.awt.event.ActionListener;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.time.Instant;
-import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -129,14 +129,15 @@ public class Main {
 
 //        DBLogic_MedicalHistory dbMedHist = new DBLogic_MedicalHistory();
 /*
-        boolean regStatus = dbMedHist.register(3, 5, "diagnosis6", Date.valueOf(LocalDate.of(2012, 2, 12)), "medical_manipulation6", "medicaments6");
-//        boolean regStatus = dbMedHist.register(5, 3, "diagnosis9", Date.valueOf(LocalDate.of(2010, 7, 17)), null, null);
+        boolean regStatus = dbMedHist.register(9, 7, "diagnosis10", Date.valueOf("1985-08-13"), "medical_manipulation10", "medicaments10");
+//        boolean regStatus = dbMedHist.register(9, 7, "diagnosis11", Date.valueOf("2002-02-20"), null, null);
         System.out.println(regStatus);
 */
 
 /*
-        String[] patient = dbMedHist.getPatient(7);
+        String[] patient = dbMedHist.getPatientNameAndGroup(8);
         System.out.println(patient[0] + " " + patient[1]);
+        System.out.println(Arrays.toString(patient));
 */
 
 /*
@@ -147,7 +148,7 @@ public class Main {
 */
 
 /*
-        ArrayList<String> medicalHistoryOfPatient = dbMedHist.getMedicalHistoryOfPatient(7);
+        ArrayList<String> medicalHistoryOfPatient = dbMedHist.getMedicalHistoryOfPatient(9);
         for (String el: medicalHistoryOfPatient) {
             System.out.println("MH: " + el);
         }

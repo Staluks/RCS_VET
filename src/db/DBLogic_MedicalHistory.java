@@ -36,7 +36,7 @@ public class DBLogic_MedicalHistory extends DBConnection {
 
     // Get patient name and group by ID (array[name, group])
     // Return NULL if patient is not found (array(null, null))
-    public String[] getPatient(int patient_id) throws SQLException {
+    public String[] getPatientNameAndGroup(int patient_id) throws SQLException {
         String sql = "SELECT `name`, `group` from patient WHERE id = ?";
         String[] patient = new String[2];
 
