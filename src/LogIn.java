@@ -55,6 +55,10 @@ public class LogIn extends Fields_Login {
         panellogin.add(regbut);
 
         regbut.setBounds(20, 500, 160, 35);
+       panellogin.add(wrongPass);
+        wrongPass.setBounds(150, 540,400,100);
+
+
 
 
     }

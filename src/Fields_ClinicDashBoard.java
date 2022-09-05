@@ -11,6 +11,9 @@ public class Fields_ClinicDashBoard {
     JButton block = new JButton("Block");
     JButton unblock = new JButton("Unblock");
     JButton edit = new JButton("Edit");
+    JLabel clinName = new JLabel();
+
+
 
 
 }
