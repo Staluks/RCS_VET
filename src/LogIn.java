@@ -1,3 +1,5 @@
+import Fields.Fields_Login;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -50,21 +52,6 @@ public class LogIn extends Fields_Login {
         loginbut.setBounds(250, 500, 200, 35);
 
 
-//        loginbut.addActionListener(new ActionListener() {
-//           @Override
-//           public void actionPerformed(ActionEvent e) {
-//                   String field;
-//                   field = userText.getText();
-//                   String field2;
-//                   field2 = passwordText.getText();
-//                   if(ValidationLogin.isValidUsername(field) && ValidationLogin.isValidPassword(field2)) {
-//
-//                   }
-//                   else {
-//                       JOptionPane.showMessageDialog(null, "Please enter your username and password correctly");
-//                   }
-//               }
-//           });
 
 
 

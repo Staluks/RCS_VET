@@ -93,8 +93,7 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //check if input is corect
-                //logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())
-                if (true) {
+                if (logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())) {
                     if (loginmeth.clinic.isSelected()) {
                         try {
                             //get clinic id by login username and password
@@ -123,40 +122,41 @@ public class Main {
                         } catch (SQLException a) {
                             a.printStackTrace();
                         }
+                    }
+                    if (loginmeth.doctor.isSelected()) {
+                        try {
+                            Integer doctorId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                            if (doctorId > -1) {
+                                loginmeth.panellogin.setVisible(false);
+                                loginmeth.frame.add(docdashb.panelDoctorDashB);
+                                docdashb.doctorDash();
+                                String doctorName = dbDoctor.getName(loginmeth.userText.getText());
+                                docdashb.welcome.setText("Welcome " + doctorName);
+                                ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
+                                for (String s : patientList) {
+                                    //when clinic dashboard opens a list of all asosiated doctors will appear
+                                    JList allPatient = new JList(patientList.toArray());
+                                    docdashb.panelDoctorDashB.add(allPatient);
+                                    allPatient.setBounds(30, 120, 600, 400);
 
-                        if (loginmeth.doctor.isSelected()) {
-                            try {
-                                Integer doctorId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-                                if (doctorId > -1) {
-                                    loginmeth.panellogin.setVisible(false);
-                                    loginmeth.frame.add(docdashb.panelDoctorDashB);
-                                    docdashb.doctorDash();
-                                    String doctorName = dbDoctor.getName(loginmeth.userText.getText());
-                                    docdashb.welcome.setText("Welcome " + doctorName);
-                                    ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
-                                    for (String s : patientList) {
-                                        //when clinic dashboard opens a list of all asosiated doctors will appear
-                                        JList allPatient = new JList(patientList.toArray());
-                                        docdashb.panelDoctorDashB.add(allPatient);
-                                        allPatient.setBounds(30, 120, 600, 400);
-
-                                    }
-
-                                } else {
-                                    //if log in failed then this mesage will appear
-                                    loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
                                 }
 
-                            } catch (SQLException b) {
-                                b.printStackTrace();
+                            } else {
+                                //if log in failed then this mesage will appear
+                                loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
                             }
+
+                        } catch (SQLException b) {
+                            b.printStackTrace();
                         }
                     }
-                } else {
-                    //if log in failed this message will appear
-                    loginmeth.wrongPass.setText(" 2 Log in failed! Check username or password and try again!");
-                }
+
+            } else{
+                //if log in failed this message will appear
+                loginmeth.wrongPass.setText(" 2 Log in failed! Check username or password and try again!");
             }
+        }
+
         });
         //to return to the log in window user can pres log out button
         clindashb.logout.addActionListener(new ActionListener() {

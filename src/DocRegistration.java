@@ -1,3 +1,5 @@
+import Fields.FieldsDocRegister;
+
 import javax.swing.*;
 import java.awt.*;
 

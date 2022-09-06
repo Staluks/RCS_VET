@@ -1,3 +1,5 @@
+import Fields.Fields_DoctorDashBoard;
+
 import java.awt.*;
 
 public class DoctorDashBoard extends Fields_DoctorDashBoard {

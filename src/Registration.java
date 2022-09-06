@@ -1,3 +1,5 @@
+import Fields.Fields_Registration;
+
 import java.awt.*;
 
 public class Registration extends Fields_Registration {
