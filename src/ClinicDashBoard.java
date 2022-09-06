@@ -1,7 +1,9 @@
-import javax.swing.*;
+
+import Fields.Fields_ClinicDashBoard;
+
 import java.awt.*;
 
-public class ClinicDashBoard extends Fields_ClinicDashBoard{
+public class ClinicDashBoard extends Fields_ClinicDashBoard {
 
     public void clinicDash (){
         panelClinicDashB.setVisible(true);
@@ -24,13 +26,6 @@ public class ClinicDashBoard extends Fields_ClinicDashBoard{
 
         edit.setBounds(350,600,100,45);
 
-        panelClinicDashB.add(block);
-
-        block.setBounds(160,600,80,45);
-
-        panelClinicDashB.add(unblock);
-
-        unblock.setBounds(70,600,80,45);
 
         panelClinicDashB.add(clinName);
 

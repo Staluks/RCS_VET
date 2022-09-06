@@ -1,6 +1,8 @@
+import Fields.Fields_DoctorDashBoard;
+
 import java.awt.*;
 
-public class DoctorDashBoard extends Fields_DoctorDashBoard{
+public class DoctorDashBoard extends Fields_DoctorDashBoard {
     public void doctorDash (){
         panelDoctorDashB.setVisible(true);
         panelDoctorDashB.setLayout(null);
