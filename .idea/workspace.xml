@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daf23019-0736-4a2e-8e61-74a8c9737c30" name="Changes" comment="login +db validacija ar clinic vai doctor login" />
-    <list default="true" id="f15af50a-f82a-404a-bfc9-059b516bd281" name="Changes" comment="izmainas" />
-    <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    <change beforePath="$PROJECT_DIR$/RCS_VET.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RCS_VET.iml" afterDir="false" />
-    <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    <change beforePath="$PROJECT_DIR$/src/db/DBLogic_MedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_MedicalHistory.java" afterDir="false" />
-    <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Patient.java" afterDir="false" />
-    <list default="true" id="2c3d5f18-d3a4-4362-99a3-648092d224e7" name="Changes" comment="-added dbLogic to submit button in new doctor form, added get selected radiobutton">
+    <list default="true" id="3995b484-64fc-4e4c-af36-ee72097a9198" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="validation Password">
-    <list default="true" id="f15af50a-f82a-404a-bfc9-059b516bd281" name="Changes" comment="- merge fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields_Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields_DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_DoctorDashBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,36 +37,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllRemotes": "true"
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;
   &lt;component name=&quot;PropertiesComponent&quot;&gt;{
   &amp;quot;keyToString&amp;quot;: {
+    &amp;quot;Git.Branch.Popup.ShowAllRemotes&amp;quot;: &amp;quot;true&amp;quot;,
     &amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;
+  &amp;lt;component name=&amp;quot;PropertiesComponent&amp;quot;&amp;gt;{
+  &amp;amp;quot;keyToString&amp;amp;quot;: {
+    &amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
+    &amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
+    &amp;amp;quot;project.structure.last.edited&amp;amp;quot;: &amp;amp;quot;Modules&amp;amp;quot;,
+    &amp;amp;quot;project.structure.proportion&amp;amp;quot;: &amp;amp;quot;0.15&amp;amp;quot;,
+    &amp;amp;quot;project.structure.side.proportion&amp;amp;quot;: &amp;amp;quot;0.2&amp;amp;quot;
     &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;SHARE_PROJECT_CONFIGURATION_FILES&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;last_opened_file_path&amp;quot;: &amp;quot;C:/Users/37128/IdeaProjects/RCS_VET/lib/mysql-connector-java-8.0.30.jar&amp;quot;,
     &amp;quot;project.structure.last.edited&amp;quot;: &amp;quot;Modules&amp;quot;,
-    &amp;quot;project.structure.proportion&amp;quot;: &amp;quot;0.15&amp;quot;,
-    &amp;quot;project.structure.side.proportion&amp;quot;: &amp;quot;0.2&amp;quot;
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/37128/IdeaProjects/RCS_VET/lib/mysql-connector-java-8.0.30.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
-  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
-  &amp;quot;keyToString&amp;quot;: {
-    &amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;project.structure.last.edited&amp;quot;: &amp;quot;Modules&amp;quot;,
-    &amp;quot;project.structure.proportion&amp;quot;: &amp;quot;0.15&amp;quot;,
-    &amp;quot;project.structure.side.proportion&amp;quot;: &amp;quot;0.2&amp;quot;
+    &amp;quot;project.structure.proportion&amp;quot;: &amp;quot;0.0&amp;quot;,
+    &amp;quot;project.structure.side.proportion&amp;quot;: &amp;quot;0.0&amp;quot;
+  &amp;lt;component name=&amp;quot;PropertiesComponent&amp;quot;&amp;gt;{
+  &amp;amp;quot;keyToString&amp;amp;quot;: {
+    &amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
+    &amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
+    &amp;amp;quot;project.structure.last.edited&amp;amp;quot;: &amp;amp;quot;Modules&amp;amp;quot;,
+    &amp;amp;quot;project.structure.proportion&amp;amp;quot;: &amp;amp;quot;0.15&amp;amp;quot;,
+    &amp;amp;quot;project.structure.side.proportion&amp;amp;quot;: &amp;amp;quot;0.2&amp;amp;quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -100,7 +84,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
@@ -146,12 +129,12 @@
       <option name="project" value="LOCAL" />
       <updated>1662378636141</updated>
     </task>
-    <task id="LOCAL-00005" summary="-fixes">
-      <created>1662269328695</created>
+    <task id="LOCAL-00005" summary="- merge fixes">
+      <created>1662385479407</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1662269328695</updated>
+      <updated>1662385479407</updated>
     </task>
     <task id="LOCAL-00006" summary="-fixes">
       <created>1662269622613</created>
@@ -159,36 +142,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1662269622613</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
-    <option name="localTasksCounter" value="2" />
-    <task id="LOCAL-00002" summary="- DBLogicPatient: crud">
-      <created>1662370605024</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662370605024</updated>
-    </task>
-    <task id="LOCAL-00003" summary="- DBLogicPatient: crud - &quot;update&quot; added">
-      <created>1662374695116</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1662374695116</updated>
-    </task>
-    <task id="LOCAL-00004" summary="- DBLogicPatient: crud - fixes after review">
-      <created>1662378636141</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1662378636141</updated>
-    </task>
-    <task id="LOCAL-00005" summary="- merge fixes">
-      <created>1662385479407</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1662385479407</updated>
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
@@ -213,8 +166,6 @@
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
-    <option name="LAST_COMMIT_MESSAGE" value="- DBLogicPatient: crud - fixes after review" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a doctors registration Form." />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
