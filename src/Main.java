@@ -112,8 +112,6 @@ public class Main {
         //int clinicId = dbClinic.getClinicId("clDUsername", "clDPass");
         //dbClinic.getName("clDUsername");
         //dbClinic.isUsernameUnique("clDUsername");
-        // -------------------------------------------------------------------------
-
 
         //DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
 

@@ -25,5 +25,6 @@ public class Fields_Login {
 
         JButton loginbut = new JButton("Log In");
         JButton regbut = new JButton("Create new account");
+        JLabel wrongPass = new JLabel();
 
     }
