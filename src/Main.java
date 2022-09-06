@@ -3,6 +3,7 @@ import db.DBLogic_Doctor;
 import db.DBLogic_MedicalHistory;
 import db.DBLogic_Patient;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Date;
@@ -19,6 +20,9 @@ public class Main {
         DoctorDashBoard docdashb = new DoctorDashBoard();
         DocRegistration docreg = new DocRegistration();
         DBLogic_Clinic dbClinic = new DBLogic_Clinic();
+        DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
+        DBLogic_Patient dbPatient = new DBLogic_Patient();
+        DBLogic_MedicalHistory dbMedHistory = new DBLogic_MedicalHistory();
 
 
 
@@ -49,20 +53,62 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (loginmeth.clinic.isSelected()) {
-                    //todo backend validation - if true
-//                    try {
-//                        int a = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-//                        //if (a = -1)
-//                    }catch (SQLException a){
-//                        a.printStackTrace();
-//                    }
-                    loginmeth.panellogin.setVisible(false);
-                    loginmeth.frame.add(clindashb.panelClinicDashB);
-                    clindashb.clinicDash();
-                } if (loginmeth.doctor.isSelected()){
-                    loginmeth.panellogin.setVisible(false);
-                    loginmeth.frame.add(docdashb.panelDoctorDashB);
-                    docdashb.doctorDash();
+                    //todo add validations
+                    try {
+                        //get clinic id by login username and password
+                        Integer clinicId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                        //if clinic was found in DB by username and password then log in is succesfull and clinic dash board opens
+                        if (clinicId > -1) {
+                            loginmeth.panellogin.setVisible(false);
+                            loginmeth.frame.add(clindashb.panelClinicDashB);
+                            clindashb.clinicDash();
+                            //get clinic name to display in dashboard
+                            String clinicName = dbClinic.getName(loginmeth.userText.getText());
+                            clindashb.clinName.setText("Welcome " + clinicName);
+                            //get doctor list in clinic dashboard
+                            ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
+                            for (String s : doctorList) {
+                                //when clinic dashboard opens a list of all asosiated doctors will appear
+                                JList alldoctors = new JList(doctorList.toArray());
+                                clindashb.panelClinicDashB.add(alldoctors);
+                                alldoctors.setBounds(30, 120, 600, 400);
+
+                            }
+                        } else {
+                            //if log in failed this message will appear
+                            loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
+                        }
+                    } catch (SQLException a) {
+                        a.printStackTrace();
+                    }
+
+                }
+                if (loginmeth.doctor.isSelected()) {
+                    try {
+                        Integer doctorId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                        if (doctorId > -1) {
+                            loginmeth.panellogin.setVisible(false);
+                            loginmeth.frame.add(docdashb.panelDoctorDashB);
+                            docdashb.doctorDash();
+                            String doctorName = dbDoctor.getName(loginmeth.userText.getText());
+                            docdashb.welcome.setText("Welcome " + doctorName);
+                            ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
+                            for (String s : patientList) {
+                                //when clinic dashboard opens a list of all asosiated doctors will appear
+                                JList allPatient = new JList(patientList.toArray());
+                                docdashb.panelDoctorDashB.add(allPatient);
+                                allPatient.setBounds(30, 120, 600, 400);
+
+                            }
+
+                        } else {
+                            //if log in failed then this mesage will appear
+                            loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
+                        }
+
+                    } catch (SQLException b) {
+                        b.printStackTrace();
+                    }
                 }
             }
         });
@@ -112,8 +158,6 @@ public class Main {
         //int clinicId = dbClinic.getClinicId("clDUsername", "clDPass");
         //dbClinic.getName("clDUsername");
         //dbClinic.isUsernameUnique("clDUsername");
-        // -------------------------------------------------------------------------
-
 
         //DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
 

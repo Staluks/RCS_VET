@@ -30,6 +30,11 @@ public class DoctorDashBoard extends Fields_DoctorDashBoard{
 
         addnewPatient.setBounds(460,600,125,45);
 
+        panelDoctorDashB.add(welcome);
+
+        welcome.setBounds(20,10,300,50);
+
+
 
     }
 }

@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.*;
 
 public class ClinicDashBoard extends Fields_ClinicDashBoard{
@@ -30,6 +31,16 @@ public class ClinicDashBoard extends Fields_ClinicDashBoard{
         panelClinicDashB.add(unblock);
 
         unblock.setBounds(70,600,80,45);
+
+        panelClinicDashB.add(clinName);
+
+        clinName.setBounds(20,10,300,50);
+
+
+
+
+
+
 
 
 
