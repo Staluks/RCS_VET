@@ -16,6 +16,7 @@ public class FieldsDocRegister {
 
     public JLabel password = new JLabel("Password *");
     public  JLabel reppassword = new JLabel("Confirm password *");
+    public  JLabel errorMessage = new JLabel();
 
     public JTextField docNameText = new JTextField();
     public  JTextField docSurnameText = new JTextField();

@@ -98,7 +98,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 //check if input is corect
                // if (logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())) {
-                 if(true){
+                 if(logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())){
                     if (loginmeth.clinic.isSelected()) {
                         try {
                             //get clinic id by login username and password
