@@ -143,6 +143,32 @@ public class DBLogic_Doctor extends DBConnection{
         return -1;
     }
 
+    // get doctor status by ID
+    // returns string: "active" or "blocked" OR "" if doctor not found
+    public String getDoctorStatus(int doctor_id) throws SQLException {
+
+        String status  = "";
+
+        // connection to DB
+        Connection conn = connectToDB();
+
+        // sql statement to execute
+        String select  = "SELECT status from doctor WHERE id = ?";
+        PreparedStatement ps = conn.prepareStatement(select);
+
+        ps.setInt(1, doctor_id);
+        ResultSet rs = ps.executeQuery();
+
+        // check if such doctor exists in DB
+        if(rs.next()) {
+            status = rs.getString("status");
+        }
+
+        conn.close();
+
+        return status;
+    }
+
     //get doctor name, surname by username
     // returns doctor, surname name or "" if doctor not found by username
     public String getName(String username) throws SQLException {

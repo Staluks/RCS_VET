@@ -86,7 +86,8 @@ public class Main {
                 if (loginmeth.doctor.isSelected()) {
                     try {
                         Integer doctorId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-                        if (doctorId > -1) {
+                        String doctorStatus = dbDoctor.getDoctorStatus(doctorId.intValue());
+                        if (doctorId > -1 && doctorStatus.equals("active")) {
                             loginmeth.panellogin.setVisible(false);
                             loginmeth.frame.add(docdashb.panelDoctorDashB);
                             docdashb.doctorDash();
@@ -153,7 +154,7 @@ public class Main {
 
         //DBLogic_Clinic dbClinic = new DBLogic_Clinic();
 
-        //boolean s = dbClinic.register("clNameE", "cl5@email.com", "22030409", "cl5LegalAddress", "cl5PhysicalAddress", "cl5RegNumber", "clEUsername", "clEPass");
+        //boolean s = dbClinic.register("clName Check", "clCheck@email.com", "220409", "cl Check 1", "cl Check 2", "0000045", "dog1", "dogT1");
         //System.out.println(s);
         //int clinicId = dbClinic.getClinicId("clDUsername", "clDPass");
         //dbClinic.getName("clDUsername");
@@ -166,6 +167,9 @@ public class Main {
 
         //int id = dbDoctor.getDoctorId("usernameD2", "passwordD3");
         //System.out.println(id);
+
+        //String status = dbDoctor.getDoctorStatus(6);
+        //System.out.println(status);
 
         //System.out.println(dbDoctor.getName("usernameD3"));
 
