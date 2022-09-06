@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f15af50a-f82a-404a-bfc9-059b516bd281" name="Changes" comment="- DBLogicPatient: crud - fixes after review">
+    <list default="true" id="1a0083db-5102-4168-b7e8-0a2ba4736080" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="validation Password">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields_Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,44 +16,38 @@
       </list>
     </option>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Develop" />
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="rcs_16" />
-        <entry key="$PROJECT_DIR$" value="Develop" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2DFCXm7KvYGPM0Lto5QBDa8vHQB" />
+  <component name="ProjectId" id="2EMQccBRYT5dk3qNaLSMqJOFzlv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Main">
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CHeck">
+    <configuration name="CHeck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Validation.CHeck" />
+      <module name="RCS_VET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RCS_VET" />
@@ -68,20 +55,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Validation.ValidationLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Validation.ValidationLogin" />
-      <module name="RCS_VET" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Validation.ValidationLogin" />
+        <item itemvalue="Application.CHeck" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -89,41 +65,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="" />
-      <created>1660285489749</created>
+      <changelist id="1a0083db-5102-4168-b7e8-0a2ba4736080" name="Changes" comment="" />
+      <created>1662403053383</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1660285489749</updated>
+      <updated>1662403053383</updated>
     </task>
-    <task id="LOCAL-00001" summary="made a doctors registration Form.">
-      <created>1661242787938</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1661242787938</updated>
-    </task>
-    <task id="LOCAL-00002" summary="- DBLogicPatient: crud">
-      <created>1662370605024</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662370605024</updated>
-    </task>
-    <task id="LOCAL-00003" summary="- DBLogicPatient: crud - &quot;update&quot; added">
-      <created>1662374695116</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1662374695116</updated>
-    </task>
-    <task id="LOCAL-00004" summary="- DBLogicPatient: crud - fixes after review">
-      <created>1662378636141</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1662378636141</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,12 +83,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="made a doctors registration Form." />
-    <MESSAGE value="- DBLogicPatient: crud" />
-    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
-    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
-    <option name="LAST_COMMIT_MESSAGE" value="- DBLogicPatient: crud - fixes after review" />
   </component>
 </project>
