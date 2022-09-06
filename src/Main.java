@@ -1,19 +1,19 @@
+import Validation.DocRegValidation;
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
 import db.DBLogic_MedicalHistory;
 import db.DBLogic_Patient;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
 
-        DocRegValidation docRegVal = new DocRegValidation();
+
         LogIn loginmeth = new LogIn();
         Registration regmeth = new Registration();
         ClinicDashBoard clindashb = new ClinicDashBoard();
@@ -24,7 +24,7 @@ public class Main {
         DBLogic_Patient dbPatient = new DBLogic_Patient();
         DBLogic_MedicalHistory dbMedHistory = new DBLogic_MedicalHistory();
         DocRegValidation docRegVal = new DocRegValidation();
-
+        DocEdit editDoc = new DocEdit();
 
 
 
@@ -179,6 +179,16 @@ public class Main {
                 }
             }
         });
+//        button to get to doctors edit form
+        clindashb.edit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clindashb.panelClinicDashB.setVisible(false);
+                loginmeth.frame.add(editDoc.panelDocRegistration);
+                editDoc.docEditWindow("arturs", "kalnins", "310790-11708", "NR0135");
+            }
+        });
+
 
 
 
