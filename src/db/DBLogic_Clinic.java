@@ -6,7 +6,6 @@ import java.sql.*;
 
 public class DBLogic_Clinic extends DBConnection{
 
-
     // check is username unique for clinic
     // returns "true" if username is unique, "false" if username already exists in DB
     public boolean isUsernameUnique(String username) throws SQLException {

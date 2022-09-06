@@ -1,11 +1,14 @@
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
+import db.DBLogic_MedicalHistory;
+import db.DBLogic_Patient;
 
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -16,7 +19,6 @@ public class Main {
         DoctorDashBoard docdashb = new DoctorDashBoard();
         DocRegistration docreg = new DocRegistration();
         DBLogic_Clinic dbClinic = new DBLogic_Clinic();
-        DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
 
 
 
@@ -47,54 +49,20 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (loginmeth.clinic.isSelected()) {
-                    //todo add validations
-                    try {
-                        //get clinic id by login username and password
-                        Integer clinicId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-                        //if clinic was found in DB by username and password then log in is succesfull and clinic dash board opens
-                        if (clinicId > -1) {
-                            loginmeth.panellogin.setVisible(false);
-                            loginmeth.frame.add(clindashb.panelClinicDashB);
-                            clindashb.clinicDash();
-                            //get clinic name to display in dashboard
-                            String clinicName = dbClinic.getName(loginmeth.userText.getText());
-                            clindashb.clinName.setText("Welcome " + clinicName);
-                            //get doctor list in clinic dashboard
-                            ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId.toString());
-                            for (String s : doctorList) {
-                                //when clinic dashboard opens a list of all asosiated doctors will appear
-                                JList alldoctors = new JList(doctorList.toArray());
-                                clindashb.panelClinicDashB.add(alldoctors);
-                                alldoctors.setBounds(30, 120, 600, 400);
-
-                            }
-                        } else {
-                            //if log in failed this message will appear
-                            loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
-                        }
-                    } catch (SQLException a) {
-                        a.printStackTrace();
-                    }
-
-                }
-                if (loginmeth.doctor.isSelected()) {
-                    try {
-                        Integer doctorId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-                        if (doctorId > -1) {
-                            loginmeth.panellogin.setVisible(false);
-                            loginmeth.frame.add(docdashb.panelDoctorDashB);
-                            docdashb.doctorDash();
-                            String doctorName = dbClinic.getName(loginmeth.userText.getText());
-                            docdashb.welcome.setText("Welcome " + doctorName);
-
-                        } else {
-                            //if log in failed then this mesage will appear
-                            loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
-                        }
-
-                    } catch (SQLException b) {
-                        b.printStackTrace();
-                    }
+                    //todo backend validation - if true
+//                    try {
+//                        int a = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+//                        //if (a = -1)
+//                    }catch (SQLException a){
+//                        a.printStackTrace();
+//                    }
+                    loginmeth.panellogin.setVisible(false);
+                    loginmeth.frame.add(clindashb.panelClinicDashB);
+                    clindashb.clinicDash();
+                } if (loginmeth.doctor.isSelected()){
+                    loginmeth.panellogin.setVisible(false);
+                    loginmeth.frame.add(docdashb.panelDoctorDashB);
+                    docdashb.doctorDash();
                 }
             }
         });
@@ -137,24 +105,83 @@ public class Main {
 
 
 
-//        DBLogic_Clinic dbClinic = new DBLogic_Clinic();
-//        boolean s = dbClinic.register("clNameF", "cl7@email.com", "22330409", "cl6LegalAddress", "cl6PhysicalAddress", "cl7RegNumber", "clFUsername", "clFPass");
-//        System.out.println(s);
+        //DBLogic_Clinic dbClinic = new DBLogic_Clinic();
+
+        //boolean s = dbClinic.register("clNameE", "cl5@email.com", "22030409", "cl5LegalAddress", "cl5PhysicalAddress", "cl5RegNumber", "clEUsername", "clEPass");
+        //System.out.println(s);
         //int clinicId = dbClinic.getClinicId("clDUsername", "clDPass");
         //dbClinic.getName("clDUsername");
         //dbClinic.isUsernameUnique("clDUsername");
 
         //DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
-        //boolean b = dbDoctor.register("NameD3", "SurnameD3", "usernameD3", "passwordD3", "333333-33333", "CER333", "4", "active");
-        //System.out.println();
+
+        //boolean b = dbDoctor.register("NameD10", "SurnameD10", "usernameD10", "passwordD10", "999999-99999", "CER101010", 4, "active");
+        //System.out.println(b);
+
         //int id = dbDoctor.getDoctorId("usernameD2", "passwordD3");
         //System.out.println(id);
+
         //System.out.println(dbDoctor.getName("usernameD3"));
+
         //ArrayList<String> list = dbDoctor.getDoctorList("4");
         //for (String s : list) {
         //    System.out.println(s);
+        //}
+
+        //ArrayList<String> list = dbDoctor.getDoctorAllInfoList(14);
+        //for (String s : list) {
+        //    System.out.println(s);
+        //}
+        //boolean d = dbDoctor.update("NameD8", "SurnameD8", "888888-88888", "CER888", "active",14);
+        //System.out.println(d);
+        // -------------------------------------------------------------------------
 
 
+        //DBLogic_Patient dbPatient = new DBLogic_Patient();
+        //boolean p = dbPatient.register("Kroshka", "Dog", "Chihua-hua", 2.5f, Date.valueOf("2013-03-13"), "CH1111", "Helena", "Luropa", 10 );
+
+        //boolean p = dbPatient.register("Snowball", "Dog", "Husky", 20.5f, Date.valueOf("2020-06-15"), "CF1234", "Milena", "Sokolova", 7 );
+        //System.out.println(p);
+
+        //ArrayList<String> list = dbPatient.getPatientAllInfoList("7");
+        //for (String s : list) {
+        //    System.out.println(s);
+        //}
+        //ArrayList<String> list = dbPatient.getPatientList("3");
+        //for (String s : list) {
+        //    System.out.println(s);
+        //}
+        //boolean u = dbPatient.update("Snowball", "Dog", "Husky", 22.5f, Date.valueOf("2019-06-15"), "CF4321", "Alina", "Sokolova", 7, 7);
+        //System.out.println(u);
+/*
+        String[] patient = dbPatient.getPatientNameAndGroup(3);
+        System.out.println(patient[0] + " " + patient[1]);
+        System.out.println(Arrays.toString(patient));
+*/
+/*
+        ArrayList<Integer> patientIds = dbPatient.getPatientIds(4);
+        for (int id: patientIds) {
+            System.out.println("ID: " + id);
+        }
+*/
+        // -------------------------------------------------------------------------
+
+        // ---------- ===== === -- - ------- = - = ========================================
+
+//        DBLogic_MedicalHistory dbMedHist = new DBLogic_MedicalHistory();
+/*
+        boolean regStatus = dbMedHist.register(9, 7, "diagnosis10", Date.valueOf("1985-08-13"), "medical_manipulation10", "medicaments10");
+//        boolean regStatus = dbMedHist.register(9, 7, "diagnosis11", Date.valueOf("2002-02-20"), null, null);
+        System.out.println(regStatus);
+*/
+/*
+        ArrayList<String> medicalHistoryOfPatient = dbMedHist.getMedicalHistoryOfPatient(9);
+        for (String el: medicalHistoryOfPatient) {
+            System.out.println("MH: " + el);
+        }
+*/
+
+        // ---------- ===== === -- - ------- = - = ========================================
 
     }
 }
