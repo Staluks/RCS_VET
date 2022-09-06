@@ -1,6 +1,6 @@
+import Fields.Fields_Registration;
+
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Registration extends Fields_Registration {
 
@@ -64,6 +64,10 @@ public void registrationWindow (){
   panelRegistration.add(submit);
 
   submit.setBounds(440,570,150,60);
+
+  panelRegistration.add(warning);
+
+  warning.setBounds(20,570, 300,300);
 
 
 
