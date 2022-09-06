@@ -13,22 +13,27 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws SQLException {
 
+        DocRegValidation docRegVal = new DocRegValidation();
+        LogIn loginmeth = new LogIn();
+        Registration regmeth = new Registration();
+        ClinicDashBoard clindashb = new ClinicDashBoard();
+        DoctorDashBoard docdashb = new DoctorDashBoard();
+        DocRegistration docreg = new DocRegistration();
+        DBLogic_Clinic dbClinic = new DBLogic_Clinic();
+        DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
+        DBLogic_Patient dbPatient = new DBLogic_Patient();
+        DBLogic_MedicalHistory dbMedHistory = new DBLogic_MedicalHistory();
+        DocRegValidation docRegVal = new DocRegValidation();
 
 
-    DocRegValidation docRegVal = new DocRegValidation();
-    LogIn loginmeth = new LogIn();
-    Registration regmeth = new Registration();
-    ClinicDashBoard clindashb = new ClinicDashBoard();
-    DoctorDashBoard docdashb = new DoctorDashBoard();
-    DocRegistration docreg = new DocRegistration();
-    DBLogic_Clinic dbClinic = new DBLogic_Clinic();
-    DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
 
-    loginmeth.loginWindow();
 
-    //to join  the panellogin and panelregistration actionlistener is brought to the main class
+
+        loginmeth.loginWindow();
+
+        //to join  the panellogin and panelregistration actionlistener is brought to the main class
         //if user presses create new account a new window will open with the registration form
-    loginmeth.regbut.addActionListener(new ActionListener() {
+        loginmeth.regbut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 loginmeth.panellogin.setVisible(false);
@@ -36,8 +41,8 @@ public class Main {
                 regmeth.registrationWindow();
             }
         });
-    //if user decides to not create new account, user can press button back and return to the login page
-    regmeth.back.addActionListener(new ActionListener() {
+        //if user decides to not create new account, user can press button back and return to the login page
+        regmeth.back.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 regmeth.panelRegistration.setVisible(false);
@@ -50,20 +55,62 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (loginmeth.clinic.isSelected()) {
-                    //todo backend validation - if true
-//                    try {
-//                        int a = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-//                        //if (a = -1)
-//                    }catch (SQLException a){
-//                        a.printStackTrace();
-//                    }
-                    loginmeth.panellogin.setVisible(false);
-                    loginmeth.frame.add(clindashb.panelClinicDashB);
-                    clindashb.clinicDash();
-                } if (loginmeth.doctor.isSelected()){
-                    loginmeth.panellogin.setVisible(false);
-                    loginmeth.frame.add(docdashb.panelDoctorDashB);
-                    docdashb.doctorDash();
+                    //todo add validations
+                    try {
+                        //get clinic id by login username and password
+                        Integer clinicId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                        //if clinic was found in DB by username and password then log in is succesfull and clinic dash board opens
+                        if (clinicId > -1) {
+                            loginmeth.panellogin.setVisible(false);
+                            loginmeth.frame.add(clindashb.panelClinicDashB);
+                            clindashb.clinicDash();
+                            //get clinic name to display in dashboard
+                            String clinicName = dbClinic.getName(loginmeth.userText.getText());
+                            clindashb.clinName.setText("Welcome " + clinicName);
+                            //get doctor list in clinic dashboard
+                            ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
+                            for (String s : doctorList) {
+                                //when clinic dashboard opens a list of all asosiated doctors will appear
+                                JList alldoctors = new JList(doctorList.toArray());
+                                clindashb.panelClinicDashB.add(alldoctors);
+                                alldoctors.setBounds(30, 120, 600, 400);
+
+                            }
+                        } else {
+                            //if log in failed this message will appear
+                            loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
+                        }
+                    } catch (SQLException a) {
+                        a.printStackTrace();
+                    }
+
+                }
+                if (loginmeth.doctor.isSelected()) {
+                    try {
+                        Integer doctorId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                        if (doctorId > -1) {
+                            loginmeth.panellogin.setVisible(false);
+                            loginmeth.frame.add(docdashb.panelDoctorDashB);
+                            docdashb.doctorDash();
+                            String doctorName = dbDoctor.getName(loginmeth.userText.getText());
+                            docdashb.welcome.setText("Welcome " + doctorName);
+                            ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
+                            for (String s : patientList) {
+                                //when clinic dashboard opens a list of all asosiated doctors will appear
+                                JList allPatient = new JList(patientList.toArray());
+                                docdashb.panelDoctorDashB.add(allPatient);
+                                allPatient.setBounds(30, 120, 600, 400);
+
+                            }
+
+                        } else {
+                            //if log in failed then this mesage will appear
+                            loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
+                        }
+
+                    } catch (SQLException b) {
+                        b.printStackTrace();
+                    }
                 }
             }
         });
