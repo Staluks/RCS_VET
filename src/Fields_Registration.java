@@ -27,6 +27,7 @@ public class Fields_Registration {
     JPasswordField reppasswordText = new JPasswordField();
 
     JButton submit = new JButton("Submit");
+    JLabel warning = new JLabel("Warning");
 
 
 }

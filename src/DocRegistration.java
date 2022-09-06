@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class DocRegistration extends FieldsDocRegister{
+public class DocRegistration extends FieldsDocRegister {
     public void docRegistrationWindow(){
 
         //defining panelDocRegistration window for doctor's registration form
