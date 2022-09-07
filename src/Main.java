@@ -72,7 +72,6 @@ public class Main {
                         ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
                         for (String s : doctorList) {
                             //when clinic dashboard opens a list of all asosiated doctors will appear
-                            clindashb.alldoctors.setSelectedValue(doctorList.toArray(), true);
                             JList alldoctors = new JList(doctorList.toArray());
                             clindashb.panelClinicDashB.add(alldoctors);
                             alldoctors.setBounds(30, 120, 600, 400);
@@ -141,10 +140,10 @@ public class Main {
                                 docdashb.welcome.setText("Welcome " + doctorName);
                                 ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
                                 for (String s : patientList) {
-                                    //when clinic dashboard opens a list of all asosiated doctors will appear
-//                                    JList allPatient = new JList(patientList.toArray());
-//                                    docdashb.panelDoctorDashB.add(allPatient);
-//                                    allPatient.setBounds(30, 120, 600, 400);
+//                                    when clinic dashboard opens a list of all asosiated doctors will appear
+                                    JList allPatient = new JList(patientList.toArray());
+                                    docdashb.panelDoctorDashB.add(allPatient);
+                                    allPatient.setBounds(30, 120, 600, 400);
 
                                 }
 
