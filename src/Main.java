@@ -217,6 +217,15 @@ public class Main {
                             docreg.panelDocRegistration.setVisible(false);
                             loginmeth.frame.add(clindashb.panelClinicDashB);
                             clindashb.clinicDash();
+                            docreg.docNameText.setText("");
+                            docreg.docSurnameText.setText("");
+                            docreg.usernameText.setText("");
+                            docreg.passwordText.setText("");
+                            docreg.personalCodeText.setText("");
+                            docreg.certificateText.setText("");
+                            docreg.reppasswordText.setText("");
+                            docreg.active.setSelected(true);
+
                         }else{
                             docreg.errorMessage.setText("doctor with this username/personal code/certificate Nr. already exists");
                         }
@@ -235,6 +244,15 @@ public class Main {
                 clindashb.panelClinicDashB.setVisible(false);
                 loginmeth.frame.add(editDoc.panelDocRegistration);
                 editDoc.docEditWindow("arturs", "kalnins", "310790-11708", "NR0135");
+
+            }
+        });
+        editDoc.back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                editDoc.panelDocRegistration.setVisible(false);
+                loginmeth.frame.add(clindashb.panelClinicDashB);
+                clindashb.clinicDash();
             }
         });
 

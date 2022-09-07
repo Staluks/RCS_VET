@@ -14,6 +14,7 @@ public class Fields_ClinicDashBoard {
     public JButton unblock = new JButton("Unblock");
     public JButton edit = new JButton("Edit");
     public JLabel clinName = new JLabel();
+    public JList alldoctors = new JList();
 
 
 
