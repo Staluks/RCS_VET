@@ -1,3 +1,4 @@
+import Validation.DocRegValidation;
 import Validation.ValidationLogin;
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
@@ -15,6 +16,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws SQLException {
 
+
         LogIn loginmeth = new LogIn();
         Registration regmeth = new Registration();
         ClinicDashBoard clindashb = new ClinicDashBoard();
@@ -24,6 +26,8 @@ public class Main {
         DBLogic_Doctor dbDoctor = new DBLogic_Doctor();
         DBLogic_Patient dbPatient = new DBLogic_Patient();
         DBLogic_MedicalHistory dbMedHistory = new DBLogic_MedicalHistory();
+        DocRegValidation docRegVal = new DocRegValidation();
+        DocEdit editDoc = new DocEdit();
         ValidationLogin logInVal = new ValidationLogin();
 
 
@@ -94,7 +98,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 //check if input is corect
                // if (logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())) {
-                 if(true){
+                 if(logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())){
                     if (loginmeth.clinic.isSelected()) {
                         try {
                             //get clinic id by login username and password
@@ -195,6 +199,63 @@ public class Main {
                 loginmeth.loginWindow();
             }
         });
+        // if everything is filled right clinic can register new doctor for clinic with submit button
+        docreg.submit.addActionListener(new ActionListener() {
+//            submit button for new doctors registration
+            @Override
+            public void actionPerformed(ActionEvent e) {
+//              gets Clinic ID
+                try {
+                    int dbClId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+
+    //               chekcs if text fields are filled correct
+                    if(docRegVal.docRegVal(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.reppasswordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText())){
+    //                   checks if unique needed fields are unique
+    //                   if unique then fields are registered in doctors table.
+                        if(dbDoctor.register(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText(), dbClId, docRegVal.getStatus(docreg.active))){
+                            dbDoctor.register(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText(), dbClId, docRegVal.getStatus(docreg.active));
+                            docreg.panelDocRegistration.setVisible(false);
+                            loginmeth.frame.add(clindashb.panelClinicDashB);
+                            clindashb.clinicDash();
+                            docreg.docNameText.setText("");
+                            docreg.docSurnameText.setText("");
+                            docreg.usernameText.setText("");
+                            docreg.passwordText.setText("");
+                            docreg.personalCodeText.setText("");
+                            docreg.certificateText.setText("");
+                            docreg.reppasswordText.setText("");
+                            docreg.active.setSelected(true);
+
+                        }else{
+                            docreg.errorMessage.setText("doctor with this username/personal code/certificate Nr. already exists");
+                        }
+                    }else{
+                        docreg.errorMessage.setText("fields are filled wrong");
+                    }
+                }catch (SQLException a) {
+                    a.printStackTrace();
+                }
+            }
+        });
+//        button to get to doctors edit form
+        clindashb.edit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clindashb.panelClinicDashB.setVisible(false);
+                loginmeth.frame.add(editDoc.panelDocRegistration);
+                editDoc.docEditWindow("arturs", "kalnins", "310790-11708", "NR0135");
+
+            }
+        });
+        editDoc.back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                editDoc.panelDocRegistration.setVisible(false);
+                loginmeth.frame.add(clindashb.panelClinicDashB);
+                clindashb.clinicDash();
+            }
+        });
+
 
 
 
