@@ -13,6 +13,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
 public class Main {
     public static void main(String[] args) throws SQLException {
 
@@ -139,7 +140,7 @@ public class Main {
                                 docdashb.welcome.setText("Welcome " + doctorName);
                                 ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
                                 for (String s : patientList) {
-                                    //when clinic dashboard opens a list of all asosiated doctors will appear
+//                                    when clinic dashboard opens a list of all asosiated doctors will appear
                                     JList allPatient = new JList(patientList.toArray());
                                     docdashb.panelDoctorDashB.add(allPatient);
                                     allPatient.setBounds(30, 120, 600, 400);

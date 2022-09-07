@@ -30,8 +30,6 @@ public class ClinicDashBoard extends Fields_ClinicDashBoard {
         panelClinicDashB.add(clinName);
 
         clinName.setBounds(20,10,300,50);
-        panelClinicDashB.add(alldoctors);
-        alldoctors.setBounds(30, 120, 600, 400);
 
 
 

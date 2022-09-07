@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65a4d7d9-e6e5-4d6f-9a6a-3e9057771e3c" name="Changes" comment="fixed validation for login">
+    <list default="true" id="65a4d7d9-e6e5-4d6f-9a6a-3e9057771e3c" name="Changes" comment="nepabeigts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClinicDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClinicDashBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_ClinicDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_ClinicDashBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662502232168</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="nepabeigts">
+      <created>1662528578817</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662528578817</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +208,7 @@
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
     <MESSAGE value="- merge fixes" />
     <MESSAGE value="fixed validation for login" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed validation for login" />
+    <MESSAGE value="nepabeigts" />
+    <option name="LAST_COMMIT_MESSAGE" value="nepabeigts" />
   </component>
 </project>
