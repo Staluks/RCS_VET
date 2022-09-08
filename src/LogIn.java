@@ -1,8 +1,7 @@
+import Fields.Fields_Login;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.lang.module.ModuleDescriptor;
 
 public class LogIn extends Fields_Login {
 
@@ -46,15 +45,25 @@ public class LogIn extends Fields_Login {
         panellogin.add(passwordText);
 
         userText.setBounds(270, 350, 150, 40);
+        userText.setText("");
         passwordText.setBounds(270, 410, 150, 40);
+        passwordText.setText("");
 
         panellogin.add(loginbut);
 
         loginbut.setBounds(250, 500, 200, 35);
 
+
+
+
+
         panellogin.add(regbut);
 
         regbut.setBounds(20, 500, 160, 35);
+       panellogin.add(wrongPass);
+        wrongPass.setBounds(150, 540,400,100);
+
+
 
 
     }
