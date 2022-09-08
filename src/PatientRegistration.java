@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class PatientRegistration extends Fields_PatientRegistration {
     public void patientRegistrationWindow() {
-        //defining panelPatRegistration window for Patien registration form
+        //defining panelPatRegistration window for Patient registration form
         panelPatientRegistration.setVisible(true);
         panelPatientRegistration.setLayout(null);
         panelPatientRegistration.setBackground(Color.LIGHT_GRAY);

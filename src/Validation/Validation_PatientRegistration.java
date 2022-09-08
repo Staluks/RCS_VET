@@ -40,7 +40,7 @@ public class Validation_PatientRegistration {
         return true;
     }
 
-   public boolean isValidDateOfBirth (String text) {
+   public boolean isValidDateOfBirth(String text) {
        return Pattern.matches(pattern_dateOfBirth, text);
    }
 
