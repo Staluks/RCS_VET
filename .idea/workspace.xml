@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65a4d7d9-e6e5-4d6f-9a6a-3e9057771e3c" name="Changes" comment="nepabeigts">
+    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClinicDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClinicDashBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/DocRegValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/DocRegValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/ValidationLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/ValidationLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,49 +46,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;
-  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
-  &amp;quot;keyToString&amp;quot;: {
-    &amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;
-  &amp;lt;component name=&amp;quot;PropertiesComponent&amp;quot;&amp;gt;{
-  &amp;amp;quot;keyToString&amp;amp;quot;: {
-    &amp;amp;quot;Git.Branch.Popup.ShowAllRemotes&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
-    &amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
-    &amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;
-  &amp;amp;lt;component name=&amp;amp;quot;PropertiesComponent&amp;amp;quot;&amp;amp;gt;{
-  &amp;amp;amp;quot;keyToString&amp;amp;amp;quot;: {
-    &amp;amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;project.structure.last.edited&amp;amp;amp;quot;: &amp;amp;amp;quot;Modules&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;project.structure.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.15&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;project.structure.side.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.2&amp;amp;amp;quot;
-    &amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
-    &amp;amp;quot;SHARE_PROJECT_CONFIGURATION_FILES&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
-    &amp;amp;quot;last_opened_file_path&amp;amp;quot;: &amp;amp;quot;C:/Users/37128/IdeaProjects/RCS_VET/lib/mysql-connector-java-8.0.30.jar&amp;amp;quot;,
-    &amp;amp;quot;project.structure.last.edited&amp;amp;quot;: &amp;amp;quot;Modules&amp;amp;quot;,
-    &amp;amp;quot;project.structure.proportion&amp;amp;quot;: &amp;amp;quot;0.0&amp;amp;quot;,
-    &amp;amp;quot;project.structure.side.proportion&amp;amp;quot;: &amp;amp;quot;0.0&amp;amp;quot;
-  &amp;amp;lt;component name=&amp;amp;quot;PropertiesComponent&amp;amp;quot;&amp;amp;gt;{
-  &amp;amp;amp;quot;keyToString&amp;amp;amp;quot;: {
-    &amp;amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;project.structure.last.edited&amp;amp;amp;quot;: &amp;amp;amp;quot;Modules&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;project.structure.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.15&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;project.structure.side.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.2&amp;amp;amp;quot;
-    &amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;
-  &amp;amp;lt;component name=&amp;amp;quot;PropertiesComponent&amp;amp;quot;&amp;amp;gt;{
-  &amp;amp;amp;quot;keyToString&amp;amp;amp;quot;: {
-    &amp;amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;project.structure.last.edited&amp;amp;amp;quot;: &amp;amp;amp;quot;Modules&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;project.structure.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.15&amp;amp;amp;quot;,
-    &amp;amp;amp;quot;project.structure.side.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.2&amp;amp;amp;quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Main">
+}]]></component>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RCS_VET" />
@@ -88,19 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Validation.ValidationLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Validation.ValidationLogin" />
-      <module name="RCS_VET" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
