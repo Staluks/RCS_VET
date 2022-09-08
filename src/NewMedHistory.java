@@ -51,7 +51,5 @@ public class NewMedHistory extends FieldsNewMedHistory {
 
         panelNewMedHis.add(submithis);
         submithis.setBounds(440,570,150,60);
-
-
     }
 }

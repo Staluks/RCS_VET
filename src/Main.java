@@ -30,6 +30,7 @@ public class Main {
         DocRegValidation docRegVal = new DocRegValidation();
         DocEdit editDoc = new DocEdit();
         ValidationLogin logInVal = new ValidationLogin();
+        PatRegistration patReg = new PatRegistration();
 
 
 
@@ -257,6 +258,24 @@ public class Main {
                 editDoc.panelDocRegistration.setVisible(false);
                 loginmeth.frame.add(clindashb.panelClinicDashB);
                 clindashb.clinicDash();
+            }
+        });
+        docdashb.addnewPatient.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                docdashb.panelDoctorDashB.setVisible(false);
+                loginmeth.frame.add(patReg.panelPatRegistration);
+                patReg.panelPatRegistration.setVisible(true);
+                patReg.patRegistrationWindow();
+            }
+        });
+        patReg.cancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                patReg.panelPatRegistration.setVisible(false);
+                loginmeth.frame.add(docdashb.panelDoctorDashB);
+                docdashb.panelDoctorDashB.setVisible(true);
+                docdashb.doctorDash();
             }
         });
 
