@@ -29,7 +29,7 @@ public class Fields_Registration {
     public  JPasswordField reppasswordText = new JPasswordField();
 
     public JButton submit = new JButton("Submit");
-    public  JLabel warning = new JLabel("Warning");
+    public  JLabel warning = new JLabel("");
 
 
 }

@@ -34,6 +34,7 @@ public class Main {
 
 
 
+
         loginmeth.loginWindow();
 
         //to join  the panellogin and panelregistration actionlistener is brought to the main class
@@ -67,7 +68,7 @@ public class Main {
                         //get clinic id by login username and password
                         Integer clinicId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
                         String clinicName = dbClinic.getName(loginmeth.userText.getText());
-                        clindashb.clinName.setText("Welcome " + clinicName);
+                        clindashb.clinName.setText("Welcome " + name);
                         //get doctor list in clinic dashboard
                         ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
                         for (String s : doctorList) {
@@ -77,6 +78,7 @@ public class Main {
                             alldoctors.setBounds(30, 120, 600, 400);
                         }
                     }else{
+                        //if sometging is wrong this mesage will appear
                         regmeth.warning.setText("Registration failed! Please check all fields!");
 
                     }
@@ -115,7 +117,7 @@ public class Main {
                                 ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
                                 for (String s : doctorList) {
                                     //when clinic dashboard opens a list of all asosiated doctors will appear
-                                    JList alldoctors = new JList(doctorList.toArray());
+                                    JList alldoctors = new JList( doctorList.toArray());
                                     clindashb.panelClinicDashB.add(alldoctors);
                                     alldoctors.setBounds(30, 120, 600, 400);
                                 }
@@ -242,6 +244,7 @@ public class Main {
         clindashb.edit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //need to select from list
                 clindashb.panelClinicDashB.setVisible(false);
                 loginmeth.frame.add(editDoc.panelDocRegistration);
                 editDoc.docEditWindow("arturs", "kalnins", "310790-11708", "NR0135");
@@ -256,6 +259,8 @@ public class Main {
                 clindashb.clinicDash();
             }
         });
+
+
 
 
 

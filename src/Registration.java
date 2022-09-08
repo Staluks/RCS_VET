@@ -76,7 +76,7 @@ public void registrationWindow (){
 
   panelRegistration.add(warning);
 
-  warning.setBounds(20,570, 300,300);
+  warning.setBounds(20,550, 300,50);
 
 
 

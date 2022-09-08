@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="">
+    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="pusoju velreiz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662528578817</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="pusoju velreiz">
+      <created>1662655088859</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662655088859</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +182,7 @@
     <MESSAGE value="- merge fixes" />
     <MESSAGE value="fixed validation for login" />
     <MESSAGE value="nepabeigts" />
-    <option name="LAST_COMMIT_MESSAGE" value="nepabeigts" />
+    <MESSAGE value="pusoju velreiz" />
+    <option name="LAST_COMMIT_MESSAGE" value="pusoju velreiz" />
   </component>
 </project>
