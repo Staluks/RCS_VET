@@ -24,9 +24,9 @@ public class DoctorDashBoard extends Fields_DoctorDashBoard {
 
         edit.setBounds(350,600,100,45);
 
-        panelDoctorDashB.add(addInfo);
+        panelDoctorDashB.add(addMedHistory);
 
-        addInfo.setBounds(0,600,80,45);
+        addMedHistory.setBounds(10,600,140,45);
 
         panelDoctorDashB.add(addnewPatient);
 
