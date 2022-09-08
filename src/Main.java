@@ -98,7 +98,6 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //check if input is corect
-               // if (logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())) {
                  if(logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())){
                     if (loginmeth.clinic.isSelected()) {
                         try {
@@ -119,7 +118,6 @@ public class Main {
                                     JList alldoctors = new JList(doctorList.toArray());
                                     clindashb.panelClinicDashB.add(alldoctors);
                                     alldoctors.setBounds(30, 120, 600, 400);
-
                                 }
                             } else {
                                 //if log in failed this message will appear
@@ -129,6 +127,7 @@ public class Main {
                             a.printStackTrace();
                         }
                     }
+                    //if doctor is selected, input is validated and checked witg DB
                     if (loginmeth.doctor.isSelected()) {
                         try {
                             Integer doctorId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
@@ -136,15 +135,16 @@ public class Main {
                                 loginmeth.panellogin.setVisible(false);
                                 loginmeth.frame.add(docdashb.panelDoctorDashB);
                                 docdashb.doctorDash();
+                                //display doctors name in dashboard
                                 String doctorName = dbDoctor.getName(loginmeth.userText.getText());
                                 docdashb.welcome.setText("Welcome " + doctorName);
+                                //doctor dashboard will display list f all patients it has registered
                                 ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
                                 for (String s : patientList) {
 //                                    when clinic dashboard opens a list of all asosiated doctors will appear
                                     JList allPatient = new JList(patientList.toArray());
                                     docdashb.panelDoctorDashB.add(allPatient);
                                     allPatient.setBounds(30, 120, 600, 400);
-
                                 }
 
                             } else {
