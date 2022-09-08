@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="bez val">
+    <list default="true" id="65a4d7d9-e6e5-4d6f-9a6a-3e9057771e3c" name="Changes" comment="nepabeigts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClinicDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClinicDashBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="rcs_16.2" />
+        <entry key="$PROJECT_DIR$" value="Develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,13 +48,36 @@
   &amp;lt;component name=&amp;quot;PropertiesComponent&amp;quot;&amp;gt;{
   &amp;amp;quot;keyToString&amp;amp;quot;: {
     &amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
+    &amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;
+  &amp;amp;lt;component name=&amp;amp;quot;PropertiesComponent&amp;amp;quot;&amp;amp;gt;{
+  &amp;amp;amp;quot;keyToString&amp;amp;amp;quot;: {
+    &amp;amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;project.structure.last.edited&amp;amp;amp;quot;: &amp;amp;amp;quot;Modules&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;project.structure.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.15&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;project.structure.side.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.2&amp;amp;amp;quot;
     &amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
     &amp;amp;quot;project.structure.last.edited&amp;amp;quot;: &amp;amp;quot;Modules&amp;amp;quot;,
-    &amp;amp;quot;project.structure.proportion&amp;amp;quot;: &amp;amp;quot;0.15&amp;amp;quot;,
-    &amp;amp;quot;project.structure.side.proportion&amp;amp;quot;: &amp;amp;quot;0.2&amp;amp;quot;
+    &amp;amp;quot;project.structure.proportion&amp;amp;quot;: &amp;amp;quot;0.0&amp;amp;quot;,
+    &amp;amp;quot;project.structure.side.proportion&amp;amp;quot;: &amp;amp;quot;0.0&amp;amp;quot;
+  &amp;amp;lt;component name=&amp;amp;quot;PropertiesComponent&amp;amp;quot;&amp;amp;gt;{
+  &amp;amp;amp;quot;keyToString&amp;amp;amp;quot;: {
+    &amp;amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;project.structure.last.edited&amp;amp;amp;quot;: &amp;amp;amp;quot;Modules&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;project.structure.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.15&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;project.structure.side.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.2&amp;amp;amp;quot;
+    &amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;
+  &amp;amp;lt;component name=&amp;amp;quot;PropertiesComponent&amp;amp;quot;&amp;amp;gt;{
+  &amp;amp;amp;quot;keyToString&amp;amp;amp;quot;: {
+    &amp;amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;amp;quot;: &amp;amp;amp;quot;true&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;project.structure.last.edited&amp;amp;amp;quot;: &amp;amp;amp;quot;Modules&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;project.structure.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.15&amp;amp;amp;quot;,
+    &amp;amp;amp;quot;project.structure.side.proportion&amp;amp;amp;quot;: &amp;amp;amp;quot;0.2&amp;amp;amp;quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RCS_VET" />
@@ -63,8 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Validation.ValidationLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Validation.ValidationLogin" />
+      <module name="RCS_VET" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -120,14 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662388669904</updated>
     </task>
-    <task id="LOCAL-00007" summary="bez val">
-      <created>1662499177258</created>
+    <task id="LOCAL-00007" summary="fixed validation for login">
+      <created>1662502232168</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1662499177258</updated>
+      <updated>1662502232168</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="nepabeigts">
+      <created>1662528578817</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662528578817</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +183,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made a doctors registration Form." />
+    <MESSAGE value="_created patient registration form" />
+    <MESSAGE value="_created medical history form" />
+    <MESSAGE value="-created doctors registration validation" />
+    <MESSAGE value="-fixes" />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
@@ -160,7 +204,8 @@
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
     <MESSAGE value="- merge fixes" />
-    <MESSAGE value="bez val" />
-    <option name="LAST_COMMIT_MESSAGE" value="bez val" />
+    <MESSAGE value="fixed validation for login" />
+    <MESSAGE value="nepabeigts" />
+    <option name="LAST_COMMIT_MESSAGE" value="nepabeigts" />
   </component>
 </project>

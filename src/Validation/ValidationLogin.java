@@ -6,9 +6,9 @@ import java.util.regex.Pattern;
 public class ValidationLogin {
     public static boolean isValidUsername(String name){
 
-        String regex = "^[A-Za-z][A-Za-z0-9_ ]{2,}$";
+        String regex = "[a-zA-Z\\d]*";
         Pattern p = Pattern.compile(regex);
-        if (name == null) {
+        if (name.length()< 6) {
             return false;
         }
         Matcher m = p.matcher(name);
@@ -17,9 +17,9 @@ public class ValidationLogin {
 
     public static boolean isValidPassword(String name){
 
-        String regex = "^[A-Za-z][A-Za-z0-9_ !@#$%^&*~]{8,20}$";
+        String regex = "[A-Za-z\\d@\u0024\u0021\u0023\u0025\u0026\u002A\u005F\u005E\u007E]+";
         Pattern p = Pattern.compile(regex);
-        if (name == null) {
+        if (name.length()<7 || name.length() > 20) {
             return false;
         }
         Matcher m = p.matcher(name);
