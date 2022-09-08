@@ -67,7 +67,6 @@ public class Main {
                         clindashb.clinicDash();
                         //get clinic id by login username and password
                         Integer clinicId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-                        String clinicName = dbClinic.getName(loginmeth.userText.getText());
                         clindashb.clinName.setText("Welcome " + name);
                         //get doctor list in clinic dashboard
                         ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
