@@ -37,6 +37,7 @@ public class Validation_DoctorRegistration {
                 return false;
             }
         }
+
         return Pattern.matches(pattern_password, password);
     }
 
