@@ -48,7 +48,7 @@ public class Validation_DoctorRegistration {
 
     // min: 2 letters, allowed values: a-z, A-Z, 0-9
     public boolean isValidCertificate(String text) {
-        if (text.length() < 2 || text.length() > 50) {
+        if (text.length() > 50) {
             return false;
         }
 

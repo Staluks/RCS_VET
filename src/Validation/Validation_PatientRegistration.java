@@ -45,7 +45,7 @@ public class Validation_PatientRegistration {
    }
 
     public boolean isValidPassportNumber(String text) {
-        if (text.length() < 2 || text.length() > 50) {
+        if (text.length() > 50) {
             return false;
         }
 
