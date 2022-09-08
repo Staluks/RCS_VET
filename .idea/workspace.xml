@@ -2,11 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="pievilku izmainas">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctorDashBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClinicDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClinicDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DocEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditDoctorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DocRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctorDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/FieldsDocRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_DoctorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_NewMedicalHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/FieldsPatRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_PatientRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_ClinicDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_ClinicDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewMedHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewMedicalHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PatRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PatientRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/DocRegValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_DoctorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/PacientRegistr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/ValidationLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Clinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Clinic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/md5/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/md5/MD5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +91,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Validation.Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Validation.Main2" />
+      <module name="RCS_VET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Validation.Main2" />
         <item itemvalue="Application.Main2" />
       </list>
     </recent_temporary>

@@ -6,14 +6,16 @@ import java.util.ArrayList;
 public class DBLogic_Patient extends DBConnection{
 
     // register new patient
-    public boolean register(String name, String group, String breed, float weight, Date date_of_birth, String passport_num, String owner_name, String owner_surname, int doctor_id) {
+    public boolean register(String name, String group, String breed, float weight, Date date_of_birth,
+                            String passport_num, String owner_name, String owner_surname, int doctor_id) {
 
         try {
             // connection to DB
             Connection conn = connectToDB();
 
             // sql statement to execute
-            String sql = "INSERT INTO patient (`name`, `group`, breed, weight, date_of_birth, passport_num, owner_name, owner_surname, doctor_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO patient (`name`, `group`, breed, weight, date_of_birth, passport_num, " +
+                    "owner_name, owner_surname, doctor_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement ps = conn.prepareStatement(sql);
 
             ps.setString(1, name);
@@ -118,7 +120,8 @@ public class DBLogic_Patient extends DBConnection{
         Connection conn = connectToDB();
 
         // sql statement to execute
-        String select  = "SELECT name, `group`, breed, passport_num, owner_name, owner_surname from patient WHERE doctor_id = ?";
+        String select  = "SELECT name, `group`, breed, passport_num, owner_name, owner_surname " +
+                "from patient WHERE doctor_id = ?";
         PreparedStatement ps = conn.prepareStatement(select);
 
         ps.setInt(1, doctor_id);
@@ -126,7 +129,9 @@ public class DBLogic_Patient extends DBConnection{
 
         // get doctor name, surname by username
         while (rs.next()) {
-            patientList.add(rs.getString("name") + " " + rs.getString("group") + " " + rs.getString("breed") +" " + rs.getString("passport_num") + " " + rs.getString("owner_name") + " " + rs.getString("owner_surname"));
+            patientList.add(rs.getString("name") + " " + rs.getString("group") + " "
+                    + rs.getString("breed") +" " + rs.getString("passport_num") + " "
+                    + rs.getString("owner_name") + " " + rs.getString("owner_surname"));
         }
 
         conn.close();
@@ -142,11 +147,13 @@ public class DBLogic_Patient extends DBConnection{
         Connection conn = connectToDB();
 
         // sql statement to execute
-        String select  = "SELECT name, `group`, breed, weight, date_of_birth, passport_num, owner_name, owner_surname from patient WHERE id = ?";
+        String select  = "SELECT name, `group`, breed, weight, date_of_birth, passport_num, owner_name, " +
+                "owner_surname from patient WHERE id = ?";
         PreparedStatement ps = conn.prepareStatement(select);
 
         ps.setInt(1, patient_id);
         ResultSet rs = ps.executeQuery();
+
         while (rs.next()) {
             patientAllInfo.add(rs.getString("name"));
             patientAllInfo.add(rs.getString("group"));
@@ -184,14 +191,16 @@ public class DBLogic_Patient extends DBConnection{
     }
 
     // update existing patient data
-    public boolean update(String name, String group, String breed, float weight, Date date_of_birth, String passport_num, String owner_name, String owner_surname, int doctor_id, int patient_id) {
+    public boolean update(String name, String group, String breed, float weight, Date date_of_birth,
+                          String passport_num, String owner_name, String owner_surname, int doctor_id, int patient_id) {
 
         try {
             // connection to DB
             Connection conn = connectToDB();
 
             // sql statement to execute
-            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, weight= ?, date_of_birth = ?, passport_num = ?, owner_name = ?, owner_surname = ? WHERE doctor_id = ? AND id = ? LIMIT 1";
+            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, weight= ?, date_of_birth = ?, " +
+                    "passport_num = ?, owner_name = ?, owner_surname = ? WHERE doctor_id = ? AND id = ? LIMIT 1";
             PreparedStatement ps = conn.prepareStatement(sql);
 
             ps.setString(1, name);
