@@ -8,10 +8,8 @@ import db.DBLogic_Patient;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class Main {
@@ -31,6 +29,7 @@ public class Main {
         DocEdit editDoc = new DocEdit();
         ValidationLogin logInVal = new ValidationLogin();
         PatRegistration patReg = new PatRegistration();
+        NewMedHistory medHisWin = new NewMedHistory();
 
 
 
@@ -263,6 +262,7 @@ public class Main {
         docdashb.addnewPatient.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //if user preses button add med his, a new window with a form will open
                 docdashb.panelDoctorDashB.setVisible(false);
                 loginmeth.frame.add(patReg.panelPatRegistration);
                 patReg.panelPatRegistration.setVisible(true);
@@ -272,9 +272,29 @@ public class Main {
         patReg.cancel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //if user decides to not make new patient, by pressing back , user returns to dashboard
                 patReg.panelPatRegistration.setVisible(false);
                 loginmeth.frame.add(docdashb.panelDoctorDashB);
                 docdashb.panelDoctorDashB.setVisible(true);
+                docdashb.doctorDash();
+            }
+        });
+        docdashb.addMedHistory.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+               //doctor opens window for entering new info about patient
+                docdashb.panelDoctorDashB.setVisible(false);
+                loginmeth.frame.add(medHisWin.panelNewMedHis);
+                medHisWin.panelNewMedHis.setVisible(true);
+                medHisWin.NewMedHistoryWindow();
+            }
+        });
+        medHisWin.cancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //to return to dash board user presses back
+                medHisWin.panelNewMedHis.setVisible(false);
+                loginmeth.frame.add(docdashb.panelDoctorDashB);
                 docdashb.doctorDash();
             }
         });

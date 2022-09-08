@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="pievilku izmainas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields/FieldsPatRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/FieldsPatRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctorDashBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NewMedHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewMedHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PatRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PatRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patient/FieldsPatRegister.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patient/PatRegistration.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

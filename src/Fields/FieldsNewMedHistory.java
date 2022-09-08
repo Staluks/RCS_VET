@@ -6,7 +6,7 @@ public class FieldsNewMedHistory {
 
     public JPanel panelNewMedHis = new JPanel();
 
-    public JButton cancel = new JButton("< Cancel");
+    public JButton cancel = new JButton("< Back");
     public JButton submithis = new JButton("Submit");
     public JLabel newMedHisForm = new JLabel("New Medical History");
     public JLabel patName = new JLabel("Name of Patient *");

@@ -10,7 +10,7 @@ public class Fields_DoctorDashBoard {
     public  JButton logout = new JButton("Log out");
     public  JButton addnewPatient = new JButton("Add New Patient");
     public  JButton history = new JButton("History");
-    public JButton addInfo = new JButton("Add Information");
+    public JButton addMedHistory = new JButton("Add Medical History");
     public  JButton edit = new JButton("Edit");
     public  JLabel welcome = new JLabel();
 
