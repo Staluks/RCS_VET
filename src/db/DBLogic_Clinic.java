@@ -31,7 +31,8 @@ public class DBLogic_Clinic extends DBConnection{
     }
 
     // register new clinic
-    public boolean register(String name, String email, String phone, String legal_address, String physical_address, String reg_number, String username, String password) {
+    public boolean register(String name, String email, String phone, String legal_address, String physical_address,
+                            String reg_number, String username, String password) {
 
         try {
             if (isUsernameUnique(username)) {
@@ -42,7 +43,8 @@ public class DBLogic_Clinic extends DBConnection{
                 MD5 passwordHash = new MD5();
 
                 // sql statement to execute
-                String sql = "INSERT INTO clinic (name, email, phone, legal_address, physical_address, reg_number, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                String sql = "INSERT INTO clinic (name, email, phone, legal_address, physical_address, " +
+                        "reg_number, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                 PreparedStatement ps = conn.prepareStatement(sql);
 
                 ps.setString(1, name);
@@ -118,5 +120,4 @@ public class DBLogic_Clinic extends DBConnection{
 
         return name;
     }
-
 }

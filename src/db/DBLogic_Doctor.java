@@ -80,7 +80,8 @@ public class DBLogic_Doctor extends DBConnection{
     }
 
     // register new doctor
-    public boolean register(String name, String surname, String username, String password, String personal_code, String certificate, int clinic_id, String status) {
+    public boolean register(String name, String surname, String username, String password, String personal_code,
+                            String certificate, int clinic_id, String status) {
 
         try {
             if (isUsernameUnique(username) && isCertificateUnique(certificate) && isPersonalCodeUnique(personal_code)) {
@@ -91,7 +92,8 @@ public class DBLogic_Doctor extends DBConnection{
                 MD5 passwordHash = new MD5();
 
                 // sql statement to execute
-                String sql = "INSERT INTO doctor (name, surname, username, password, personal_code, certificate, clinic_id, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                String sql = "INSERT INTO doctor (name, surname, username, password, personal_code, certificate, " +
+                        "clinic_id, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                 PreparedStatement ps = conn.prepareStatement(sql);
 
                 ps.setString(1, name);
@@ -232,6 +234,7 @@ public class DBLogic_Doctor extends DBConnection{
 
         ps.setInt(1, doctor_id);
         ResultSet rs = ps.executeQuery();
+
         while (rs.next()) {
             doctorAllInfo.add(rs.getString("name"));
             doctorAllInfo.add(rs.getString("surname"));
@@ -239,13 +242,15 @@ public class DBLogic_Doctor extends DBConnection{
             doctorAllInfo.add(rs.getString("certificate"));
             doctorAllInfo.add(rs.getString("status"));
         }
+
         conn.close();
 
         return doctorAllInfo;
     }
 
     // update existing doctor data
-    public boolean update(String name, String surname, String personal_code, String certificate, String status, int doctor_id) {
+    public boolean update(String name, String surname, String personal_code, String certificate,
+                          String status, int doctor_id) {
 
         try {
             if (isCertificateUnique(certificate) && isPersonalCodeUnique(personal_code)) {
@@ -253,8 +258,8 @@ public class DBLogic_Doctor extends DBConnection{
                 Connection conn = connectToDB();
 
                 // sql statement to execute
-                String sql = "UPDATE doctor SET name = ?, surname = ?, personal_code = ?, certificate = ?, status = ? WHERE id = ? LIMIT 1";
-                // WHERE doctor_id = ?";
+                String sql = "UPDATE doctor SET name = ?, surname = ?, personal_code = ?, certificate = ?, " +
+                        "status = ? WHERE id = ? LIMIT 1";
                 PreparedStatement ps = conn.prepareStatement(sql);
 
                 ps.setString(1, name);

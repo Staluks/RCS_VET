@@ -10,7 +10,6 @@ public abstract class DBConnection {
     private final String USER = "rcs_vet_user";
     private final String PASS = "An0thrS3crt";
 
-
     // connection to DB
     public Connection connectToDB() {
         Connection conn = null;

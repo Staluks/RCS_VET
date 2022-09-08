@@ -1,33 +1,31 @@
-import Fields.FieldsDocRegister;
+import Fields.Fields_DoctorRegistration;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class DocRegistration extends FieldsDocRegister {
-    public void docRegistrationWindow(){
-
+public class DoctorRegistration extends Fields_DoctorRegistration {
+    public void doctorRegistrationWindow() {
         //defining panelDocRegistration window for doctor's registration form
-        panelDocRegistration.setVisible(true);
-        panelDocRegistration.setLayout(null);
-        panelDocRegistration.setBackground(Color.LIGHT_GRAY);
-        panelDocRegistration.add(back);
+        panelDoctorRegistration.setVisible(true);
+        panelDoctorRegistration.setLayout(null);
+        panelDoctorRegistration.setBackground(Color.LIGHT_GRAY);
 
         //if user wants he can click back to return to the first window
+        panelDoctorRegistration.add(back);
         back.setBounds(10, 10, 90, 40);
         //top heading
-        panelDocRegistration.add(docRegistration);
-
+        panelDoctorRegistration.add(docRegistration);
         docRegistration.setBounds(220, 50, 300, 70);
 
         //adding and defining all the text elements in the form
-        panelDocRegistration.add(docName);
-        panelDocRegistration.add(docSurname);
-        panelDocRegistration.add(username);
-        panelDocRegistration.add(personalCode);
-        panelDocRegistration.add(certificate);
-        panelDocRegistration.add(password);
-        panelDocRegistration.add(reppassword);
-        panelDocRegistration.add(errorMessage);
+        panelDoctorRegistration.add(docName);
+        panelDoctorRegistration.add(docSurname);
+        panelDoctorRegistration.add(username);
+        panelDoctorRegistration.add(personalCode);
+        panelDoctorRegistration.add(certificate);
+        panelDoctorRegistration.add(password);
+        panelDoctorRegistration.add(reppassword);
+        panelDoctorRegistration.add(errorMessage);
 
         docName.setBounds(50, 60, 200,200);
         docSurname.setBounds(50, 105, 200, 200);
@@ -39,13 +37,13 @@ public class DocRegistration extends FieldsDocRegister {
         errorMessage.setBounds(280, 445, 200, 30);
 
         //adding all the fields for user input in the form
-        panelDocRegistration.add(docNameText);
-        panelDocRegistration.add(docSurnameText);
-        panelDocRegistration.add(usernameText);
-        panelDocRegistration.add(personalCodeText);
-        panelDocRegistration.add(certificateText);
-        panelDocRegistration.add(passwordText);
-        panelDocRegistration.add(reppasswordText);
+        panelDoctorRegistration.add(docNameText);
+        panelDoctorRegistration.add(docSurnameText);
+        panelDoctorRegistration.add(usernameText);
+        panelDoctorRegistration.add(personalCodeText);
+        panelDoctorRegistration.add(certificateText);
+        panelDoctorRegistration.add(passwordText);
+        panelDoctorRegistration.add(reppasswordText);
 
         docNameText.setBounds(280,140,200,35);
         docSurnameText.setBounds(280,185,200,35);
@@ -55,8 +53,8 @@ public class DocRegistration extends FieldsDocRegister {
         passwordText.setBounds(280,365,200,35);
         reppasswordText.setBounds(280,410,200,35);
 
-        panelDocRegistration.add(active);
-        panelDocRegistration.add(blocked);
+        panelDoctorRegistration.add(active);
+        panelDoctorRegistration.add(blocked);
 
         active.setBounds(290, 500, 80, 20);
         blocked.setBounds(390, 500, 80, 20);
@@ -67,10 +65,7 @@ public class DocRegistration extends FieldsDocRegister {
         active.setSelected(true);
         buttonGroup.add(blocked);
 
-
-        panelDocRegistration.add(submit);
+        panelDoctorRegistration.add(submit);
         submit.setBounds(440,570,150,60);
-
     }
-
 }
