@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7231c0e1-24aa-424f-9662-ab6f8bec601c" name="Changes" comment="">
+    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fields_DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields_DoctorDashBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -11,6 +19,8 @@
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Patient/FieldsNewMedHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient/FieldsNewMedHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Patient/NewMedHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient/NewMedHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/DocRegValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/DocRegValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/ValidationLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/ValidationLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +54,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;
-  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
-  &amp;quot;keyToString&amp;quot;: {
-    &amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;
-  &amp;lt;component name=&amp;quot;PropertiesComponent&amp;quot;&amp;gt;{
-  &amp;amp;quot;keyToString&amp;amp;quot;: {
-    &amp;amp;quot;RunOnceActivity.OpenProjectViewOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
-    &amp;amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;amp;quot;: &amp;amp;quot;true&amp;amp;quot;,
-    &amp;amp;quot;project.structure.last.edited&amp;amp;quot;: &amp;amp;quot;Modules&amp;amp;quot;,
-    &amp;amp;quot;project.structure.proportion&amp;amp;quot;: &amp;amp;quot;0.15&amp;amp;quot;,
-    &amp;amp;quot;project.structure.side.proportion&amp;amp;quot;: &amp;amp;quot;0.2&amp;amp;quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Main">
+}]]></component>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RCS_VET" />
@@ -68,19 +69,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Validation.ValidationLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Validation.ValidationLogin" />
-      <module name="RCS_VET" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -138,6 +128,28 @@
       <updated>1662263916622</updated>
     </task>
     <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00006" summary="- fixes after review">
+      <created>1662388669904</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662388669904</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixed validation for login">
+      <created>1662502232168</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662502232168</updated>
+    </task>
+    <task id="LOCAL-00008" summary="nepabeigts">
+      <created>1662528578817</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662528578817</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,9 +165,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made a doctors registration Form." />
+    <MESSAGE value="_created patient registration form" />
+    <MESSAGE value="_created medical history form" />
+    <MESSAGE value="-created doctors registration validation" />
+    <MESSAGE value="-fixes" />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+    <MESSAGE value="doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)" />
+    <MESSAGE value="- DBLogicPatient: crud" />
+    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
+    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+    <MESSAGE value="- merge fixes" />
+    <MESSAGE value="- fixes after review" />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
@@ -167,5 +189,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="- merge fixes" />
     <MESSAGE value="made a  new patient registration Form." />
     <option name="LAST_COMMIT_MESSAGE" value="made a  new patient registration Form." />
+    <MESSAGE value="fixed validation for login" />
+    <MESSAGE value="nepabeigts" />
+    <option name="LAST_COMMIT_MESSAGE" value="nepabeigts" />
   </component>
 </project>
