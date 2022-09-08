@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class DoctorRegistration extends Fields_DoctorRegistration {
-    public void docRegistrationWindow() {
+    public void doctorRegistrationWindow() {
         //defining panelDocRegistration window for doctor's registration form
         panelDoctorRegistration.setVisible(true);
         panelDoctorRegistration.setLayout(null);

@@ -3,7 +3,7 @@ import Fields.Fields_ClinicDashboard;
 import java.awt.*;
 
 public class ClinicDashboard extends Fields_ClinicDashboard {
-    public void clinicDash () {
+    public void clinicDashboardWindow() {
         panelClinicDashboard.setVisible(true);
         panelClinicDashboard.setLayout(null);
         panelClinicDashboard.setBackground(Color.LIGHT_GRAY);

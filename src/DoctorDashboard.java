@@ -3,7 +3,7 @@ import Fields.Fields_DoctorDashboard;
 import java.awt.*;
 
 public class DoctorDashboard extends Fields_DoctorDashboard {
-    public void doctorDash () {
+    public void doctorDashboardWindow() {
         panelDoctorDashboard.setVisible(true);
         panelDoctorDashboard.setLayout(null);
         panelDoctorDashboard.setBackground(Color.LIGHT_GRAY);

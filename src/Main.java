@@ -63,7 +63,7 @@ public class Main {
                         regmeth.panelRegistration.setVisible(false);
                         loginmeth.frame.add(clindashb.panelClinicDashboard);
                         clindashb.panelClinicDashboard.setVisible(true);
-                        clindashb.clinicDash();
+                        clindashb.clinicDashboardWindow();
                         // get clinic id by login username and password
                         Integer clinicId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
                         clindashb.clinName.setText("Welcome " + name);
@@ -108,7 +108,7 @@ public class Main {
                             if (clinicId > -1) {
                                 loginmeth.panelLogIn.setVisible(false);
                                 loginmeth.frame.add(clindashb.panelClinicDashboard);
-                                clindashb.clinicDash();
+                                clindashb.clinicDashboardWindow();
                                 // get clinic name to display in dashboard
                                 String clinicName = dbClinic.getName(loginmeth.userText.getText());
                                 clindashb.clinName.setText("Welcome " + clinicName);
@@ -135,7 +135,7 @@ public class Main {
                             if (doctorId > -1) {
                                 loginmeth.panelLogIn.setVisible(false);
                                 loginmeth.frame.add(docdashb.panelDoctorDashboard);
-                                docdashb.doctorDash();
+                                docdashb.doctorDashboardWindow();
                                 // display doctors name in dashboard
                                 String doctorName = dbDoctor.getName(loginmeth.userText.getText());
                                 docdashb.welcome.setText("Welcome " + doctorName);
@@ -182,7 +182,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 clindashb.panelClinicDashboard.setVisible(false);
                 loginmeth.frame.add(docreg.panelDoctorRegistration);
-                docreg.docRegistrationWindow();
+                docreg.doctorRegistrationWindow();
             }
         });
 
@@ -192,7 +192,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 docreg.panelDoctorRegistration.setVisible(false);
                 loginmeth.frame.add(clindashb.panelClinicDashboard);
-                clindashb.clinicDash();
+                clindashb.clinicDashboardWindow();
             }
         });
 
@@ -223,7 +223,7 @@ public class Main {
                             dbDoctor.register(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText(), dbClId, docRegVal.getStatus(docreg.active));
                             docreg.panelDoctorRegistration.setVisible(false);
                             loginmeth.frame.add(clindashb.panelClinicDashboard);
-                            clindashb.clinicDash();
+                            clindashb.clinicDashboardWindow();
                             docreg.docNameText.setText("");
                             docreg.docSurnameText.setText("");
                             docreg.usernameText.setText("");
@@ -262,7 +262,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 editDoc.panelDoctorRegistration.setVisible(false);
                 loginmeth.frame.add(clindashb.panelClinicDashboard);
-                clindashb.clinicDash();
+                clindashb.clinicDashboardWindow();
             }
         });
 
@@ -284,7 +284,7 @@ public class Main {
                 patReg.panelPatientRegistration.setVisible(false);
                 loginmeth.frame.add(docdashb.panelDoctorDashboard);
                 docdashb.panelDoctorDashboard.setVisible(true);
-                docdashb.doctorDash();
+                docdashb.doctorDashboardWindow();
             }
         });
 
@@ -305,7 +305,7 @@ public class Main {
                 //to return to dashboard user presses back
                 medHisWin.panelNewMedicalHistory.setVisible(false);
                 loginmeth.frame.add(docdashb.panelDoctorDashboard);
-                docdashb.doctorDash();
+                docdashb.doctorDashboardWindow();
             }
         });
 
