@@ -51,14 +51,23 @@ public void registrationWindow (){
   panelRegistration.add(reppasswordText);
 
   clinicNameText.setBounds(280,140,200,35);
+  clinicNameText.setText("");
   regNumberText.setBounds(280,185,200,35);
+  regNumberText.setText("");
   adresText.setBounds(280,230,200,35);
+  adresText.setText("");
   emailText.setBounds(280,275,200,35);
+  emailText.setText("");
   phoneText.setBounds(280,320,200,35);
+  phoneText.setText("");
   regaddressText.setBounds(280,365,200,35);
+  regaddressText.setText("");
   usernameText.setBounds(280,410,200,35);
+  usernameText.setText("");
   passwordText.setBounds(280,455,200,35);
+  passwordText.setText("");
   reppasswordText.setBounds(280,500,200,35);
+  reppasswordText.setText("");
 
   //submit button for creating new account
   panelRegistration.add(submit);

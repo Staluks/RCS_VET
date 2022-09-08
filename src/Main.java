@@ -195,6 +195,12 @@ public class Main {
                 loginmeth.loginWindow();
             }
         });
+        docdashb.history.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
 
 
 
