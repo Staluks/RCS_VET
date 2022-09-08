@@ -45,7 +45,9 @@ public class LogIn extends Fields_Login {
         panellogin.add(passwordText);
 
         userText.setBounds(270, 350, 150, 40);
+        userText.setText("");
         passwordText.setBounds(270, 410, 150, 40);
+        passwordText.setText("");
 
         panellogin.add(loginbut);
 
