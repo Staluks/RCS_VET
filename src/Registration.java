@@ -68,33 +68,42 @@ public class Registration extends Fields_Registration {
         clinicNameText.setBounds(280,140,200,35);
         clinicNameText.setText("");
         nameHint.setBounds(470, 110,270,35);
+        nameHint.setText("");
         regNumberText.setBounds(280,185,200,35);
         regNumberText.setText("");
         regNumHint.setBounds(485,160,270,35);
+        regNumHint.setText("");
         adresText.setBounds(280,230,200,35);
         adresText.setText("");
         adrHint.setBounds(470,205,270,35);
+        adrHint.setText("");
         emailText.setBounds(280,275,200,35);
         emailText.setText("");
         mailHint.setBounds(485,250,270,35);
+        mailHint.setText("");
         phoneText.setBounds(280,320,200,35);
         phoneText.setText("");
         phoneHint.setBounds(485,295,270,35);
+        phoneHint.setText("");
         regaddressText.setBounds(280,365,200,35);
         regaddressText.setText("");
         regAdrHint.setBounds(470,340,270,35);
+        regAdrHint.setText("");
         usernameText.setBounds(280,410,200,35);
         usernameText.setText("");
         userHint.setBounds(485, 385,270,35);
+        userHint.setText("");
         passwordText.setBounds(280,455,200,35);
         passwordText.setText("");
         passHint.setBounds(485,430,270,35);
+        passHint.setText("");
         reppasswordText.setBounds(280,500,200,35);
         reppasswordText.setText("");
 
         //this mesage is if help button is pressed
         panelRegistration.add(mesaage);
         mesaage.setBounds(220,10,400,40);
+        mesaage.setText("");
 
         //submit button for creating new account
         panelRegistration.add(submit);
