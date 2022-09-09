@@ -1,5 +1,6 @@
 import Validation.Validation_DoctorRegistration;
 import Validation.Validation_LogIn;
+import Windows.*;
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
 import db.DBLogic_MedicalHistory;

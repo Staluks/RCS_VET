@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="pievilku izmainas">
-      <change afterPath="$PROJECT_DIR$/src/Validation/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Validation/Validation_NewMedicalHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_DoctorRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_DoctorRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClinicDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/ClinicDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctorDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/DoctorDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoctorRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/DoctorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditDoctorRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/EditDoctorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewMedicalHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/NewMedicalHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PatientRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/PatientRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Validation.Main2">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RCS_VET" />
@@ -85,8 +83,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Validation.Main2" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Validation.Main2" />
         <item itemvalue="Application.Main2" />
       </list>
     </recent_temporary>
