@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="pievilku izmainas">
+      <change afterPath="$PROJECT_DIR$/src/Validation/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Validation/Validation_NewMedicalHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__12_13__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_01__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_09_2022__13_10__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_04__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_09__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2022__09_16__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctorDashBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_DoctorRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_DoctorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +55,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Validation.Main2">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RCS_VET" />
@@ -62,8 +70,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Validation.Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Validation.Main2" />
+      <module name="RCS_VET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Validation.Main2" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main2" />
       </list>
@@ -141,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662659582513</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[rcs 14] validation + added order to file/methods/classes names">
+      <created>1662675334725</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662675334725</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,7 +185,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="_created patient registration form" />
     <MESSAGE value="_created medical history form" />
     <MESSAGE value="-created doctors registration validation" />
     <MESSAGE value="-fixes" />
@@ -181,6 +209,7 @@
     <MESSAGE value="fixed validation for login" />
     <MESSAGE value="nepabeigts" />
     <MESSAGE value="pievilku izmainas" />
-    <option name="LAST_COMMIT_MESSAGE" value="pievilku izmainas" />
+    <MESSAGE value="[rcs 14] validation + added order to file/methods/classes names" />
+    <option name="LAST_COMMIT_MESSAGE" value="[rcs 14] validation + added order to file/methods/classes names" />
   </component>
 </project>

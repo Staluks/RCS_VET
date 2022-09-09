@@ -4,7 +4,6 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 
 public class MD5 {
-
     // md5 hashing algorithm
     private String md5Hashing(String value) throws Exception {
         MessageDigest algo = MessageDigest.getInstance("MD5");
@@ -25,5 +24,4 @@ public class MD5 {
 
         return md5;
     }
-
 }
