@@ -1,6 +1,7 @@
 package Fields;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Fields_Registration {
     public JPanel panelRegistration = new JPanel();
@@ -30,6 +31,17 @@ public class Fields_Registration {
 
     public JButton submit = new JButton("Submit");
     public JLabel warning = new JLabel("");
+    public JButton help = new JButton("Help");
+
+    public JLabel mesaage = new JLabel("");
+    public JLabel nameHint = new JLabel();
+    public JLabel regNumHint = new JLabel();
+    public JLabel adrHint = new JLabel();
+    public JLabel mailHint = new JLabel();
+    public  JLabel phoneHint = new JLabel();
+    public JLabel regAdrHint = new JLabel();
+    public JLabel userHint = new JLabel();
+    public JLabel passHint = new JLabel();
 }
 
 

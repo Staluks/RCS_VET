@@ -1,8 +1,12 @@
+package Windows;
+
+import Fields.Fields_DoctorRegistration;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class EditDoctorRegistration extends DoctorRegistration {
-    public void editDoctorRegistrationWindow(String name, String surname, String personCode, String certificateNr){
+public class DoctorRegistration extends Fields_DoctorRegistration {
+    public void doctorRegistrationWindow() {
         //defining panelDocRegistration window for doctor's registration form
         panelDoctorRegistration.setVisible(true);
         panelDoctorRegistration.setLayout(null);
@@ -21,6 +25,8 @@ public class EditDoctorRegistration extends DoctorRegistration {
         panelDoctorRegistration.add(username);
         panelDoctorRegistration.add(personalCode);
         panelDoctorRegistration.add(certificate);
+        panelDoctorRegistration.add(password);
+        panelDoctorRegistration.add(reppassword);
         panelDoctorRegistration.add(errorMessage);
 
         docName.setBounds(50, 60, 200,200);
@@ -28,25 +34,26 @@ public class EditDoctorRegistration extends DoctorRegistration {
         username.setBounds(50,150,200,200 );
         personalCode.setBounds(50,195,200,200);
         certificate.setBounds(50,240,200,200);
+        password.setBounds(50,285,200,200);
+        reppassword.setBounds(50,325,200,200);
         errorMessage.setBounds(280, 445, 200, 30);
 
         //adding all the fields for user input in the form
         panelDoctorRegistration.add(docNameText);
         panelDoctorRegistration.add(docSurnameText);
         panelDoctorRegistration.add(usernameText);
-        usernameText.setEditable(false);
         panelDoctorRegistration.add(personalCodeText);
         panelDoctorRegistration.add(certificateText);
+        panelDoctorRegistration.add(passwordText);
+        panelDoctorRegistration.add(reppasswordText);
 
         docNameText.setBounds(280,140,200,35);
-        docNameText.setText(name);
         docSurnameText.setBounds(280,185,200,35);
-        docSurnameText.setText(surname);
         usernameText.setBounds(280,230,200,35);
         personalCodeText.setBounds(280,275,200,35);
-        personalCodeText.setText(personCode);
         certificateText.setBounds(280,320,200,35);
-        certificateText.setText(certificateNr);
+        passwordText.setBounds(280,365,200,35);
+        reppasswordText.setBounds(280,410,200,35);
 
         panelDoctorRegistration.add(active);
         panelDoctorRegistration.add(blocked);
@@ -64,4 +71,3 @@ public class EditDoctorRegistration extends DoctorRegistration {
         submit.setBounds(440,570,150,60);
     }
 }
-

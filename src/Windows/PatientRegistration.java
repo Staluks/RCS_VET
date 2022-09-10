@@ -1,3 +1,5 @@
+package Windows;
+
 import Fields.Fields_PatientRegistration;
 
 import java.awt.*;
@@ -49,13 +51,21 @@ public class PatientRegistration extends Fields_PatientRegistration {
         panelPatientRegistration.add(ownerSurnameText);
 
         patNameText.setBounds(280,140,200,35);
+        patNameText.setText("");
         patSpeciesText.setBounds(280,185,200,35);
+        patSpeciesText.setText("");
         patBreedText.setBounds(280,230,200,35);
+        patBreedText.setText("");
         patWeightText.setBounds(280,275,200,35);
+        patWeightText.setText("");
         passportNrText.setBounds(280,320,200,35);
+        passportNrText.setText("");
         dateofBirthText.setBounds(280,365,200,35);
+        dateofBirthText.setText("");
         ownerNameText.setBounds(280,410,200,35);
+        ownerNameText.setText("");
         ownerSurnameText.setBounds(280,455,200,35);
+        ownerSurnameText.setText("");
 
         panelPatientRegistration.add(submitpat);
         submitpat.setBounds(440,570,150,60);
