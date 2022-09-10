@@ -1,5 +1,7 @@
+import Validation.Validation_ClinicRegistration;
 import Validation.Validation_DoctorRegistration;
 import Validation.Validation_LogIn;
+import Validation.Validation_PatientRegistration;
 import Windows.*;
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
@@ -28,6 +30,8 @@ public class Main {
         Validation_LogIn logInVal = new Validation_LogIn();
         PatientRegistration patReg = new PatientRegistration();
         NewMedicalHistory medHisWin = new NewMedicalHistory();
+        Validation_PatientRegistration patRegVal = new Validation_PatientRegistration();
+        Validation_ClinicRegistration clinRegVal = new Validation_ClinicRegistration();
 
 
 
@@ -50,40 +54,42 @@ public class Main {
         regmeth.submit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try{
+                try {
                     String name = regmeth.clinicNameText.getText();
                     String email = regmeth.emailText.getText();
-                    String phone =regmeth.phoneText.getText();
+                    String phone = regmeth.phoneText.getText();
                     String adress = regmeth.adresText.getText();
                     String regNumber = regmeth.regNumberText.getText();
                     String regAdress = regmeth.regaddressText.getText();
                     String username = regmeth.usernameText.getText();
                     String password = regmeth.passwordText.getText();
-                    if (dbClinic.register(name, email, phone, adress, regAdress, regNumber, username, password)){
-                        regmeth.panelRegistration.setVisible(false);
-                        loginmeth.frame.add(clindashb.panelClinicDashboard);
-                        clindashb.panelClinicDashboard.setVisible(true);
-                        clindashb.clinicDashboardWindow();
-                        // get clinic id by login username and password
-                        Integer clinicId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-                        clindashb.clinName.setText("Welcome " + name);
-                        // get doctor list in clinic dashboard
-                        ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
-                        for (String s : doctorList) {
-                            // when clinic dashboard opens a list of all associated doctors will appear
-                            JList alldoctors = new JList(doctorList.toArray());
-                            clindashb.panelClinicDashboard.add(alldoctors);
-                            alldoctors.setBounds(30, 120, 600, 400);
+                    //check if fields filled in correct
+                    if (clinRegVal.isValidName(name) && clinRegVal.isValidEmail(email) && clinRegVal.isValidPhone(phone) && clinRegVal.isValidAddress(adress) && clinRegVal.isValidRegistrationNumber(regNumber) && clinRegVal.isValidUsername(username)) {
+                        if (dbClinic.register(name, email, phone, adress, regAdress, regNumber, username, password)) {
+                            regmeth.panelRegistration.setVisible(false);
+                            loginmeth.frame.add(clindashb.panelClinicDashboard);
+                            clindashb.panelClinicDashboard.setVisible(true);
+                            clindashb.clinicDashboardWindow();
+                            // get clinic id by login username and password
+                            Integer clinicId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                            clindashb.clinName.setText("Welcome " + name);
+                            // get doctor list in clinic dashboard
+                            ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
+                            for (String s : doctorList) {
+                                // when clinic dashboard opens a list of all associated doctors will appear
+                                JList alldoctors = new JList(doctorList.toArray());
+                                clindashb.panelClinicDashboard.add(alldoctors);
+                                alldoctors.setBounds(30, 120, 600, 400);
+                            }
+                        } else {
+                            // if something is wrong this message will appear
+                            regmeth.warning.setText("Registration failed! Please check all fields!");
                         }
-                    }else{
-                        // if something is wrong this message will appear
-                        regmeth.warning.setText("Registration failed! Please check all fields!");
-
                     }
-                }catch (SQLException s){
-                    s.printStackTrace();
+                    }catch(SQLException s){
+                        s.printStackTrace();
+                    }
                 }
-            }
         });
 
         regmeth.back.addActionListener(new ActionListener() {
@@ -214,7 +220,6 @@ public class Main {
                 // gets Clinic ID
                 try {
                     int dbClId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-
                     // checks if text fields are filled correct
                     if(docRegVal.isValidRegistration(docreg.docNameText.getText(), docreg.docSurnameText.getText(), docreg.usernameText.getText(), docreg.passwordText.getText(), docreg.reppasswordText.getText(), docreg.personalCodeText.getText(), docreg.certificateText.getText())){
                         // checks if unique needed fields are unique
