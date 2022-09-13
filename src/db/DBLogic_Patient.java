@@ -1,7 +1,5 @@
 package db;
 
-import md5.MD5;
-
 import java.sql.*;
 import java.util.ArrayList;
 
