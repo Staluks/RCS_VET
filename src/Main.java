@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.util.ArrayList;
-import java.util.Date;
+import java.sql.Date;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -282,16 +282,26 @@ public class Main {
                 String nameP = patReg.patNameText.getText();
                 String speaces = patReg.patSpeciesText.getText();
                 String breed = patReg.patBreedText.getText();
-                int weight = Integer.parseInt(patReg.patWeightText.getText());
-                Date birth = new Date(patReg.dateofBirthText.getText());
+                float weight = Float.parseFloat(patReg.patWeightText.getText());
                 String passport = patReg.passportNrText.getText();
                 String nameO = patReg.ownerNameText.getText();
                 String surname = patReg.ownerSurnameText.getText();
                 try {
                     int docId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
-                    if(dbPatient.register(nameP, speaces, breed, weight, birth, passport,nameO,surname, docId)){
+                    if(dbPatient.register(nameP, speaces, breed, weight, Date.valueOf(patReg.dateofBirthText.getText()), passport,nameO,surname, docId)){
                     patReg.panelPatientRegistration.setVisible(false);
                     loginmeth.frame.add(docdashb.panelDoctorDashboard);
+                    docdashb.doctorDashboardWindow();
+                    ArrayList<String> newPatientList = dbPatient.getPatientList(docId);
+                    for (String s : newPatientList) {
+//                        docdashb.panelDoctorDashboard.revalidate();
+//                        docdashb.panelDoctorDashboard.repaint();
+                        JList newPat = new JList(newPatientList.toArray());
+                        docdashb.panelDoctorDashboard.add(newPat);
+                        newPat.setBounds(30, 120, 600, 400);
+                        newPat.repaint();
+                        }
+
                     }else {
                         patReg.wrong.setText("Check if fields are filled in correctly!");
                     }

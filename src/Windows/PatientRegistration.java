@@ -73,5 +73,24 @@ public class PatientRegistration extends Fields_PatientRegistration {
 
         panelPatientRegistration.add(submitpat);
         submitpat.setBounds(440,570,150,60);
+
+        panelPatientRegistration.add(nameHint);
+        panelPatientRegistration.add(spHint);
+        panelPatientRegistration.add(brHint);
+        passportNr.add(wigHint);
+        passportNr.add(passpHint);
+        panelPatientRegistration.add(birthHint);
+        panelPatientRegistration.add(ownHint);
+        panelPatientRegistration.add(spHint);
+
+        nameHint.setText("a-z, A-Z, 2-30 smb");
+        spHint.setText("a-z, A-Z, 2-30 smb");
+        brHint.setText("a-z, A-Z, 2-50 smb");
+        wigHint.setText("0 - 500, format: xx.xx");
+        passpHint.setText("a-z, A-Z, 2-50 smb");
+        birthHint.setText("format: yyyy-mm-dd");
+        ownHint.setText("a-z, A-Z, space, -,2-30 smb");
+        spHint.setText("a-z, A-Z, space, -, 2-30 smb");
+
     }
 }
