@@ -25,4 +25,5 @@ public class Fields_PatientRegistration {
     public JTextField dateofBirthText = new JTextField();
     public JTextField ownerNameText = new JTextField();
     public JTextField ownerSurnameText = new JTextField();
+    public JLabel wrong = new JLabel();
 }

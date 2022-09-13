@@ -11,7 +11,9 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -85,6 +87,8 @@ public class Main {
                             // if something is wrong this message will appear
                             regmeth.warning.setText("Registration failed! Please check all fields!");
                         }
+                    }else{
+                        regmeth.warning.setText("Registration failed! Please check all fields!");
                     }
                     }catch(SQLException s){
                         s.printStackTrace();
@@ -229,15 +233,7 @@ public class Main {
                             docreg.panelDoctorRegistration.setVisible(false);
                             loginmeth.frame.add(clindashb.panelClinicDashboard);
                             clindashb.clinicDashboardWindow();
-                            docreg.docNameText.setText("");
-                            docreg.docSurnameText.setText("");
-                            docreg.usernameText.setText("");
-                            docreg.passwordText.setText("");
-                            docreg.personalCodeText.setText("");
-                            docreg.certificateText.setText("");
-                            docreg.reppasswordText.setText("");
                             docreg.active.setSelected(true);
-
                         }else{
                             docreg.errorMessage.setText("doctor with this username/personal code/certificate Nr. already exists");
                         }
@@ -249,7 +245,6 @@ public class Main {
                 }
             }
         });
-
         // button to get to doctors edit form
         clindashb.edit.addActionListener(new ActionListener() {
             @Override
@@ -279,6 +274,30 @@ public class Main {
                 loginmeth.frame.add(patReg.panelPatientRegistration);
                 patReg.panelPatientRegistration.setVisible(true);
                 patReg.patientRegistrationWindow();
+            }
+        });
+        patReg.submitpat.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nameP = patReg.patNameText.getText();
+                String speaces = patReg.patSpeciesText.getText();
+                String breed = patReg.patBreedText.getText();
+                int weight = Integer.parseInt(patReg.patWeightText.getText());
+                Date birth = new Date(patReg.dateofBirthText.getText());
+                String passport = patReg.passportNrText.getText();
+                String nameO = patReg.ownerNameText.getText();
+                String surname = patReg.ownerSurnameText.getText();
+                try {
+                    int docId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                    if(dbPatient.register(nameP, speaces, breed, weight, birth, passport,nameO,surname, docId)){
+                    patReg.panelPatientRegistration.setVisible(false);
+                    loginmeth.frame.add(docdashb.panelDoctorDashboard);
+                    }else {
+                        patReg.wrong.setText("Check if fields are filled in correctly!");
+                    }
+                } catch (SQLException f) {
+                    f.printStackTrace();
+                }
             }
         });
 

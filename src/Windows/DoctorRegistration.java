@@ -69,5 +69,14 @@ public class DoctorRegistration extends Fields_DoctorRegistration {
 
         panelDoctorRegistration.add(submit);
         submit.setBounds(440,570,150,60);
+
+        docNameText.setText("");
+        docSurnameText.setText("");
+        usernameText.setText("");
+        passwordText.setText("");
+        personalCodeText.setText("");
+        certificateText.setText("");
+        reppasswordText.setText("");
+
     }
 }

@@ -59,6 +59,10 @@ public class PatientRegistration extends Fields_PatientRegistration {
         ownerNameText.setBounds(280,410,200,35);
         ownerSurnameText.setBounds(280,455,200,35);
 
+        panelPatientRegistration.add(wrong);
+        wrong.setBounds(120,570,200,50);
+        wrong.setText("");
+
         panelPatientRegistration.add(submitpat);
         submitpat.setBounds(440,570,150,60);
     }
