@@ -1,3 +1,5 @@
+package Windows;
+
 import Fields.Fields_NewMedicalHistory;
 
 import java.awt.*;
@@ -41,11 +43,17 @@ public class NewMedicalHistory extends Fields_NewMedicalHistory {
         panelNewMedicalHistory.add(medicineText);
 
         patNameText.setBounds(280,140,200,35);
+        patNameText.setText("");
         patSpeciesText.setBounds(280,185,200,35);
+        patSpeciesText.setText("");
         diagnosisText.setBounds(280,230,350,70);
+        diagnosisText.setText("");
         dateOfDiagnosisText.setBounds(280, 305,200,35);
+        dateOfDiagnosisText.setText("");
         manipulationsText.setBounds(280,350,350,70);
+        manipulationsText.setText("");
         medicineText.setBounds(280,430,350,70);
+        medicineText.setText("");
 
         panelNewMedicalHistory.add(submithis);
         submithis.setBounds(440,570,150,60);

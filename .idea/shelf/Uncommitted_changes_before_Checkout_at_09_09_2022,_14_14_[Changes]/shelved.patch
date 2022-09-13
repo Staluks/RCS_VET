@@ -1,0 +1,175 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"9780ae5f-98b3-4822-9dad-9ba910ad16c5\" name=\"Changes\" comment=\"pievilku izmainas\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/DoctorDashBoard.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/DoctorDashBoard.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Merge.Settings\">\n    <option name=\"BRANCH\" value=\"origin/Develop\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"Develop\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2DFCXm7KvYGPM0Lto5QBDa8vHQB\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RunManager\" selected=\"Application.Main\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"RCS_VET\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Main2\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main2\" />\n      <module name=\"RCS_VET\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main\" />\n        <item itemvalue=\"Application.Main2\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"9780ae5f-98b3-4822-9dad-9ba910ad16c5\" name=\"Changes\" comment=\"\" />\n      <created>1660285489749</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1660285489749</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"made a doctors registration Form.\">\n      <created>1661242787938</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1661242787938</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"made a  new patient registration Form.\">\n      <created>1662263916622</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662263916622</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"- DBLogicPatient: crud - &quot;update&quot; added\">\n      <created>1662374695116</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662374695116</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"- DBLogicPatient: crud - fixes after review\">\n      <created>1662378636141</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662378636141</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"- merge fixes\">\n      <created>1662385479407</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662385479407</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"- fixes after review\">\n      <created>1662388669904</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662388669904</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"fixed validation for login\">\n      <created>1662502232168</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662502232168</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"nepabeigts\">\n      <created>1662528578817</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662528578817</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"pievilku izmainas\">\n      <created>1662659582513</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662659582513</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"10\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"_created patient registration form\" />\n    <MESSAGE value=\"_created medical history form\" />\n    <MESSAGE value=\"-created doctors registration validation\" />\n    <MESSAGE value=\"-fixes\" />\n    <MESSAGE value=\"- DBLogicPatient: crud\" />\n    <MESSAGE value=\"- DBLogicPatient: crud - &quot;update&quot; added\" />\n    <MESSAGE value=\"- DBLogicPatient: crud - fixes after review\" />\n    <MESSAGE value=\"doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)\" />\n    <MESSAGE value=\"- DBLogicPatient: crud\" />\n    <MESSAGE value=\"- DBLogicPatient: crud - &quot;update&quot; added\" />\n    <MESSAGE value=\"- DBLogicPatient: crud - fixes after review\" />\n    <MESSAGE value=\"- merge fixes\" />\n    <MESSAGE value=\"- fixes after review\" />\n    <MESSAGE value=\"- DBLogicPatient: crud\" />\n    <MESSAGE value=\"- DBLogicPatient: crud - &quot;update&quot; added\" />\n    <MESSAGE value=\"- DBLogicPatient: crud - fixes after review\" />\n    <MESSAGE value=\"doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)\" />\n    <MESSAGE value=\"- DBLogicPatient: crud\" />\n    <MESSAGE value=\"- DBLogicPatient: crud - &quot;update&quot; added\" />\n    <MESSAGE value=\"- DBLogicPatient: crud - fixes after review\" />\n    <MESSAGE value=\"- merge fixes\" />\n    <MESSAGE value=\"made a  new patient registration Form.\" />\n    <MESSAGE value=\"fixed validation for login\" />\n    <MESSAGE value=\"nepabeigts\" />\n    <MESSAGE value=\"pievilku izmainas\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"pievilku izmainas\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a74ee34e271b4e9dcf429c221fe159b04fcda86c)
++++ b/.idea/workspace.xml	(date 1662721584674)
+@@ -1,38 +1,21 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="pievilku izmainas">
++    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoctorDashBoard.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/FieldsNewMedHistory.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashBoard.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Class" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Merge.Settings">
+-    <option name="BRANCH" value="origin/Develop" />
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="Develop" />
++        <entry key="$PROJECT_DIR$" value="master" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="MarkdownSettingsMigration">
+-    <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2DFCXm7KvYGPM0Lto5QBDa8vHQB" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+@@ -42,7 +25,6 @@
+   </component>
+   <component name="PropertiesComponent">{
+   &quot;keyToString&quot;: {
+-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+   }
+@@ -64,8 +46,9 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.Main2" />
+         <item itemvalue="Application.Main" />
+-        <item itemvalue="Application.Main2" />
++        <item itemvalue="Application.Main" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -78,70 +61,6 @@
+       <option name="presentableId" value="Default" />
+       <updated>1660285489749</updated>
+     </task>
+-    <task id="LOCAL-00001" summary="made a doctors registration Form.">
+-      <created>1661242787938</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1661242787938</updated>
+-    </task>
+-    <task id="LOCAL-00002" summary="made a  new patient registration Form.">
+-      <created>1662263916622</created>
+-      <option name="number" value="00002" />
+-      <option name="presentableId" value="LOCAL-00002" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1662263916622</updated>
+-    </task>
+-    <task id="LOCAL-00003" summary="- DBLogicPatient: crud - &quot;update&quot; added">
+-      <created>1662374695116</created>
+-      <option name="number" value="00003" />
+-      <option name="presentableId" value="LOCAL-00003" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1662374695116</updated>
+-    </task>
+-    <task id="LOCAL-00004" summary="- DBLogicPatient: crud - fixes after review">
+-      <created>1662378636141</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1662378636141</updated>
+-    </task>
+-    <task id="LOCAL-00005" summary="- merge fixes">
+-      <created>1662385479407</created>
+-      <option name="number" value="00005" />
+-      <option name="presentableId" value="LOCAL-00005" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1662385479407</updated>
+-    </task>
+-    <task id="LOCAL-00006" summary="- fixes after review">
+-      <created>1662388669904</created>
+-      <option name="number" value="00006" />
+-      <option name="presentableId" value="LOCAL-00006" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1662388669904</updated>
+-    </task>
+-    <task id="LOCAL-00007" summary="fixed validation for login">
+-      <created>1662502232168</created>
+-      <option name="number" value="00007" />
+-      <option name="presentableId" value="LOCAL-00007" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1662502232168</updated>
+-    </task>
+-    <task id="LOCAL-00008" summary="nepabeigts">
+-      <created>1662528578817</created>
+-      <option name="number" value="00008" />
+-      <option name="presentableId" value="LOCAL-00008" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1662528578817</updated>
+-    </task>
+-    <task id="LOCAL-00009" summary="pievilku izmainas">
+-      <created>1662659582513</created>
+-      <option name="number" value="00009" />
+-      <option name="presentableId" value="LOCAL-00009" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1662659582513</updated>
+-    </task>
+-    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -155,32 +74,4 @@
+       </map>
+     </option>
+   </component>
+-  <component name="VcsManagerConfiguration">
+-    <MESSAGE value="_created patient registration form" />
+-    <MESSAGE value="_created medical history form" />
+-    <MESSAGE value="-created doctors registration validation" />
+-    <MESSAGE value="-fixes" />
+-    <MESSAGE value="- DBLogicPatient: crud" />
+-    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
+-    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+-    <MESSAGE value="doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)" />
+-    <MESSAGE value="- DBLogicPatient: crud" />
+-    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
+-    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+-    <MESSAGE value="- merge fixes" />
+-    <MESSAGE value="- fixes after review" />
+-    <MESSAGE value="- DBLogicPatient: crud" />
+-    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
+-    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+-    <MESSAGE value="doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)" />
+-    <MESSAGE value="- DBLogicPatient: crud" />
+-    <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
+-    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
+-    <MESSAGE value="- merge fixes" />
+-    <MESSAGE value="made a  new patient registration Form." />
+-    <MESSAGE value="fixed validation for login" />
+-    <MESSAGE value="nepabeigts" />
+-    <MESSAGE value="pievilku izmainas" />
+-    <option name="LAST_COMMIT_MESSAGE" value="pievilku izmainas" />
+-  </component>
+ </project>
+\ No newline at end of file
