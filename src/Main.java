@@ -170,10 +170,17 @@ public class Main {
                 docdashb.history.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        int patientId = dbPatient.getPatientIds(allPatient.getSelectedColumn());
-                        JPanel his = (JPanel) e.getSource();
-                        loginmeth.frame.add(his);
-                        JTable m = new JTable(dbPatient.getPatientAllInfoList(patientId));
+                        try {
+                            Integer doctorId = dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                            //int patientId = dbPatient.getPatientId(allPatient.getSelectedRow(), doctorId);
+                            System.out.println("dd" + allPatient.getSelectedColumn());
+                            JPanel his = (JPanel) e.getSource();
+//                            loginmeth.frame.add(his);
+//                            JTable m = new JTable(dbPatient.getPatientAllInfoList(patientId));
+                        allPatient.add
+                        }catch(SQLException d){
+                            d.printStackTrace();
+                        }
                     }
                 });
             }
