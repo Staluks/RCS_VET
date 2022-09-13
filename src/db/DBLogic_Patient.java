@@ -1,5 +1,7 @@
 package db;
 
+import md5.MD5;
+
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -137,6 +139,31 @@ public class DBLogic_Patient extends DBConnection{
         conn.close();
 
         return patientList;
+    }
+
+    // get patient ID by passport number
+    // returns patient id or "-1" if patient not found
+    public int getPatientId(String passport_num, int doctor_id) throws SQLException {
+
+        // connection to DB
+        Connection conn = connectToDB();
+
+        // sql statement to execute
+        String select  = "SELECT id from patient WHERE passport_num = ? and doctor_id = ?";
+        PreparedStatement ps = conn.prepareStatement(select);
+
+        ps.setString(1, passport_num);
+        ps.setInt(2, doctor_id);
+        ResultSet rs = ps.executeQuery();
+
+        // check if such patient exists in DB
+        if(rs.next()) {
+            return rs.getInt("id");
+        }
+
+        conn.close();
+
+        return -1;
     }
 
     //get patient full info (all info about patient to update) by patient_id
