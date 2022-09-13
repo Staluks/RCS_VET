@@ -372,6 +372,8 @@ public class Main {
         //boolean p = dbPatient.register("Snowball", "Dog", "Husky", 20.5f, Date.valueOf("2020-06-15"), "CF1234", "Milena", "Sokolova", 7 );
         //System.out.println(p);
 
+        //int id = dbPatient.getPatientId("passport_num2", 1);
+        //System.out.println(id);
         //ArrayList<String> list = dbPatient.getPatientAllInfoList("7");
         //for (String s : list) {
         //    System.out.println(s);
