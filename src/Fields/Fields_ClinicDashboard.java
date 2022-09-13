@@ -13,5 +13,6 @@ public class Fields_ClinicDashboard {
     public JButton unblock = new JButton("Unblock");
     public JButton edit = new JButton("Edit");
     public JLabel clinName = new JLabel();
-    public JList alldoctors = new JList();
+    public DefaultListModel model = new DefaultListModel();
+    public JList alldoctors = new JList(model);
 }

@@ -6,10 +6,12 @@ import db.DBLogic_Doctor;
 import db.DBLogic_MedicalHistory;
 import db.DBLogic_Patient;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -71,9 +73,9 @@ public class Main {
                         ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
                         for (String s : doctorList) {
                             // when clinic dashboard opens a list of all associated doctors will appear
-                            JList alldoctors = new JList(doctorList.toArray());
-                            clindashb.panelClinicDashboard.add(alldoctors);
-                            alldoctors.setBounds(30, 120, 600, 400);
+//                            JList alldoctors = new JList(doctorList.toArray());
+//                            clindashb.panelClinicDashboard.add(alldoctors);
+//                            alldoctors.setBounds(30, 120, 600, 400);
                         }
                     }else{
                         // if something is wrong this message will appear
@@ -99,7 +101,8 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // check if input is correct
-                 if(logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())){
+//                logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())
+                 if(true){
                     if (loginmeth.clinic.isSelected()) {
                         try {
                             // get clinic id by login username and password
@@ -112,14 +115,18 @@ public class Main {
                                 // get clinic name to display in dashboard
                                 String clinicName = dbClinic.getName(loginmeth.userText.getText());
                                 clindashb.clinName.setText("Welcome " + clinicName);
-                                // get doctor list in clinic dashboard
+//                                 get doctor list in clinic dashboard
                                 ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
-                                for (String s : doctorList) {
-                                    // when clinic dashboard opens a list of all associated doctors will appear
-                                    JList alldoctors = new JList( doctorList.toArray());
-                                    clindashb.panelClinicDashboard.add(alldoctors);
-                                    alldoctors.setBounds(30, 120, 600, 400);
+                                for(String s : doctorList){
+                                    clindashb.model.addElement(s);
                                 }
+//                                ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
+//                                for (String s : doctorList) {
+//                                    // when clinic dashboard opens a list of all associated doctors will appear
+//                                    JList alldoctors = new JList( doctorList.toArray());
+//                                    clindashb.panelClinicDashboard.add(alldoctors);
+//                                    alldoctors.setBounds(30, 120, 600, 400);
+//                                }
                             } else {
                                 // if log in failed this message will appear
                                 loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
@@ -139,7 +146,7 @@ public class Main {
                                 // display doctors name in dashboard
                                 String doctorName = dbDoctor.getName(loginmeth.userText.getText());
                                 docdashb.welcome.setText("Welcome " + doctorName);
-                                // doctor dashboard will display list of all patients it has registered
+//                                 doctor dashboard will display list of all patients it has registered
                                 ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
                                 for (String s : patientList) {
                                     // when clinic dashboard opens a list of all associated doctors will appear
@@ -252,8 +259,17 @@ public class Main {
                 //need to select from list
                 clindashb.panelClinicDashboard.setVisible(false);
                 loginmeth.frame.add(editDoc.panelDoctorRegistration);
-                editDoc.editDoctorRegistrationWindow("arturs", "kalnins", "310790-11708", "NR0135");
-
+                String doctorsListString = clindashb.alldoctors.getSelectedValue().toString();
+                String[] doctorsList = null;
+//              Splits selected String form Jlist to array
+                doctorsList = doctorsListString.split(" ");
+//              fills form with selected doctors info
+                editDoc.editDoctorRegistrationWindow(doctorsList[0], doctorsList[1], doctorsList[2], doctorsList[3], doctorsList[4]);
+                if (doctorsList[5] == "active"){
+                    editDoc.active.setSelected(true);
+                }else{
+                    editDoc.blocked.setSelected(true);
+                }
             }
         });
 
@@ -306,6 +322,52 @@ public class Main {
                 medHisWin.panelNewMedicalHistory.setVisible(false);
                 loginmeth.frame.add(docdashb.panelDoctorDashboard);
                 docdashb.doctorDashboardWindow();
+            }
+        });
+        editDoc.submit.addActionListener(new ActionListener() {
+            // submit button for new doctors registration
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // gets Clinic ID
+                try {
+                    int dbClId = dbClinic.getClinicId(loginmeth.userText.getText(), loginmeth.passwordText.getText());
+                    String doctorsListString = clindashb.alldoctors.getSelectedValue().toString();
+                    String[] doctorsList = null;
+//              Splits selected String form Jlist to array
+                    doctorsList = doctorsListString.split(" ");
+                    int dbIdDoctor = dbDoctor.getDoctorId(doctorsList[2]);
+
+                    // checks if text fields are filled correct
+                    if(true){
+                        // checks if unique needed fields are unique
+                        // if unique then fields are registered in doctors table.
+                        if(dbDoctor.update(editDoc.docNameText.getText(), editDoc.docSurnameText.getText(),editDoc.personalCodeText.getText(), editDoc.certificateText.getText(), "active", dbIdDoctor)){
+                            dbDoctor.update(editDoc.docNameText.getText(), editDoc.docSurnameText.getText(),editDoc.personalCodeText.getText(), editDoc.certificateText.getText(), "active", dbIdDoctor);
+                            editDoc.panelDoctorRegistration.setVisible(false);
+                            loginmeth.frame.add(clindashb.panelClinicDashboard);
+                            clindashb.clinicDashboardWindow();
+                            editDoc.docNameText.setText("");
+                            editDoc.docSurnameText.setText("");
+                            editDoc.usernameText.setText("");
+                            editDoc.personalCodeText.setText("");
+                            editDoc.certificateText.setText("");
+                            editDoc.active.setSelected(true);
+//                            refresh doctors list
+                            clindashb.model.clear();
+                            ArrayList<String> doctorList = dbDoctor.getDoctorList(dbClId);
+                            for(String s : doctorList){
+                                clindashb.model.addElement(s);
+                            }
+
+                        }else{
+                            editDoc.errorMessage.setText("doctor with this username/personal code/certificate Nr. already exists");
+                        }
+                    }else{
+                        editDoc.errorMessage.setText("fields are filled wrong");
+                    }
+                }catch (SQLException a) {
+                    a.printStackTrace();
+                }
             }
         });
 

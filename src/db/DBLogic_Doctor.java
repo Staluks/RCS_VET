@@ -204,7 +204,7 @@ public class DBLogic_Doctor extends DBConnection{
         Connection conn = connectToDB();
 
         // sql statement to execute
-        String select  = "SELECT name, surname, personal_code, status from doctor WHERE clinic_id = ?";
+        String select  = "SELECT name, surname, username, personal_code, certificate, status from doctor WHERE clinic_id = ?";
         PreparedStatement ps = conn.prepareStatement(select);
 
         ps.setInt(1, clinic_id);
@@ -213,7 +213,7 @@ public class DBLogic_Doctor extends DBConnection{
         // get doctor name, surname by username
         while (rs.next()) {
             doctorList.add(rs.getString("name") + " " + rs.getString("surname") +
-                    " " + rs.getString("personal_code") + " " + rs.getString("status"));
+                    " " + rs.getString("username") + " " + rs.getString("personal_code") + " " + rs.getString("certificate") + " " + rs.getString("status"));
         }
 
         conn.close();
@@ -229,7 +229,7 @@ public class DBLogic_Doctor extends DBConnection{
         Connection conn = connectToDB();
 
         // sql statement to execute
-        String select  = "SELECT name, surname, personal_code, certificate, status from doctor WHERE id = ?";
+        String select  = "SELECT name, surname, username, personal_code, certificate, status from doctor WHERE id = ?";
         PreparedStatement ps = conn.prepareStatement(select);
 
         ps.setInt(1, doctor_id);
@@ -238,6 +238,7 @@ public class DBLogic_Doctor extends DBConnection{
         while (rs.next()) {
             doctorAllInfo.add(rs.getString("name"));
             doctorAllInfo.add(rs.getString("surname"));
+            doctorAllInfo.add(rs.getString("username"));
             doctorAllInfo.add(rs.getString("personal_code"));
             doctorAllInfo.add(rs.getString("certificate"));
             doctorAllInfo.add(rs.getString("status"));
@@ -279,5 +280,26 @@ public class DBLogic_Doctor extends DBConnection{
         }
 
         return false;
+    }
+    public int getDoctorId(String username) throws SQLException {
+
+        // connection to DB
+        Connection conn = connectToDB();
+
+        // sql statement to execute
+        String select  = "SELECT id, username, password from doctor WHERE username = ?";
+        PreparedStatement ps = conn.prepareStatement(select);
+
+        ps.setString(1, username);
+        ResultSet rs = ps.executeQuery();
+
+        // check if such doctor exists in DB
+        if(rs.next()) {
+            return rs.getInt("id");
+        }
+
+        conn.close();
+
+        return -1;
     }
 }

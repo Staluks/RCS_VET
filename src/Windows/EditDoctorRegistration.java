@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class EditDoctorRegistration extends DoctorRegistration {
-    public void editDoctorRegistrationWindow(String name, String surname, String personCode, String certificateNr){
+    public void editDoctorRegistrationWindow(String name, String surname, String userName, String personCode, String certificateNr){
         //defining panelDocRegistration window for doctor's registration form
         panelDoctorRegistration.setVisible(true);
         panelDoctorRegistration.setLayout(null);
@@ -47,6 +47,7 @@ public class EditDoctorRegistration extends DoctorRegistration {
         docSurnameText.setBounds(280,185,200,35);
         docSurnameText.setText(surname);
         usernameText.setBounds(280,230,200,35);
+        usernameText.setText(userName);
         personalCodeText.setBounds(280,275,200,35);
         personalCodeText.setText(personCode);
         certificateText.setBounds(280,320,200,35);
