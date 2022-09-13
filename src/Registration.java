@@ -95,7 +95,7 @@ public class Registration extends Fields_Registration {
         userHint.setText("");
         passwordText.setBounds(280,455,200,35);
         passwordText.setText("");
-        passHint.setBounds(485,430,270,35);
+        passHint.setBounds(475,430,270,35);
         passHint.setText("");
         reppasswordText.setBounds(280,500,200,35);
         reppasswordText.setText("");
@@ -122,7 +122,7 @@ public class Registration extends Fields_Registration {
             phoneHint.setText("0-9, 1-8 smb");
             regAdrHint.setText("a-z, A-Z, 0-9, space, -, 2-255 smb");
             userHint.setText("a-z, A-Z, 0-9, 6-30 smb");
-            passHint.setText("a-z, A-Z, 0-9, 8-20 smb");
+            passHint.setText("a-z,A-Z,0-9,!@#$%^&*~_,8-20smb");
         }
     });
     }
