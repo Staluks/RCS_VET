@@ -6,8 +6,13 @@ import db.DBLogic_Doctor;
 import db.DBLogic_MedicalHistory;
 import db.DBLogic_Patient;
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -28,6 +33,7 @@ public class Main {
         Validation_LogIn logInVal = new Validation_LogIn();
         PatientRegistration patReg = new PatientRegistration();
         NewMedicalHistory medHisWin = new NewMedicalHistory();
+        JTable allPatient = new JTable();
 
 
 
@@ -99,7 +105,7 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // check if input is correct
-                 if(logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())){
+                if (logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())) {
                     if (loginmeth.clinic.isSelected()) {
                         try {
                             // get clinic id by login username and password
@@ -116,7 +122,7 @@ public class Main {
                                 ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
                                 for (String s : doctorList) {
                                     // when clinic dashboard opens a list of all associated doctors will appear
-                                    JList alldoctors = new JList( doctorList.toArray());
+                                    JList alldoctors = new JList(doctorList.toArray());
                                     clindashb.panelClinicDashboard.add(alldoctors);
                                     alldoctors.setBounds(30, 120, 600, 400);
                                 }
@@ -147,7 +153,6 @@ public class Main {
                                     docdashb.panelDoctorDashboard.add(allPatient);
                                     allPatient.setBounds(30, 120, 600, 400);
                                 }
-
                             } else {
                                 // if log in failed then this message will appear
                                 loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
@@ -158,12 +163,20 @@ public class Main {
                         }
                     }
 
-                } else{
+                } else {
                     // if log in failed this message will appear
                     loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
                 }
+                docdashb.history.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        int patientId = dbPatient.getPatientIds(allPatient.getSelectedColumn());
+                        JPanel his = (JPanel) e.getSource();
+                        loginmeth.frame.add(his);
+                        JTable m = new JTable(dbPatient.getPatientAllInfoList(patientId));
+                    }
+                });
             }
-
         });
 
         // to return to the log in window user can pres log out button
@@ -266,6 +279,12 @@ public class Main {
             }
         });
 
+        docdashb.history.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+        }
+        });
         docdashb.addnewPatient.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
