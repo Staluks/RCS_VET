@@ -35,7 +35,7 @@ public class Main {
         Validation_PatientRegistration patRegVal = new Validation_PatientRegistration();
         Validation_ClinicRegistration clinRegVal = new Validation_ClinicRegistration();
 
-
+JScrollBar forLists = new JScrollBar();
 
 
 
@@ -297,6 +297,8 @@ public class Main {
 //                        docdashb.panelDoctorDashboard.revalidate();
 //                        docdashb.panelDoctorDashboard.repaint();
                         JList newPat = new JList(newPatientList.toArray());
+                        newPat.add(forLists);
+                        forLists.setVisible(true);
                         docdashb.panelDoctorDashboard.add(newPat);
                         newPat.setBounds(30, 120, 600, 400);
                         newPat.repaint();

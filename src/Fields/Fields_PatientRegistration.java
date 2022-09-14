@@ -27,12 +27,13 @@ public class Fields_PatientRegistration {
     public JTextField ownerSurnameText = new JTextField();
     public JLabel wrong = new JLabel();
     public JButton help = new JButton("Help");
-    public JLabel nameHint = new JLabel("");
-    public JLabel spHint = new JLabel("");
-    public JLabel brHint = new JLabel("");
-    public JLabel wigHint = new JLabel("");
-    public JLabel passpHint = new JLabel("");
-    public JLabel birthHint = new JLabel("");
-    public  JLabel ownHint = new JLabel("");
-     public JLabel surGint = new JLabel("");
+    public JLabel nameHint = new JLabel();
+    public JLabel spHint = new JLabel();
+    public JLabel brHint = new JLabel();
+    public JLabel wigHint = new JLabel();
+    public JLabel passpHint = new JLabel();
+    public JLabel birthHint = new JLabel();
+    public  JLabel ownHint = new JLabel();
+     public JLabel surGint = new JLabel();
+     public JLabel mesaage = new JLabel();
 }

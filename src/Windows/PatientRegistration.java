@@ -3,6 +3,8 @@ package Windows;
 import Fields.Fields_PatientRegistration;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class PatientRegistration extends Fields_PatientRegistration {
     public void patientRegistrationWindow() {
@@ -83,14 +85,45 @@ public class PatientRegistration extends Fields_PatientRegistration {
         panelPatientRegistration.add(ownHint);
         panelPatientRegistration.add(spHint);
 
-        nameHint.setText("a-z, A-Z, 2-30 smb");
-        spHint.setText("a-z, A-Z, 2-30 smb");
-        brHint.setText("a-z, A-Z, 2-50 smb");
-        wigHint.setText("0 - 500, format: xx.xx");
-        passpHint.setText("a-z, A-Z, 2-50 smb");
-        birthHint.setText("format: yyyy-mm-dd");
-        ownHint.setText("a-z, A-Z, space, -,2-30 smb");
-        spHint.setText("a-z, A-Z, space, -, 2-30 smb");
+        nameHint.setBounds(485,140,200,20);
+        spHint.setBounds(485,185,200,20);
+        brHint.setBounds(485,230,200,20);
+        wigHint.setBounds(485,275,200,20);
+        passpHint.setBounds(485,320,200,20);
+        birthHint.setBounds(485,365,200,20);
+        ownHint.setBounds(485,410,200,20);
+        spHint.setBounds(485,455,200,20);
+        mesaage.setText("");
+        nameHint.setText("");
+        spHint.setText("");
+        brHint.setText("");
+        wigHint.setText("");
+        passpHint.setText("");
+        birthHint.setText("");
+        ownHint.setText("");
+        spHint.setText("");
+
+
+        panelPatientRegistration.add(mesaage);
+        mesaage.setBounds(220,10,400,40);
+
+        panelPatientRegistration.add(help);
+        help.setBounds(600,10,90,40);
+        help.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                mesaage.setText("Please check, if fields are filled in correctly!");
+                nameHint.setText("a-z, A-Z, 2-30 smb");
+                spHint.setText("a-z, A-Z, 2-30 smb");
+                brHint.setText("a-z, A-Z, 2-50 smb");
+                wigHint.setText("0 - 500, format: xx.xx");
+                passpHint.setText("a-z, A-Z, 2-50 smb");
+                birthHint.setText("format: yyyy-mm-dd");
+                ownHint.setText("a-z, A-Z, space, -,2-30 smb");
+                spHint.setText("a-z, A-Z, space, -, 2-30 smb");
+
+            }
+        });
 
     }
 }
