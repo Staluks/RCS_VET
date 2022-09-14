@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="edit for doctors,&#10;amended in Fields_ClinicDashboard&#10;amended in ClinicDashboard&#10;amended in Main login button">
-      <change afterPath="$PROJECT_DIR$/src/Windows/EditPatient.java" afterDir="false" />
+    <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Windows/ClinicDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/ClinicDashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Windows/DoctorDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/DoctorDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663112230852</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient">
+      <created>1663192904222</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663192904222</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +198,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-created doctors registration validation" />
     <MESSAGE value="-fixes" />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
@@ -216,6 +222,7 @@
     <MESSAGE value="[rcs 14] validation + added order to file/methods/classes names" />
     <MESSAGE value="pievilku izmainas" />
     <MESSAGE value="edit for doctors,&#10;amended in Fields_ClinicDashboard&#10;amended in ClinicDashboard&#10;amended in Main login button" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit for doctors,&#10;amended in Fields_ClinicDashboard&#10;amended in ClinicDashboard&#10;amended in Main login button" />
+    <MESSAGE value="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient" />
+    <option name="LAST_COMMIT_MESSAGE" value="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient" />
   </component>
 </project>

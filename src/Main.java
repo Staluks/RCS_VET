@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -400,6 +401,7 @@ public class Main {
                 docdashb.doctorDashboardWindow();
             }
         });
+//        submit button for edit patient
         editPat.submitpat.addActionListener(new ActionListener() {
             // submit button for new doctors registration
             @Override
@@ -426,7 +428,7 @@ public class Main {
 //                            editDoc.personalCodeText.setText("");
 //                            editDoc.certificateText.setText("");
 
-//                            refresh doctors list
+//                            refresh patient list
                             docdashb.modelPatient.clear();
                             ArrayList<String> patientList = dbPatient.getPatientList(dbIdDoctor);
                             for (String s : patientList) {
@@ -445,6 +447,47 @@ public class Main {
             }
         });
 
+        patReg.submitpat.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //if user preses button, a new window with a form will open
+                try {
+                    int dbDoctorsId = dbDoctor.getDoctorId(loginmeth.userText.getText());
+                    // checks if text fields are filled correct
+                    if(patientVal.isValidPatRegistration(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), patReg.passportNrText.getText(), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText())){
+                        // if unique then fields are registered in patients table.
+                        if(dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), Date.valueOf(patReg.dateofBirthText.getText()), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId)){
+//                            dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()),Date.valueOf(patReg.dateofBirthText.getText()), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId);
+                            patReg.panelPatientRegistration.setVisible(false);
+                            loginmeth.frame.add(docdashb.panelDoctorDashboard);
+                            docdashb.doctorDashboardWindow();
+                            patReg.patNameText.setText("");
+                            patReg.patSpeciesText.setText("");
+                            patReg.patBreedText.setText("");
+                            patReg.patWeightText.setText("");
+                            patReg.passportNrText.setText("");
+                            patReg.dateofBirthText.setText("");
+                            patReg.ownerNameText.setText("");
+                            patReg.ownerSurnameText.setText("");
+//                          refresh patient list
+                            docdashb.modelPatient.clear();
+                            ArrayList<String> patientList = dbPatient.getPatientList(dbDoctorsId);
+                            for (String s : patientList) {
+                                docdashb.modelPatient.addElement(s);
+                            }
+
+                        }else{
+                            docreg.errorMessage.setText("fields are filled wrong");
+                        }
+                    }else{
+                        docreg.errorMessage.setText("fields are filled wrong");
+                    }
+                }catch (SQLException a) {
+                    a.printStackTrace();
+                }
+
+            }
+        });
 
 
 

@@ -15,4 +15,5 @@ public class Fields_DoctorDashboard {
     public JLabel welcome = new JLabel();
     public DefaultListModel modelPatient = new DefaultListModel();
     public JList allPatient = new JList(modelPatient);
+    public JScrollPane scrollPane = new JScrollPane();
 }

@@ -60,4 +60,13 @@ public class Validation_PatientRegistration {
 
         return Pattern.matches(pattern_common2, text);
     }
+    public boolean isValidPatRegistration(String name, String spieces, String breed, float weight,
+                                       String passport, String birth, String ownerN, String ownerS) {
+        if (isValidName(name) && isValidSpecies(spieces) && isValidBreed(breed) && isValidWeight(weight)
+                && isValidPassportNumber(passport) && isValidDateOfBirth(birth) && isValidOwnerName(ownerN) && isValidOwnerName(ownerS)) {
+            return true;
+        }
+
+        return false;
+    }
 }
