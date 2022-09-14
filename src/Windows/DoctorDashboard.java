@@ -30,5 +30,7 @@ public class DoctorDashboard extends Fields_DoctorDashboard {
 
         panelDoctorDashboard.add(welcome);
         welcome.setBounds(20,10,300,50);
+        allPatient.setBounds(30, 120, 600, 400);
+        panelDoctorDashboard.add(allPatient);
     }
 }

@@ -1,5 +1,6 @@
 import Validation.Validation_DoctorRegistration;
 import Validation.Validation_LogIn;
+import Validation.Validation_PatientRegistration;
 import Windows.*;
 import db.DBLogic_Clinic;
 import db.DBLogic_Doctor;
@@ -30,8 +31,8 @@ public class Main {
         Validation_LogIn logInVal = new Validation_LogIn();
         PatientRegistration patReg = new PatientRegistration();
         NewMedicalHistory medHisWin = new NewMedicalHistory();
-
-
+        EditPatient editPat = new EditPatient();
+        Validation_PatientRegistration patientVal = new Validation_PatientRegistration();
 
 
 
@@ -149,10 +150,11 @@ public class Main {
 //                                 doctor dashboard will display list of all patients it has registered
                                 ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
                                 for (String s : patientList) {
+                                    docdashb.modelPatient.addElement(s);
                                     // when clinic dashboard opens a list of all associated doctors will appear
-                                    JList allPatient = new JList(patientList.toArray());
-                                    docdashb.panelDoctorDashboard.add(allPatient);
-                                    allPatient.setBounds(30, 120, 600, 400);
+//                                    JList allPatient = new JList(patientList.toArray());
+//                                    docdashb.panelDoctorDashboard.add(allPatient);
+//                                    allPatient.setBounds(30, 120, 600, 400);
                                 }
 
                             } else {
@@ -239,6 +241,11 @@ public class Main {
                             docreg.certificateText.setText("");
                             docreg.reppasswordText.setText("");
                             docreg.active.setSelected(true);
+                            clindashb.model.clear();
+                            ArrayList<String> doctorList = dbDoctor.getDoctorList(dbClId);
+                            for(String s : doctorList){
+                                clindashb.model.addElement(s);
+                            }
 
                         }else{
                             docreg.errorMessage.setText("doctor with this username/personal code/certificate Nr. already exists");
@@ -338,7 +345,7 @@ public class Main {
                     int dbIdDoctor = dbDoctor.getDoctorId(doctorsList[2]);
 
                     // checks if text fields are filled correct
-                    if(true){
+                    if(docRegVal.isValidName(editDoc.docNameText.getText()) && docRegVal.isValidName(editDoc.docSurnameText.getText()) && docRegVal.isValidPersonalCode(editDoc.personalCodeText.getText()) && docRegVal.isValidCertificate(editDoc.certificateText.getText())){
                         // checks if unique needed fields are unique
                         // if unique then fields are registered in doctors table.
                         if(dbDoctor.update(editDoc.docNameText.getText(), editDoc.docSurnameText.getText(),editDoc.personalCodeText.getText(), editDoc.certificateText.getText(), "active", dbIdDoctor)){
@@ -357,6 +364,73 @@ public class Main {
                             ArrayList<String> doctorList = dbDoctor.getDoctorList(dbClId);
                             for(String s : doctorList){
                                 clindashb.model.addElement(s);
+                            }
+
+                        }else{
+                            editDoc.errorMessage.setText("doctor with this username/personal code/certificate Nr. already exists");
+                        }
+                    }else{
+                        editDoc.errorMessage.setText("fields are filled wrong");
+                    }
+                }catch (SQLException a) {
+                    a.printStackTrace();
+                }
+            }
+        });
+        docdashb.edit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //need to select from list
+                docdashb.panelDoctorDashboard.setVisible(false);
+                loginmeth.frame.add(editPat.panelPatientRegistration);
+                String patientListString = docdashb.allPatient.getSelectedValue().toString();
+                String[] patientsList = null;
+//              Splits selected String form Jlist to array
+                patientsList = patientListString.split(" ");
+//              fills form with selected patients info
+                editPat.patientEditWindow(patientsList[0], patientsList[1], patientsList[2], patientsList[3], patientsList[4], patientsList[5]);
+
+            }
+        });
+        editPat.cancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                editPat.panelPatientRegistration.setVisible(false);
+                loginmeth.frame.add(docdashb.panelDoctorDashboard);
+                docdashb.doctorDashboardWindow();
+            }
+        });
+        editPat.submitpat.addActionListener(new ActionListener() {
+            // submit button for new doctors registration
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // gets Clinic ID
+                try {
+                    String patientListString = docdashb.allPatient.getSelectedValue().toString();
+                    String[] patientsList = null;
+//              Splits selected String form Jlist to array
+                    patientsList = patientListString.split(" ");
+                    int dbIdDoctor = dbDoctor.getDoctorId(loginmeth.userText.getText());
+                    int dbIdPatient = Integer.valueOf(patientsList[6]);
+                    // checks if text fields are filled correct
+                    if(patientVal.isValidName(editPat.patNameText.getText()) && patientVal.isValidSpecies(editPat.patSpeciesText.getText()) && patientVal.isValidBreed(editPat.patBreedText.getText()) && patientVal.isValidPassportNumber(editPat.passportNrText.getText()) && patientVal.isValidOwnerName(editPat.ownerNameText.getText()) && patientVal.isValidOwnerName(editPat.ownerSurnameText.getText())){
+                        // if unique then fields are registered in doctors table.
+                        if(dbPatient.update(editPat.patNameText.getText(), editPat.patSpeciesText.getText(), editPat.patBreedText.getText(), editPat.passportNrText.getText(), editPat.ownerNameText.getText(), editPat.ownerSurnameText.getText(), dbIdDoctor, dbIdPatient)){
+                            dbPatient.update(editPat.patNameText.getText(), editPat.patSpeciesText.getText(), editPat.patBreedText.getText(), editPat.passportNrText.getText(), editPat.ownerNameText.getText(), editPat.ownerSurnameText.getText(), dbIdDoctor, dbIdPatient);
+                            editPat.panelPatientRegistration.setVisible(false);
+                            loginmeth.frame.add(docdashb.panelDoctorDashboard);
+                            docdashb.doctorDashboardWindow();
+//                            editDoc.docNameText.setText("");
+//                            editDoc.docSurnameText.setText("");
+//                            editDoc.usernameText.setText("");
+//                            editDoc.personalCodeText.setText("");
+//                            editDoc.certificateText.setText("");
+
+//                            refresh doctors list
+                            docdashb.modelPatient.clear();
+                            ArrayList<String> patientList = dbPatient.getPatientList(dbIdDoctor);
+                            for (String s : patientList) {
+                                docdashb.modelPatient.addElement(s);
                             }
 
                         }else{
