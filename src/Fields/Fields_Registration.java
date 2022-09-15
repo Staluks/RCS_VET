@@ -42,6 +42,7 @@ public class Fields_Registration {
     public JLabel regAdrHint = new JLabel();
     public JLabel userHint = new JLabel();
     public JLabel passHint = new JLabel();
+    public JLabel repassHint = new JLabel();
 }
 
 
