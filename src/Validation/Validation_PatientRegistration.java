@@ -33,7 +33,7 @@ public class Validation_PatientRegistration {
     }
 
     public boolean isValidWeight(float amount) {
-        if (amount > 500.0f) {
+        if (amount > 500.0f || amount == 0) {
             return false;
         }
 

@@ -451,11 +451,11 @@ public class Main {
         patReg.submitpat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //if user preses button, a doctors dash will open and all entered info will be updated
+                //if user preses button, a new window with a form will open
                 try {
                     int dbDoctorsId = dbDoctor.getDoctorId(loginmeth.userText.getText());
                     // checks if text fields are filled correct
-                    if(patientVal.isValidPatRegistration(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), patReg.dateofBirthText.getText(), patReg.passportNrText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText())){
+                    if(patientVal.isValidPatRegistration(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), patReg.passportNrText.getText(), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText())){
                         // if unique then fields are registered in patients table.
                         if(dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), Date.valueOf(patReg.dateofBirthText.getText()), patReg.passportNrText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId)){
 //                            dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()),Date.valueOf(patReg.dateofBirthText.getText()), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId);
@@ -478,10 +478,10 @@ public class Main {
                             }
 
                         }else{
-                            patReg.errorMessage.setText("fields are filled wrong");
+                            docreg.errorMessage.setText("fields are filled wrong");
                         }
                     }else{
-                        patReg.errorMessage.setText("fields are filled wrong");
+                        docreg.errorMessage.setText("fields are filled wrong");
                     }
                 }catch (SQLException a) {
                     a.printStackTrace();
