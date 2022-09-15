@@ -16,6 +16,7 @@ public class EditPatient extends Fields_PatientRegistration {
         cancel.setBounds(10, 10, 90, 40);
 
         //top heading
+        patRegistration.setText("Edit patients account here!");
         panelPatientRegistration.add(patRegistration);
         patRegistration.setBounds(220, 50, 300, 70);
 
@@ -26,6 +27,7 @@ public class EditPatient extends Fields_PatientRegistration {
         panelPatientRegistration.add(passportNr);
         panelPatientRegistration.add(ownerName);
         panelPatientRegistration.add(ownerSurname);
+        panelPatientRegistration.add(errorMessage);
 
         patName.setBounds(70, 60, 200,200);
         patSpecies.setBounds(70, 105, 200, 200);
@@ -33,7 +35,7 @@ public class EditPatient extends Fields_PatientRegistration {
         passportNr.setBounds(70,195,200,200);
         ownerName.setBounds(70,240,200,200);
         ownerSurname.setBounds(70,285,200,200);
-
+        errorMessage.setBounds(280, 445, 200, 30);
 
 
 

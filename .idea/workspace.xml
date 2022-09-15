@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_DoctorDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_PatientRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_PatientRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Windows/ClinicDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/ClinicDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Windows/DoctorDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/DoctorDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_DoctorRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_DoctorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Windows/EditPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/EditPatient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="" />
+      <changelist id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient" />
       <created>1660285489749</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

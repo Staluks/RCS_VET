@@ -103,8 +103,7 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // check if input is correct
-//                logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())
-                 if(true){
+                 if(logInVal.isValidUsername(loginmeth.userText.getText()) && logInVal.isValidPassword(loginmeth.passwordText.getText())){
                     if (loginmeth.clinic.isSelected()) {
                         try {
                             // get clinic id by login username and password
@@ -131,7 +130,7 @@ public class Main {
 //                                }
                             } else {
                                 // if log in failed this message will appear
-                                loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
+                                loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!2");
                             }
                         } catch (SQLException a) {
                             a.printStackTrace();
@@ -170,7 +169,7 @@ public class Main {
 
                 } else{
                     // if log in failed this message will appear
-                    loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
+                    loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!1");
                 }
             }
 
@@ -349,8 +348,8 @@ public class Main {
                     if(docRegVal.isValidName(editDoc.docNameText.getText()) && docRegVal.isValidName(editDoc.docSurnameText.getText()) && docRegVal.isValidPersonalCode(editDoc.personalCodeText.getText()) && docRegVal.isValidCertificate(editDoc.certificateText.getText())){
                         // checks if unique needed fields are unique
                         // if unique then fields are registered in doctors table.
-                        if(dbDoctor.update(editDoc.docNameText.getText(), editDoc.docSurnameText.getText(),editDoc.personalCodeText.getText(), editDoc.certificateText.getText(), "active", dbIdDoctor)){
-                            dbDoctor.update(editDoc.docNameText.getText(), editDoc.docSurnameText.getText(),editDoc.personalCodeText.getText(), editDoc.certificateText.getText(), "active", dbIdDoctor);
+                        if(dbDoctor.update(editDoc.docNameText.getText(), editDoc.docSurnameText.getText(),editDoc.personalCodeText.getText(), editDoc.certificateText.getText(), docRegVal.getStatus(editDoc.active), dbIdDoctor)){
+                            dbDoctor.update(editDoc.docNameText.getText(), editDoc.docSurnameText.getText(),editDoc.personalCodeText.getText(), editDoc.certificateText.getText(), docRegVal.getStatus(editDoc.active), dbIdDoctor);
                             editDoc.panelDoctorRegistration.setVisible(false);
                             loginmeth.frame.add(clindashb.panelClinicDashboard);
                             clindashb.clinicDashboardWindow();
@@ -436,10 +435,10 @@ public class Main {
                             }
 
                         }else{
-                            editDoc.errorMessage.setText("doctor with this username/personal code/certificate Nr. already exists");
+                            editPat.errorMessage.setText("fields are filled wrong");
                         }
                     }else{
-                        editDoc.errorMessage.setText("fields are filled wrong");
+                        editPat.errorMessage.setText("fields are filled wrong");
                     }
                 }catch (SQLException a) {
                     a.printStackTrace();
@@ -450,7 +449,7 @@ public class Main {
         patReg.submitpat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //if user preses button, a new window with a form will open
+                //if user preses button, a doctors dash will open and all entered info will be updated
                 try {
                     int dbDoctorsId = dbDoctor.getDoctorId(loginmeth.userText.getText());
                     // checks if text fields are filled correct
@@ -477,10 +476,10 @@ public class Main {
                             }
 
                         }else{
-                            docreg.errorMessage.setText("fields are filled wrong");
+                            patReg.errorMessage.setText("fields are filled wrong");
                         }
                     }else{
-                        docreg.errorMessage.setText("fields are filled wrong");
+                        patReg.errorMessage.setText("fields are filled wrong");
                     }
                 }catch (SQLException a) {
                     a.printStackTrace();
