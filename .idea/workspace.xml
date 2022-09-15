@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons">
+    <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="fixed login duplicates after logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -26,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="rcs_24.1" />
+        <entry key="$PROJECT_DIR$" value="rcs_26" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,9 +80,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Validation.Main2" />
         <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Validation.Main2" />
       </list>
@@ -188,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663229040909</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed login duplicates after logout">
+      <created>1663231628590</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663231628590</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +210,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
     <MESSAGE value="doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)" />
@@ -228,6 +234,7 @@
     <MESSAGE value="edit for doctors,&#10;amended in Fields_ClinicDashboard&#10;amended in ClinicDashboard&#10;amended in Main login button" />
     <MESSAGE value="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient" />
     <MESSAGE value="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons" />
+    <MESSAGE value="fixed login duplicates after logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed login duplicates after logout" />
   </component>
 </project>

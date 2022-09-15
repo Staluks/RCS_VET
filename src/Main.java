@@ -130,7 +130,7 @@ public class Main {
 //                                }
                             } else {
                                 // if log in failed this message will appear
-                                loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!2");
+                                loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
                             }
                         } catch (SQLException a) {
                             a.printStackTrace();
@@ -169,7 +169,7 @@ public class Main {
 
                 } else{
                     // if log in failed this message will appear
-                    loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!1");
+                    loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
                 }
             }
 
@@ -455,9 +455,9 @@ public class Main {
                 try {
                     int dbDoctorsId = dbDoctor.getDoctorId(loginmeth.userText.getText());
                     // checks if text fields are filled correct
-                    if(patientVal.isValidPatRegistration(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), patReg.passportNrText.getText(), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText())){
+                    if(patientVal.isValidPatRegistration(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), patReg.dateofBirthText.getText(), patReg.passportNrText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText())){
                         // if unique then fields are registered in patients table.
-                        if(dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), Date.valueOf(patReg.dateofBirthText.getText()), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId)){
+                        if(dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), Date.valueOf(patReg.dateofBirthText.getText()), patReg.passportNrText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId)){
 //                            dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()),Date.valueOf(patReg.dateofBirthText.getText()), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId);
                             patReg.panelPatientRegistration.setVisible(false);
                             loginmeth.frame.add(docdashb.panelDoctorDashboard);
