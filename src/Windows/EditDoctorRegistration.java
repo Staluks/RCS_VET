@@ -67,6 +67,11 @@ public class EditDoctorRegistration extends DoctorRegistration {
 
         panelDoctorRegistration.add(submit);
         submit.setBounds(440,570,150,60);
+        docNameText.setText("");
+        docSurnameText.setText("");
+        usernameText.setText("");
+        personalCodeText.setText("");
+        certificateText.setText("");
     }
 }
 

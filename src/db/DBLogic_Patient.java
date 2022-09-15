@@ -141,7 +141,7 @@ public class DBLogic_Patient extends DBConnection{
 
     // get patient ID by passport number
     // returns patient id or "-1" if patient not found
-    public int getPatientId(String passport_num, int doctor_id) throws SQLException {
+    public int getPatientId(String passport_num) throws SQLException {
 
         // connection to DB
         Connection conn = connectToDB();

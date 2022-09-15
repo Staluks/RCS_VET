@@ -69,5 +69,13 @@ public class PatientRegistration extends Fields_PatientRegistration {
 
         panelPatientRegistration.add(submitpat);
         submitpat.setBounds(440,570,150,60);
+        patNameText.setText("");
+        patSpeciesText.setText("");
+        patBreedText.setText("");
+        patWeightText.setText("");
+        passportNrText.setText("");
+        dateofBirthText.setText("");
+        ownerNameText.setText("");
+        ownerSurnameText.setText("");
     }
 }

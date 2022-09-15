@@ -34,6 +34,7 @@ public class Main {
         NewMedicalHistory medHisWin = new NewMedicalHistory();
         EditPatient editPat = new EditPatient();
         Validation_PatientRegistration patientVal = new Validation_PatientRegistration();
+        HistoryWindow hisWin = new HistoryWindow();
 
 
 
@@ -75,9 +76,7 @@ public class Main {
                         ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
                         for (String s : doctorList) {
                             // when clinic dashboard opens a list of all associated doctors will appear
-//                            JList alldoctors = new JList(doctorList.toArray());
-//                            clindashb.panelClinicDashboard.add(alldoctors);
-//                            alldoctors.setBounds(30, 120, 600, 400);
+                            clindashb.model.addElement(s);
                         }
                     }else{
                         // if something is wrong this message will appear
@@ -121,13 +120,6 @@ public class Main {
                                 for(String s : doctorList){
                                     clindashb.model.addElement(s);
                                 }
-//                                ArrayList<String> doctorList = dbDoctor.getDoctorList(clinicId);
-//                                for (String s : doctorList) {
-//                                    // when clinic dashboard opens a list of all associated doctors will appear
-//                                    JList alldoctors = new JList( doctorList.toArray());
-//                                    clindashb.panelClinicDashboard.add(alldoctors);
-//                                    alldoctors.setBounds(30, 120, 600, 400);
-//                                }
                             } else {
                                 // if log in failed this message will appear
                                 loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!2");
@@ -151,12 +143,7 @@ public class Main {
                                 ArrayList<String> patientList = dbPatient.getPatientList(doctorId);
                                 for (String s : patientList) {
                                     docdashb.modelPatient.addElement(s);
-                                    // when clinic dashboard opens a list of all associated doctors will appear
-//                                    JList allPatient = new JList(patientList.toArray());
-//                                    docdashb.panelDoctorDashboard.add(allPatient);
-//                                    allPatient.setBounds(30, 120, 600, 400);
-                                }
-
+                                   }
                             } else {
                                 // if log in failed then this message will appear
                                 loginmeth.wrongPass.setText("Log in failed! Check username or password and try again!");
@@ -233,13 +220,6 @@ public class Main {
                             docreg.panelDoctorRegistration.setVisible(false);
                             loginmeth.frame.add(clindashb.panelClinicDashboard);
                             clindashb.clinicDashboardWindow();
-                            docreg.docNameText.setText("");
-                            docreg.docSurnameText.setText("");
-                            docreg.usernameText.setText("");
-                            docreg.passwordText.setText("");
-                            docreg.personalCodeText.setText("");
-                            docreg.certificateText.setText("");
-                            docreg.reppasswordText.setText("");
                             docreg.active.setSelected(true);
                             clindashb.model.clear();
                             ArrayList<String> doctorList = dbDoctor.getDoctorList(dbClId);
@@ -314,10 +294,13 @@ public class Main {
         docdashb.addMedHistory.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               //doctor opens window for entering new info about patient
+               //need to select from list
+                String patientListString = docdashb.allPatient.getSelectedValue().toString();
+                String[] patientsList = null;
+                patientsList = patientListString.split(" ");
+                //doctor opens window for entering new info about patient
                 docdashb.panelDoctorDashboard.setVisible(false);
                 loginmeth.frame.add(medHisWin.panelNewMedicalHistory);
-                medHisWin.panelNewMedicalHistory.setVisible(true);
                 medHisWin.newMedicalHistoryWindow();
             }
         });
@@ -343,7 +326,6 @@ public class Main {
 //              Splits selected String form Jlist to array
                     doctorsList = doctorsListString.split(" ");
                     int dbIdDoctor = dbDoctor.getDoctorId(doctorsList[2]);
-
                     // checks if text fields are filled correct
                     if(docRegVal.isValidName(editDoc.docNameText.getText()) && docRegVal.isValidName(editDoc.docSurnameText.getText()) && docRegVal.isValidPersonalCode(editDoc.personalCodeText.getText()) && docRegVal.isValidCertificate(editDoc.certificateText.getText())){
                         // checks if unique needed fields are unique
@@ -353,11 +335,6 @@ public class Main {
                             editDoc.panelDoctorRegistration.setVisible(false);
                             loginmeth.frame.add(clindashb.panelClinicDashboard);
                             clindashb.clinicDashboardWindow();
-                            editDoc.docNameText.setText("");
-                            editDoc.docSurnameText.setText("");
-                            editDoc.usernameText.setText("");
-                            editDoc.personalCodeText.setText("");
-                            editDoc.certificateText.setText("");
                             editDoc.active.setSelected(true);
 //                            refresh doctors list
                             clindashb.model.clear();
@@ -421,19 +398,12 @@ public class Main {
                             editPat.panelPatientRegistration.setVisible(false);
                             loginmeth.frame.add(docdashb.panelDoctorDashboard);
                             docdashb.doctorDashboardWindow();
-//                            editDoc.docNameText.setText("");
-//                            editDoc.docSurnameText.setText("");
-//                            editDoc.usernameText.setText("");
-//                            editDoc.personalCodeText.setText("");
-//                            editDoc.certificateText.setText("");
-
 //                            refresh patient list
                             docdashb.modelPatient.clear();
                             ArrayList<String> patientList = dbPatient.getPatientList(dbIdDoctor);
                             for (String s : patientList) {
                                 docdashb.modelPatient.addElement(s);
                             }
-
                         }else{
                             editPat.errorMessage.setText("fields are filled wrong");
                         }
@@ -445,7 +415,6 @@ public class Main {
                 }
             }
         });
-
         patReg.submitpat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -460,14 +429,6 @@ public class Main {
                             patReg.panelPatientRegistration.setVisible(false);
                             loginmeth.frame.add(docdashb.panelDoctorDashboard);
                             docdashb.doctorDashboardWindow();
-                            patReg.patNameText.setText("");
-                            patReg.patSpeciesText.setText("");
-                            patReg.patBreedText.setText("");
-                            patReg.patWeightText.setText("");
-                            patReg.passportNrText.setText("");
-                            patReg.dateofBirthText.setText("");
-                            patReg.ownerNameText.setText("");
-                            patReg.ownerSurnameText.setText("");
 //                          refresh patient list
                             docdashb.modelPatient.clear();
                             ArrayList<String> patientList = dbPatient.getPatientList(dbDoctorsId);
@@ -485,6 +446,19 @@ public class Main {
                     a.printStackTrace();
                 }
 
+            }
+        });
+        docdashb.history.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+              try{
+                  int patientId = dbPatient.getPatientId(docdashb.allPatient.getSelectedValue().toString());
+                  ArrayList<Integer> patientIds = dbPatient.getPatientIds(patientId);
+                  for (int id: patientIds) {
+                      hisWin.model.addElement(id);
+                  }
+            }catch (SQLException a) {
+              a.printStackTrace();}
             }
         });
 
