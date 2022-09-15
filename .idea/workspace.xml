@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="fixes for rcs_21">
+    <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="fixes for patien registration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_PatientRegistration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663233815291</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixes for patien registration">
+      <created>1663237286210</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663237286210</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,7 +224,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
     <MESSAGE value="doctor&#10;- method: register (String clinic_id -&gt; int clinic_id)&#10;method: getDoctorList (String clinic_id -&gt; int clinic_id)" />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
@@ -243,6 +248,7 @@
     <MESSAGE value="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons" />
     <MESSAGE value="fixed login duplicates after logout" />
     <MESSAGE value="fixes for rcs_21" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes for rcs_21" />
+    <MESSAGE value="fixes for patien registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes for patien registration" />
   </component>
 </project>

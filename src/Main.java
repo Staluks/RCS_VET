@@ -266,18 +266,20 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //need to select from list
-                clindashb.panelClinicDashboard.setVisible(false);
-                loginmeth.frame.add(editDoc.panelDoctorRegistration);
-                String doctorsListString = clindashb.alldoctors.getSelectedValue().toString();
-                String[] doctorsList = null;
+                if(!clindashb.alldoctors.isSelectionEmpty()) {
+                    clindashb.panelClinicDashboard.setVisible(false);
+                    loginmeth.frame.add(editDoc.panelDoctorRegistration);
+                    String doctorsListString = clindashb.alldoctors.getSelectedValue().toString();
+                    String[] doctorsList = null;
 //              Splits selected String form Jlist to array
-                doctorsList = doctorsListString.split(" ");
+                    doctorsList = doctorsListString.split(" ");
 //              fills form with selected doctors info
-                editDoc.editDoctorRegistrationWindow(doctorsList[0], doctorsList[1], doctorsList[2], doctorsList[3], doctorsList[4]);
-                if (doctorsList[5] == "active"){
-                    editDoc.active.setSelected(true);
-                }else{
-                    editDoc.blocked.setSelected(true);
+                    editDoc.editDoctorRegistrationWindow(doctorsList[0], doctorsList[1], doctorsList[2], doctorsList[3], doctorsList[4]);
+                    if (doctorsList[5] == "active") {
+                        editDoc.active.setSelected(true);
+                    } else {
+                        editDoc.blocked.setSelected(true);
+                    }
                 }
             }
         });
@@ -382,16 +384,18 @@ public class Main {
         docdashb.edit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //need to select from list
-                docdashb.panelDoctorDashboard.setVisible(false);
-                loginmeth.frame.add(editPat.panelPatientRegistration);
-                String patientListString = docdashb.allPatient.getSelectedValue().toString();
-                String[] patientsList = null;
+                if (!docdashb.allPatient.isSelectionEmpty()) {
+                    //need to select from list
+                    docdashb.panelDoctorDashboard.setVisible(false);
+                    loginmeth.frame.add(editPat.panelPatientRegistration);
+                    String patientListString = docdashb.allPatient.getSelectedValue().toString();
+                    String[] patientsList = null;
 //              Splits selected String form Jlist to array
-                patientsList = patientListString.split(" ");
+                    patientsList = patientListString.split(" ");
 //              fills form with selected patients info
-                editPat.patientEditWindow(patientsList[0], patientsList[1], patientsList[2], patientsList[3], patientsList[4], patientsList[5]);
+                    editPat.patientEditWindow(patientsList[0], patientsList[1], patientsList[2], patientsList[3], patientsList[4], patientsList[5]);
 
+                }
             }
         });
         editPat.cancel.addActionListener(new ActionListener() {
@@ -458,7 +462,7 @@ public class Main {
                     if(patientVal.isValidPatRegistration(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), patReg.passportNrText.getText(), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText())){
                         // if unique then fields are registered in patients table.
                         if(dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()), Date.valueOf(patReg.dateofBirthText.getText()), patReg.passportNrText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId)){
-//                            dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()),Date.valueOf(patReg.dateofBirthText.getText()), patReg.dateofBirthText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId);
+//                            dbPatient.register(patReg.patNameText.getText(), patReg.patSpeciesText.getText(), patReg.patBreedText.getText(), Float.valueOf(patReg.patWeightText.getText()),Date.valueOf(patReg.dateofBirthText.getText()), patReg.passportNrText.getText(), patReg.ownerNameText.getText(), patReg.ownerSurnameText.getText(), dbDoctorsId);
                             patReg.panelPatientRegistration.setVisible(false);
                             loginmeth.frame.add(docdashb.panelDoctorDashboard);
                             docdashb.doctorDashboardWindow();
