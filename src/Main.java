@@ -182,6 +182,7 @@ public class Main {
                 clindashb.panelClinicDashboard.setVisible(false);
                 loginmeth.frame.add(loginmeth.panelLogIn);
                 loginmeth.logInWindow();
+                clindashb.model.clear();
             }
         });
 
@@ -212,6 +213,7 @@ public class Main {
                 docdashb.panelDoctorDashboard.setVisible(false);
                 loginmeth.frame.add(loginmeth.panelLogIn);
                 loginmeth.logInWindow();
+                docdashb.modelPatient.clear();
             }
         });
 

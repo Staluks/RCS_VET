@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient">
+    <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_PatientRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_PatientRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_DoctorRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_DoctorRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation/Validation_LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/Validation_LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Windows/EditPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Windows/EditPatient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Develop" />
+        <entry key="$PROJECT_DIR$" value="rcs_24.1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,9 +80,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Validation.Main2" />
         <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Validation.Main2" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663192904222</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons">
+      <created>1663229040909</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663229040909</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +203,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-fixes" />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
     <MESSAGE value="- DBLogicPatient: crud - fixes after review" />
@@ -223,6 +227,7 @@
     <MESSAGE value="pievilku izmainas" />
     <MESSAGE value="edit for doctors,&#10;amended in Fields_ClinicDashboard&#10;amended in ClinicDashboard&#10;amended in Main login button" />
     <MESSAGE value="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient" />
-    <option name="LAST_COMMIT_MESSAGE" value="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient" />
+    <MESSAGE value="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons" />
   </component>
 </project>
