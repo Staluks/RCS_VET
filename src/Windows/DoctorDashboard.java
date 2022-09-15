@@ -2,6 +2,7 @@ package Windows;
 
 import Fields.Fields_DoctorDashboard;
 
+import javax.swing.*;
 import java.awt.*;
 
 public class DoctorDashboard extends Fields_DoctorDashboard {
@@ -30,5 +31,12 @@ public class DoctorDashboard extends Fields_DoctorDashboard {
 
         panelDoctorDashboard.add(welcome);
         welcome.setBounds(20,10,300,50);
+        allPatient.setBounds(30, 120, 600, 400);
+        panelDoctorDashboard.add(allPatient);
+//        panelDoctorDashboard.add(scrollPane);
+//        scrollPane.setViewportView(allPatient);
+//        allPatient.setLayoutOrientation(JList.VERTICAL);
+//        panelDoctorDashboard.add(scrollPane);
+
     }
 }

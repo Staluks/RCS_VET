@@ -24,5 +24,9 @@ public class ClinicDashboard extends Fields_ClinicDashboard {
 
         panelClinicDashboard.add(clinName);
         clinName.setBounds(20,10,300,50);
+
+        alldoctors.setBounds(30, 120, 600, 400);
+        panelClinicDashboard.add(alldoctors);
+
     }
 }
