@@ -35,6 +35,7 @@ public class Main {
         EditPatient editPat = new EditPatient();
         Validation_PatientRegistration patientVal = new Validation_PatientRegistration();
         HistoryWindow hisWin = new HistoryWindow();
+        DBLogic_MedicalHistory dbMedHist = new DBLogic_MedicalHistory();
 
 
 
@@ -451,14 +452,29 @@ public class Main {
         docdashb.history.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-              try{
-                  int patientId = dbPatient.getPatientId(docdashb.allPatient.getSelectedValue().toString());
-                  ArrayList<Integer> patientIds = dbPatient.getPatientIds(patientId);
-                  for (int id: patientIds) {
-                      hisWin.model.addElement(id);
-                  }
+                docdashb.panelDoctorDashboard.setVisible(false);
+                loginmeth.frame.add(hisWin.panelHistory);
+                hisWin.panelHistory.setVisible(true);
+                hisWin.historyWindow();
+                try{
+                    int patientId = dbPatient.getPatientId(docdashb.allPatient.getSelectedValue().toString(), dbDoctor.getDoctorId(loginmeth.userText.getText(), loginmeth.passwordText.getText()));
+                    String patName = dbPatient.getPatientNameAndGroup(patientId).toString();
+                    hisWin.history.setText("History for patient - " + patName);
+                    ArrayList<String> medicalHistoryOfPatient = dbMedHist.getMedicalHistoryOfPatient(patientId);
+                    for (String el: medicalHistoryOfPatient) {
+                        hisWin.model.addElement(el);
+                    }
+
             }catch (SQLException a) {
               a.printStackTrace();}
+            }
+        });
+        hisWin.back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                hisWin.panelHistory.setVisible(false);
+                loginmeth.frame.add(docdashb.panelDoctorDashboard);
+                docdashb.doctorDashboardWindow();
             }
         });
 
