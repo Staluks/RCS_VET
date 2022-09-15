@@ -120,7 +120,7 @@ public class DBLogic_Patient extends DBConnection{
         Connection conn = connectToDB();
 
         // sql statement to execute
-        String select  = "SELECT name, `group`, breed, passport_num, owner_name, owner_surname " +
+        String select  = "SELECT id, name, `group`, breed, passport_num, owner_name, owner_surname " +
                 "from patient WHERE doctor_id = ?";
         PreparedStatement ps = conn.prepareStatement(select);
 
@@ -131,7 +131,7 @@ public class DBLogic_Patient extends DBConnection{
         while (rs.next()) {
             patientList.add(rs.getString("name") + " " + rs.getString("group") + " "
                     + rs.getString("breed") +" " + rs.getString("passport_num") + " "
-                    + rs.getString("owner_name") + " " + rs.getString("owner_surname"));
+                    + rs.getString("owner_name") + " " + rs.getString("owner_surname") + " " + rs.getInt("id"));
         }
 
         conn.close();
@@ -216,7 +216,7 @@ public class DBLogic_Patient extends DBConnection{
     }
 
     // update existing patient data
-    public boolean update(String name, String group, String breed, float weight, Date date_of_birth,
+    public boolean update(String name, String group, String breed,
                           String passport_num, String owner_name, String owner_surname, int doctor_id, int patient_id) {
 
         try {
@@ -224,20 +224,32 @@ public class DBLogic_Patient extends DBConnection{
             Connection conn = connectToDB();
 
             // sql statement to execute
-            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, weight= ?, date_of_birth = ?, " +
+//            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, weight= ?, date_of_birth = ?, " +
+//                    "passport_num = ?, owner_name = ?, owner_surname = ? WHERE doctor_id = ? AND id = ? LIMIT 1";
+//            PreparedStatement ps = conn.prepareStatement(sql);
+//
+//            ps.setString(1, name);
+//            ps.setString(2, group);
+//            ps.setString(3, breed);
+//            ps.setFloat(4, weight);
+//            ps.setDate(5, date_of_birth);
+//            ps.setString(6, passport_num);
+//            ps.setString(7, owner_name);
+//            ps.setString(8, owner_surname);
+//            ps.setInt(9, doctor_id);
+//            ps.setInt(10, patient_id);
+            String sql = "UPDATE patient SET name = ?, `group` = ?, breed = ?, " +
                     "passport_num = ?, owner_name = ?, owner_surname = ? WHERE doctor_id = ? AND id = ? LIMIT 1";
             PreparedStatement ps = conn.prepareStatement(sql);
 
             ps.setString(1, name);
             ps.setString(2, group);
             ps.setString(3, breed);
-            ps.setFloat(4, weight);
-            ps.setDate(5, date_of_birth);
-            ps.setString(6, passport_num);
-            ps.setString(7, owner_name);
-            ps.setString(8, owner_surname);
-            ps.setInt(9, doctor_id);
-            ps.setInt(10, patient_id);
+            ps.setString(4, passport_num);
+            ps.setString(5, owner_name);
+            ps.setString(6, owner_surname);
+            ps.setInt(7, doctor_id);
+            ps.setInt(8, patient_id);
 
             ps.executeUpdate();
             conn.close();

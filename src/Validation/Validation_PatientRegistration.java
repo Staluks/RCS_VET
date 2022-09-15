@@ -33,7 +33,7 @@ public class Validation_PatientRegistration {
     }
 
     public boolean isValidWeight(float amount) {
-        if (amount > 500.0f) {
+        if (amount > 500.0f || amount == 0) {
             return false;
         }
 
@@ -59,5 +59,14 @@ public class Validation_PatientRegistration {
         }
 
         return Pattern.matches(pattern_common2, text);
+    }
+    public boolean isValidPatRegistration(String name, String spieces, String breed, float weight,
+                                       String passport, String birth, String ownerN, String ownerS) {
+        if (isValidName(name) && isValidSpecies(spieces) && isValidBreed(breed) && isValidWeight(weight)
+                && isValidPassportNumber(passport) && isValidDateOfBirth(birth) && isValidOwnerName(ownerN) && isValidOwnerName(ownerS)) {
+            return true;
+        }
+
+        return false;
     }
 }
