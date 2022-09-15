@@ -248,13 +248,55 @@ public class DBLogic_Doctor extends DBConnection{
 
         return doctorAllInfo;
     }
+    public String getDoctorCertificate(int id) throws SQLException {
+
+        // connection to DB
+        Connection conn = connectToDB();
+
+        // sql statement to execute
+        String select  = "SELECT certificate, id, password from doctor WHERE id = ?";
+        PreparedStatement ps = conn.prepareStatement(select);
+
+        ps.setInt(1, id);
+        ResultSet rs = ps.executeQuery();
+
+        // check if such doctor exists in DB
+        if(rs.next()) {
+            return rs.getString("certificate");
+        }
+
+        conn.close();
+
+        return null;
+    }
+    public String getDoctorPersonalCode(int id) throws SQLException {
+
+        // connection to DB
+        Connection conn = connectToDB();
+
+        // sql statement to execute
+        String select  = "SELECT personal_code, id, password from doctor WHERE id = ?";
+        PreparedStatement ps = conn.prepareStatement(select);
+
+        ps.setInt(1, id);
+        ResultSet rs = ps.executeQuery();
+
+        // check if such doctor exists in DB
+        if(rs.next()) {
+            return rs.getString("personal_code");
+        }
+
+        conn.close();
+
+        return null;
+    }
 
     // update existing doctor data
     public boolean update(String name, String surname, String personal_code, String certificate,
                           String status, int doctor_id) {
 
         try {
-            if (isCertificateUnique(certificate) && isPersonalCodeUnique(personal_code)) {
+            if (isCertificateUnique(certificate) && isPersonalCodeUnique(personal_code) || getDoctorCertificate(doctor_id).equals(certificate) || getDoctorPersonalCode(doctor_id).equals(personal_code)) {
                 // connection to DB
                 Connection conn = connectToDB();
 
@@ -302,4 +344,5 @@ public class DBLogic_Doctor extends DBConnection{
 
         return -1;
     }
+
 }

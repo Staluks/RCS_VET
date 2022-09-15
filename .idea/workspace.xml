@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="pedejais" />
+    <list default="true" id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="pievilku izmainas">
+    <list default="true" id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="Rcs_26">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fields/Fields_Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fields/Fields_Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBLogic_Doctor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Develop" />
+        <entry key="$PROJECT_DIR$" value="rcs_26" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,13 +86,15 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Validation.Main2" />
         <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Validation.Main2" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9780ae5f-98b3-4822-9dad-9ba910ad16c5" name="Changes" comment="" />
+      <changelist id="647113f4-c579-40a4-a552-c74157a1a7ef" name="Changes" comment="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient" />
       <created>1660285489749</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -162,14 +170,56 @@
       <option name="project" value="LOCAL" />
       <updated>1662675334725</updated>
     </task>
-    <task id="LOCAL-00011" summary="pedejais">
-      <created>1663255413288</created>
+    <task id="LOCAL-00011" summary="edit for doctors,&#10;amended in Fields_ClinicDashboard&#10;amended in ClinicDashboard&#10;amended in Main login button">
+      <created>1663112230852</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1663255413288</updated>
+      <updated>1663112230852</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient">
+      <created>1663192904222</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663192904222</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons">
+      <created>1663229040909</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663229040909</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixed login duplicates after logout">
+      <created>1663231628590</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663231628590</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fixes for rcs_21">
+      <created>1663233815291</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663233815291</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixes for patien registration">
+      <created>1663237286210</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663237286210</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Rcs_26">
+      <created>1663240377792</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663240377792</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +234,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="_created medical history form" />
+    <MESSAGE value="-created doctors registration validation" />
     <MESSAGE value="-fixes" />
     <MESSAGE value="- DBLogicPatient: crud" />
     <MESSAGE value="- DBLogicPatient: crud - &quot;update&quot; added" />
@@ -207,8 +259,13 @@
     <MESSAGE value="nepabeigts" />
     <MESSAGE value="[rcs 14] validation + added order to file/methods/classes names" />
     <MESSAGE value="pievilku izmainas" />
-    <MESSAGE value="history logs izveidots un pievienots,main klase iznemtas liekas rindas(sakartotas pa klasem)" />
-    <MESSAGE value="pedejais" />
-    <option name="LAST_COMMIT_MESSAGE" value="pedejais" />
+    <MESSAGE value="edit for doctors,&#10;amended in Fields_ClinicDashboard&#10;amended in ClinicDashboard&#10;amended in Main login button" />
+    <MESSAGE value="added edit for patients&#10;fixes in main, doc dashboard, dbLogic patient" />
+    <MESSAGE value="fixes in loginValidation&#10;added error message field  in patient registration&#10;fixed in edit patient and edit doctors buttons" />
+    <MESSAGE value="fixed login duplicates after logout" />
+    <MESSAGE value="fixes for rcs_21" />
+    <MESSAGE value="fixes for patien registration" />
+    <MESSAGE value="Rcs_26" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rcs_26" />
   </component>
 </project>
