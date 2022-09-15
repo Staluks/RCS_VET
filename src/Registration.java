@@ -18,7 +18,7 @@ public class Registration extends Fields_Registration {
 
         //user can press button help to see hints appear to know how to fill in reg form
         panelRegistration.add(help);
-        help.setBounds(600,10,90,40);
+        help.setBounds(585,10,90,40);
 
         //top heading
         panelRegistration.add(registration);
@@ -64,41 +64,44 @@ public class Registration extends Fields_Registration {
         panelRegistration.add(regAdrHint);
         panelRegistration.add(userHint);
         panelRegistration.add(passHint);
+        panelRegistration.add(repassHint);
 
-        clinicNameText.setBounds(280,140,200,35);
+        clinicNameText.setBounds(250,140,200,35);
         clinicNameText.setText("");
-        nameHint.setBounds(470, 110,270,35);
+        nameHint.setBounds(470, 135,270,35);
         nameHint.setText("");
-        regNumberText.setBounds(280,185,200,35);
+        regNumberText.setBounds(250,185,200,35);
         regNumberText.setText("");
-        regNumHint.setBounds(485,160,270,35);
+        regNumHint.setBounds(470,180,270,35);
         regNumHint.setText("");
-        adresText.setBounds(280,230,200,35);
+        adresText.setBounds(250,230,200,35);
         adresText.setText("");
-        adrHint.setBounds(470,205,270,35);
+        adrHint.setBounds(470,225,270,35);
         adrHint.setText("");
-        emailText.setBounds(280,275,200,35);
+        emailText.setBounds(250,275,200,35);
         emailText.setText("");
-        mailHint.setBounds(485,250,270,35);
+        mailHint.setBounds(470,270,270,35);
         mailHint.setText("");
-        phoneText.setBounds(280,320,200,35);
+        phoneText.setBounds(250,320,200,35);
         phoneText.setText("");
-        phoneHint.setBounds(485,295,270,35);
+        phoneHint.setBounds(470,315,270,35);
         phoneHint.setText("");
-        regaddressText.setBounds(280,365,200,35);
+        regaddressText.setBounds(250,365,200,35);
         regaddressText.setText("");
-        regAdrHint.setBounds(470,340,270,35);
+        regAdrHint.setBounds(470,360,270,35);
         regAdrHint.setText("");
-        usernameText.setBounds(280,410,200,35);
+        usernameText.setBounds(250,410,200,35);
         usernameText.setText("");
-        userHint.setBounds(485, 385,270,35);
+        userHint.setBounds(470, 405,270,35);
         userHint.setText("");
-        passwordText.setBounds(280,455,200,35);
+        passwordText.setBounds(250,455,200,35);
         passwordText.setText("");
-        passHint.setBounds(485,430,270,35);
+        passHint.setBounds(470,450,270,35);
         passHint.setText("");
-        reppasswordText.setBounds(280,500,200,35);
+        reppasswordText.setBounds(250,500,200,35);
         reppasswordText.setText("");
+        repassHint.setBounds(470,495,270,35);
+        repassHint.setText("");
 
         //this mesage is if help button is pressed
         panelRegistration.add(mesaage);
@@ -123,6 +126,7 @@ public class Registration extends Fields_Registration {
             regAdrHint.setText("a-z, A-Z, 0-9, space, -, 2-255 smb");
             userHint.setText("a-z, A-Z, 0-9, 6-30 smb");
             passHint.setText("a-z, A-Z, 0-9, 8-20 smb");
+            repassHint.setText("a-z, A-Z, 0-9, 8-20 smb");
         }
     });
     }

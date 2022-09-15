@@ -13,4 +13,7 @@ public class Fields_DoctorDashboard {
     public JButton addMedHistory = new JButton("Add medical history");
     public JButton edit = new JButton("Edit");
     public JLabel welcome = new JLabel();
+    public DefaultListModel modelPatient = new DefaultListModel();
+    public JList allPatient = new JList(modelPatient);
+    public JScrollPane scrollPane = new JScrollPane();
 }
